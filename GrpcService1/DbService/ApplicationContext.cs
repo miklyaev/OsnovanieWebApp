@@ -10,6 +10,8 @@ namespace GrpcService1.DbService
         public DbSet<TUserRole> UserRoles => Set<TUserRole>();
         public DbSet<TRoleGroup> RoleGroups => Set<TRoleGroup>();
         public DbSet<TGroup> Groups => Set<TGroup>();
+        public DbSet<TOffice> Offices => Set<TOffice>();
+        public DbSet<TRegion> Regions => Set<TRegion>();
 
         //public ApplicationContext() => Database.EnsureCreated();
 

@@ -34,6 +34,9 @@ namespace GrpcService1.DbService.Model
 
         [Column("off_time")]
         public DateTime? OffTime { get; set; }
+
+        [ForeignKey("office_id")]
+        public TOffice? Office { get; set; }
     }
 
 }

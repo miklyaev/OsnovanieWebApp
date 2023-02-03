@@ -84,3 +84,55 @@
 2023-01-16 23:36:08.312 +07:00 [INF] Application is shutting down...
 2023-01-16 23:36:08.315 +07:00 [INF] Получена команда Stop. cancellationToken.IsCancellationRequested = False
 2023-01-16 23:36:08.326 +07:00 [INF] stoppingToken.IsCancellationRequested = True
+2023-02-04 01:20:18.606 +07:00 [INF] Инициализация успешно завершена.
+2023-02-04 01:20:24.725 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=10, key=04.02.2023 01:15:48.560, message={
+  "UserId": 0,
+  "UserName": "string",
+  "Password": "string",
+  "Age": 50
+}
+
+2023-02-04 01:20:24.757 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=11, key=04.02.2023 01:18:06.238, message={
+  "UserId": 0,
+  "UserName": "string",
+  "Password": "string",
+  "Age": 51
+}
+
+2023-02-04 01:21:05.150 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=12, key=04.02.2023 01:21:04.352, message={
+  "UserId": 0,
+  "UserName": "string",
+  "Password": "string",
+  "Age": 20
+}
+
+2023-02-04 01:24:25.345 +07:00 [INF] Инициализация успешно завершена.
+2023-02-04 01:28:43.813 +07:00 [INF] Инициализация успешно завершена.
+2023-02-04 01:29:54.278 +07:00 [INF] Инициализация успешно завершена.
+2023-02-04 01:31:56.229 +07:00 [INF] Инициализация успешно завершена.
+2023-02-04 01:32:21.329 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "string",
+  "Password": "string",
+  "Age": 70
+}' at: 'CSharp_Topic [[0]] @13'.
+2023-02-04 01:32:21.331 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=13, key=04.02.2023 01:31:05.909, message={
+  "UserId": 0,
+  "UserName": "string",
+  "Password": "string",
+  "Age": 70
+}
+
+2023-02-04 01:37:41.226 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "string",
+  "Password": "string",
+  "Age": 70
+}' at: 'CSharp_Topic [[0]] @14'.
+2023-02-04 01:37:41.233 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=14, key=04.02.2023 01:32:59.363, message={
+  "UserId": 0,
+  "UserName": "string",
+  "Password": "string",
+  "Age": 70
+}
+

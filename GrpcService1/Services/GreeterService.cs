@@ -129,7 +129,7 @@ namespace GrpcService1.Services
             List<User> users = new List<User>();
             try
             {
-                if (kafkaResult.Message.Value != null)
+                if (kafkaResult?.Message.Value != null)
                 {
                     User user = JsonConvert.DeserializeObject<User>(kafkaResult.Message.Value);
                     users.Add(user!);

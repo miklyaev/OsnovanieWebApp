@@ -1,0 +1,12 @@
+D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaLibNetCore\bin\Debug\net6.0\KafkaLibNetCore.deps.json
+D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaLibNetCore\bin\Debug\net6.0\KafkaLibNetCore.dll
+D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaLibNetCore\bin\Debug\net6.0\KafkaLibNetCore.pdb
+D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaLibNetCore\obj\Debug\net6.0\KafkaLibNetCore.csproj.AssemblyReference.cache
+D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaLibNetCore\obj\Debug\net6.0\KafkaLibNetCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaLibNetCore\obj\Debug\net6.0\KafkaLibNetCore.AssemblyInfoInputs.cache
+D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaLibNetCore\obj\Debug\net6.0\KafkaLibNetCore.AssemblyInfo.cs
+D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaLibNetCore\obj\Debug\net6.0\KafkaLibNetCore.csproj.CoreCompileInputs.cache
+D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaLibNetCore\obj\Debug\net6.0\KafkaLibNetCore.dll
+D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaLibNetCore\obj\Debug\net6.0\refint\KafkaLibNetCore.dll
+D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaLibNetCore\obj\Debug\net6.0\KafkaLibNetCore.pdb
+D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaLibNetCore\obj\Debug\net6.0\ref\KafkaLibNetCore.dll

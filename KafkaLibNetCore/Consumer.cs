@@ -38,6 +38,7 @@ namespace KafkaLibNetCore
         public Consumer(ILogger logger, IConfiguration config)
         {
             IConfiguration m_configuration = config;
+            m_logger = logger;
         }
         /// <summary>
         /// Конфигурация консюмера
@@ -131,7 +132,7 @@ namespace KafkaLibNetCore
 
                 if (cr != null)
                 {
-                    //m_logger.Information($"Consumed message '{cr.Message.Value}' at: '{cr.TopicPartitionOffset}'.");
+                    m_logger.Information($"Consumed message '{cr.Message.Value}' at: '{cr.TopicPartitionOffset}'.");
                     return cr;
                 }
                 else

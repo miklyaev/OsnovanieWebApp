@@ -2517,3 +2517,330 @@ AutoWrapper.Wrappers.ApiException: One or more errors occurred. (Status(StatusCo
   "age": 50
 } Responded with [200] in 3878ms
 16-01-2023 23:23:00 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Kafka/addMessage application/json 78 - 200 90 application/json 3882.9614ms
+04-02-2023 00:56:29 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+04-02-2023 00:56:29 [Information] Now listening on: "https://localhost:7139"
+04-02-2023 00:56:29 [Information] Now listening on: "http://localhost:5139"
+04-02-2023 00:56:29 [Information] Application started. Press Ctrl+C to shut down.
+04-02-2023 00:56:29 [Information] Hosting environment: "Development"
+04-02-2023 00:56:29 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+04-02-2023 00:56:32 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+04-02-2023 00:56:32 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 217.9607ms
+04-02-2023 00:56:32 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+04-02-2023 00:56:32 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 2.9616ms
+04-02-2023 00:56:32 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+04-02-2023 00:56:32 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 85.0197ms
+04-02-2023 01:06:50 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+04-02-2023 01:06:50 [Information] Now listening on: "https://localhost:7139"
+04-02-2023 01:06:50 [Information] Now listening on: "http://localhost:5139"
+04-02-2023 01:06:50 [Information] Application started. Press Ctrl+C to shut down.
+04-02-2023 01:06:50 [Information] Hosting environment: "Development"
+04-02-2023 01:06:50 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+04-02-2023 01:06:53 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+04-02-2023 01:06:54 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 629.6832ms
+04-02-2023 01:06:54 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+04-02-2023 01:06:54 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 11.4420ms
+04-02-2023 01:06:54 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+04-02-2023 01:06:54 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 79.2367ms
+04-02-2023 01:06:54 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+04-02-2023 01:06:54 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 110.4104ms
+04-02-2023 01:07:30 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Kafka/addMessage application/json 72
+04-02-2023 01:07:30 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+04-02-2023 01:07:30 [Information] Route matched with "{action = \"AddUserToKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUserToKafka(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+04-02-2023 01:07:43 [Information] Executed action "OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)" in 12441.3165ms
+04-02-2023 01:07:43 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+04-02-2023 01:07:43 [Error] [500]: One or more errors occurred. (Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)"))
+AutoWrapper.Wrappers.ApiException: One or more errors occurred. (Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)"))
+   at OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka(User user) in D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\Controllers\KafkaController.cs:line 31
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+04-02-2023 01:07:43 [Information] Source:[::1] Request: POST https localhost:7139/api/Kafka/addMessage  {
+  "userId": 0,
+  "userName": "New",
+  "password": "new",
+  "age": 50
+} Responded with [500] in 12661ms
+04-02-2023 01:07:43 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Kafka/addMessage application/json 72 - 500 984 application/json 12672.7540ms
+04-02-2023 01:08:22 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Kafka/addMessage application/json 72
+04-02-2023 01:08:22 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+04-02-2023 01:08:22 [Information] Route matched with "{action = \"AddUserToKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUserToKafka(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+04-02-2023 01:10:39 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+04-02-2023 01:10:40 [Information] Now listening on: "https://localhost:7139"
+04-02-2023 01:10:40 [Information] Now listening on: "http://localhost:5139"
+04-02-2023 01:10:40 [Information] Application started. Press Ctrl+C to shut down.
+04-02-2023 01:10:40 [Information] Hosting environment: "Development"
+04-02-2023 01:10:40 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+04-02-2023 01:10:41 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+04-02-2023 01:10:42 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 282.9389ms
+04-02-2023 01:10:42 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+04-02-2023 01:10:42 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 2.8904ms
+04-02-2023 01:10:42 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+04-02-2023 01:10:42 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13.4085ms
+04-02-2023 01:10:42 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+04-02-2023 01:10:42 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 92.3032ms
+04-02-2023 01:11:03 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Kafka/addMessage application/json 72
+04-02-2023 01:11:03 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+04-02-2023 01:11:03 [Information] Route matched with "{action = \"AddUserToKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUserToKafka(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+04-02-2023 01:11:25 [Information] Executed action "OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)" in 22323.5657ms
+04-02-2023 01:11:25 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+04-02-2023 01:11:25 [Error] [500]: One or more errors occurred. (Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)"))
+AutoWrapper.Wrappers.ApiException: One or more errors occurred. (Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)"))
+   at OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka(User user) in D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\Controllers\KafkaController.cs:line 31
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+04-02-2023 01:11:25 [Information] Source:[::1] Request: POST https localhost:7139/api/Kafka/addMessage  {
+  "userId": 0,
+  "userName": "new",
+  "password": "new",
+  "age": 50
+} Responded with [500] in 22519ms
+04-02-2023 01:11:25 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Kafka/addMessage application/json 72 - 500 984 application/json 22526.5732ms
+04-02-2023 01:12:43 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+04-02-2023 01:12:44 [Information] Now listening on: "https://localhost:7139"
+04-02-2023 01:12:44 [Information] Now listening on: "http://localhost:5139"
+04-02-2023 01:12:44 [Information] Application started. Press Ctrl+C to shut down.
+04-02-2023 01:12:44 [Information] Hosting environment: "Development"
+04-02-2023 01:12:44 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+04-02-2023 01:12:46 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+04-02-2023 01:12:46 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 285.3468ms
+04-02-2023 01:12:46 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+04-02-2023 01:12:46 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 2.9323ms
+04-02-2023 01:12:46 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+04-02-2023 01:12:46 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13.1251ms
+04-02-2023 01:12:46 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+04-02-2023 01:12:46 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 86.9511ms
+04-02-2023 01:13:14 [Information] Request starting HTTP/2 GET https://localhost:7139/HelloWorld - -
+04-02-2023 01:13:14 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.HelloWorldController.GetHelloWorld (OsnovanieWebApp)"'
+04-02-2023 01:13:14 [Information] Route matched with "{action = \"GetHelloWorld\", controller = \"HelloWorld\"}". Executing controller action with signature "System.String GetHelloWorld()" on controller "OsnovanieWebApp.Controllers.HelloWorldController" ("OsnovanieWebApp").
+04-02-2023 01:13:14 [Information] Hello world!!!
+04-02-2023 01:13:14 [Information] Executing "ObjectResult", writing value of type '"System.String"'.
+04-02-2023 01:13:14 [Information] Executed action "OsnovanieWebApp.Controllers.HelloWorldController.GetHelloWorld (OsnovanieWebApp)" in 8.4532ms
+04-02-2023 01:13:14 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.HelloWorldController.GetHelloWorld (OsnovanieWebApp)"'
+04-02-2023 01:13:14 [Information] Source:[::1] Request: GET https localhost:7139/HelloWorld   Responded with [200] in 224ms
+04-02-2023 01:13:14 [Information] Request finished HTTP/2 GET https://localhost:7139/HelloWorld - - - 200 73 application/json 235.4441ms
+04-02-2023 01:13:28 [Information] Request starting HTTP/2 GET https://localhost:7139/HelloWorld - -
+04-02-2023 01:13:28 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.HelloWorldController.GetHelloWorld (OsnovanieWebApp)"'
+04-02-2023 01:13:28 [Information] Route matched with "{action = \"GetHelloWorld\", controller = \"HelloWorld\"}". Executing controller action with signature "System.String GetHelloWorld()" on controller "OsnovanieWebApp.Controllers.HelloWorldController" ("OsnovanieWebApp").
+04-02-2023 01:13:28 [Information] Hello world!!!
+04-02-2023 01:13:28 [Information] Executing "ObjectResult", writing value of type '"System.String"'.
+04-02-2023 01:13:28 [Information] Executed action "OsnovanieWebApp.Controllers.HelloWorldController.GetHelloWorld (OsnovanieWebApp)" in 2.9217ms
+04-02-2023 01:13:28 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.HelloWorldController.GetHelloWorld (OsnovanieWebApp)"'
+04-02-2023 01:13:28 [Information] Source:[::1] Request: GET https localhost:7139/HelloWorld   Responded with [200] in 9ms
+04-02-2023 01:13:28 [Information] Request finished HTTP/2 GET https://localhost:7139/HelloWorld - - - 200 73 application/json 13.1462ms
+04-02-2023 01:15:07 [Information] Request starting HTTP/2 GET https://localhost:7139/HelloWorld - -
+04-02-2023 01:15:07 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.HelloWorldController.GetHelloWorld (OsnovanieWebApp)"'
+04-02-2023 01:15:07 [Information] Route matched with "{action = \"GetHelloWorld\", controller = \"HelloWorld\"}". Executing controller action with signature "System.String GetHelloWorld()" on controller "OsnovanieWebApp.Controllers.HelloWorldController" ("OsnovanieWebApp").
+04-02-2023 01:15:09 [Information] Hello world!!!
+04-02-2023 01:15:09 [Information] Executing "ObjectResult", writing value of type '"System.String"'.
+04-02-2023 01:15:09 [Information] Executed action "OsnovanieWebApp.Controllers.HelloWorldController.GetHelloWorld (OsnovanieWebApp)" in 2293.9014ms
+04-02-2023 01:15:09 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.HelloWorldController.GetHelloWorld (OsnovanieWebApp)"'
+04-02-2023 01:15:09 [Information] Source:[::1] Request: GET https localhost:7139/HelloWorld   Responded with [200] in 2298ms
+04-02-2023 01:15:09 [Information] Request finished HTTP/2 GET https://localhost:7139/HelloWorld - - - 200 73 application/json 2304.7660ms
+04-02-2023 01:15:45 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Kafka/addMessage application/json 78
+04-02-2023 01:15:45 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+04-02-2023 01:15:45 [Information] Route matched with "{action = \"AddUserToKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUserToKafka(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+04-02-2023 01:15:49 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+04-02-2023 01:15:49 [Information] Executed action "OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)" in 4232.9825ms
+04-02-2023 01:15:49 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+04-02-2023 01:15:49 [Information] Source:[::1] Request: POST https localhost:7139/api/Kafka/addMessage  {
+  "userId": 0,
+  "userName": "string",
+  "password": "string",
+  "age": 50
+} Responded with [200] in 4300ms
+04-02-2023 01:15:49 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Kafka/addMessage application/json 78 - 200 90 application/json 4303.2760ms
+04-02-2023 01:17:06 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Kafka/addMessage application/json 78
+04-02-2023 01:17:06 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+04-02-2023 01:17:06 [Information] Route matched with "{action = \"AddUserToKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUserToKafka(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+04-02-2023 01:18:15 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+04-02-2023 01:18:15 [Information] Executed action "OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)" in 69343.3882ms
+04-02-2023 01:18:15 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+04-02-2023 01:18:15 [Information] Source:[::1] Request: POST https localhost:7139/api/Kafka/addMessage  {
+  "userId": 0,
+  "userName": "string",
+  "password": "string",
+  "age": 51
+} Responded with [200] in 69347ms
+04-02-2023 01:18:15 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Kafka/addMessage application/json 78 - 200 90 application/json 69356.6164ms
+04-02-2023 01:20:12 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+04-02-2023 01:20:12 [Information] Now listening on: "https://localhost:7139"
+04-02-2023 01:20:12 [Information] Now listening on: "http://localhost:5139"
+04-02-2023 01:20:12 [Information] Application started. Press Ctrl+C to shut down.
+04-02-2023 01:20:12 [Information] Hosting environment: "Development"
+04-02-2023 01:20:12 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+04-02-2023 01:20:16 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+04-02-2023 01:20:16 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 304.1648ms
+04-02-2023 01:20:16 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+04-02-2023 01:20:16 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.5738ms
+04-02-2023 01:20:16 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+04-02-2023 01:20:16 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.5419ms
+04-02-2023 01:20:16 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+04-02-2023 01:20:17 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 91.6757ms
+04-02-2023 01:21:01 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Kafka/addMessage application/json 78
+04-02-2023 01:21:01 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+04-02-2023 01:21:01 [Information] Route matched with "{action = \"AddUserToKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUserToKafka(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+04-02-2023 01:21:05 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+04-02-2023 01:21:05 [Information] Executed action "OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)" in 3957.9057ms
+04-02-2023 01:21:05 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+04-02-2023 01:21:05 [Information] Source:[::1] Request: POST https localhost:7139/api/Kafka/addMessage  {
+  "userId": 0,
+  "userName": "string",
+  "password": "string",
+  "age": 20
+} Responded with [200] in 4211ms
+04-02-2023 01:21:05 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Kafka/addMessage application/json 78 - 200 90 application/json 4223.0750ms
+04-02-2023 01:24:25 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+04-02-2023 01:24:26 [Information] Now listening on: "https://localhost:7139"
+04-02-2023 01:24:26 [Information] Now listening on: "http://localhost:5139"
+04-02-2023 01:24:26 [Information] Application started. Press Ctrl+C to shut down.
+04-02-2023 01:24:26 [Information] Hosting environment: "Development"
+04-02-2023 01:24:26 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+04-02-2023 01:24:27 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+04-02-2023 01:24:28 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 292.5711ms
+04-02-2023 01:24:28 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+04-02-2023 01:24:28 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 25.2182ms
+04-02-2023 01:24:28 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+04-02-2023 01:24:28 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.9034ms
+04-02-2023 01:24:28 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+04-02-2023 01:24:28 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 88.6284ms
+04-02-2023 01:25:43 [Information] Request starting HTTP/2 GET https://localhost:7139/api/Kafka/readMessage?topic=CSharp_Topic - -
+04-02-2023 01:25:43 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.ReadFromKafka (OsnovanieWebApp)"'
+04-02-2023 01:25:43 [Information] Route matched with "{action = \"ReadFromKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse ReadFromKafka(System.String)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+04-02-2023 01:28:43 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+04-02-2023 01:28:44 [Information] Now listening on: "https://localhost:7139"
+04-02-2023 01:28:44 [Information] Now listening on: "http://localhost:5139"
+04-02-2023 01:28:44 [Information] Application started. Press Ctrl+C to shut down.
+04-02-2023 01:28:44 [Information] Hosting environment: "Development"
+04-02-2023 01:28:44 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+04-02-2023 01:28:46 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+04-02-2023 01:28:46 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 288.7891ms
+04-02-2023 01:28:46 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+04-02-2023 01:28:46 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.2583ms
+04-02-2023 01:28:46 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+04-02-2023 01:28:46 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.6990ms
+04-02-2023 01:28:46 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+04-02-2023 01:28:46 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 90.2243ms
+04-02-2023 01:29:05 [Information] Request starting HTTP/2 GET https://localhost:7139/api/Kafka/readMessage?topic=CSharp_Topic - -
+04-02-2023 01:29:05 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.ReadFromKafka (OsnovanieWebApp)"'
+04-02-2023 01:29:05 [Information] Route matched with "{action = \"ReadFromKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse ReadFromKafka(System.String)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+04-02-2023 01:29:54 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+04-02-2023 01:29:54 [Information] Now listening on: "https://localhost:7139"
+04-02-2023 01:29:54 [Information] Now listening on: "http://localhost:5139"
+04-02-2023 01:29:54 [Information] Application started. Press Ctrl+C to shut down.
+04-02-2023 01:29:54 [Information] Hosting environment: "Development"
+04-02-2023 01:29:54 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+04-02-2023 01:29:56 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+04-02-2023 01:29:56 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 283.7196ms
+04-02-2023 01:29:56 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+04-02-2023 01:29:56 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 2.9210ms
+04-02-2023 01:29:56 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+04-02-2023 01:29:56 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13.3870ms
+04-02-2023 01:29:56 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+04-02-2023 01:29:56 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 89.4964ms
+04-02-2023 01:30:21 [Information] Request starting HTTP/2 GET https://localhost:7139/api/Kafka/readMessage?topic=CSharp_Topic - -
+04-02-2023 01:30:21 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.ReadFromKafka (OsnovanieWebApp)"'
+04-02-2023 01:30:21 [Information] Route matched with "{action = \"ReadFromKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse ReadFromKafka(System.String)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+04-02-2023 01:30:33 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+04-02-2023 01:30:33 [Information] Executed action "OsnovanieWebApp.Controllers.KafkaController.ReadFromKafka (OsnovanieWebApp)" in 12233.3973ms
+04-02-2023 01:30:33 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.KafkaController.ReadFromKafka (OsnovanieWebApp)"'
+04-02-2023 01:30:34 [Information] Source:[::1] Request: GET https localhost:7139/api/Kafka/readMessage ?topic=CSharp_Topic  Responded with [200] in 12462ms
+04-02-2023 01:30:34 [Information] Request finished HTTP/2 GET https://localhost:7139/api/Kafka/readMessage?topic=CSharp_Topic - - - 200 79 application/json 12471.4745ms
+04-02-2023 01:31:00 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Kafka/addMessage application/json 78
+04-02-2023 01:31:00 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+04-02-2023 01:31:00 [Information] Route matched with "{action = \"AddUserToKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUserToKafka(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+04-02-2023 01:31:08 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+04-02-2023 01:31:56 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+04-02-2023 01:31:56 [Information] Now listening on: "https://localhost:7139"
+04-02-2023 01:31:56 [Information] Now listening on: "http://localhost:5139"
+04-02-2023 01:31:56 [Information] Application started. Press Ctrl+C to shut down.
+04-02-2023 01:31:56 [Information] Hosting environment: "Development"
+04-02-2023 01:31:56 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+04-02-2023 01:31:58 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+04-02-2023 01:31:59 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 281.9617ms
+04-02-2023 01:31:59 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+04-02-2023 01:31:59 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.4024ms
+04-02-2023 01:31:59 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+04-02-2023 01:31:59 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.8591ms
+04-02-2023 01:31:59 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+04-02-2023 01:31:59 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 88.7696ms
+04-02-2023 01:32:34 [Information] Request starting HTTP/2 GET https://localhost:7139/api/Kafka/readMessage?topic=CSharp_Topic - -
+04-02-2023 01:32:34 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.ReadFromKafka (OsnovanieWebApp)"'
+04-02-2023 01:32:34 [Information] Route matched with "{action = \"ReadFromKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse ReadFromKafka(System.String)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+04-02-2023 01:32:40 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+04-02-2023 01:32:40 [Information] Executed action "OsnovanieWebApp.Controllers.KafkaController.ReadFromKafka (OsnovanieWebApp)" in 5846.7149ms
+04-02-2023 01:32:40 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.KafkaController.ReadFromKafka (OsnovanieWebApp)"'
+04-02-2023 01:32:40 [Information] Source:[::1] Request: GET https localhost:7139/api/Kafka/readMessage ?topic=CSharp_Topic  Responded with [200] in 6076ms
+04-02-2023 01:32:40 [Information] Request finished HTTP/2 GET https://localhost:7139/api/Kafka/readMessage?topic=CSharp_Topic - - - 200 79 application/json 6085.1861ms
+04-02-2023 01:32:54 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Kafka/addMessage application/json 78
+04-02-2023 01:32:54 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+04-02-2023 01:32:54 [Information] Route matched with "{action = \"AddUserToKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUserToKafka(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+04-02-2023 01:32:59 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+04-02-2023 01:32:59 [Information] Executed action "OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)" in 5330.1881ms
+04-02-2023 01:32:59 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+04-02-2023 01:32:59 [Information] Source:[::1] Request: POST https localhost:7139/api/Kafka/addMessage  {
+  "userId": 0,
+  "userName": "string",
+  "password": "string",
+  "age": 70
+} Responded with [200] in 5341ms
+04-02-2023 01:32:59 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Kafka/addMessage application/json 78 - 200 90 application/json 5345.8292ms
+04-02-2023 01:34:22 [Information] Request starting HTTP/2 POST https://localhost:7139/api/User/addUser application/json 75
+04-02-2023 01:34:22 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.UserController.AddUser (OsnovanieWebApp)"'
+04-02-2023 01:34:22 [Information] Route matched with "{action = \"AddUser\", controller = \"User\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUser(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.UserController" ("OsnovanieWebApp").
+04-02-2023 01:34:38 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+04-02-2023 01:34:38 [Information] Executed action "OsnovanieWebApp.Controllers.UserController.AddUser (OsnovanieWebApp)" in 15844.6355ms
+04-02-2023 01:34:38 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.UserController.AddUser (OsnovanieWebApp)"'
+04-02-2023 01:34:38 [Information] Source:[::1] Request: POST https localhost:7139/api/User/addUser  {
+  "userId": 0,
+  "userName": "Boris",
+  "password": "John",
+  "age": 40
+} Responded with [200] in 15849ms
+04-02-2023 01:34:38 [Information] Request finished HTTP/2 POST https://localhost:7139/api/User/addUser application/json 75 - 200 81 application/json 15858.3027ms

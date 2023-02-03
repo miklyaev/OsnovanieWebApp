@@ -3,6 +3,7 @@ using System;
 using GrpcService1.DbService;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace GrpcService1.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    partial class ApplicationContextModelSnapshot : ModelSnapshot
+    [Migration("20230203194025_AddOffice3")]
+    partial class AddOffice3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -65,36 +68,9 @@ namespace GrpcService1.Migrations
                         .HasColumnType("text")
                         .HasColumnName("office_name");
 
-                    b.Property<int?>("region_id")
-                        .HasColumnType("integer");
-
                     b.HasKey("OfficeId");
 
-                    b.HasIndex("region_id");
-
                     b.ToTable("t_office");
-                });
-
-            modelBuilder.Entity("GrpcService1.DbService.Model.TRegion", b =>
-                {
-                    b.Property<int>("RegionId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("region_id");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("RegionId"));
-
-                    b.Property<int>("RegionCode")
-                        .HasColumnType("integer")
-                        .HasColumnName("region_code");
-
-                    b.Property<string>("RegionName")
-                        .HasColumnType("text")
-                        .HasColumnName("region_name");
-
-                    b.HasKey("RegionId");
-
-                    b.ToTable("t_region");
                 });
 
             modelBuilder.Entity("GrpcService1.DbService.Model.TRole", b =>
@@ -222,15 +198,6 @@ namespace GrpcService1.Migrations
                     b.ToTable("t_user_role");
                 });
 
-            modelBuilder.Entity("GrpcService1.DbService.Model.TOffice", b =>
-                {
-                    b.HasOne("GrpcService1.DbService.Model.TRegion", "Region")
-                        .WithMany("Offices")
-                        .HasForeignKey("region_id");
-
-                    b.Navigation("Region");
-                });
-
             modelBuilder.Entity("GrpcService1.DbService.Model.TRoleGroup", b =>
                 {
                     b.HasOne("GrpcService1.DbService.Model.TGroup", "Group")
@@ -281,11 +248,6 @@ namespace GrpcService1.Migrations
             modelBuilder.Entity("GrpcService1.DbService.Model.TOffice", b =>
                 {
                     b.Navigation("Users");
-                });
-
-            modelBuilder.Entity("GrpcService1.DbService.Model.TRegion", b =>
-                {
-                    b.Navigation("Offices");
                 });
 #pragma warning restore 612, 618
         }
