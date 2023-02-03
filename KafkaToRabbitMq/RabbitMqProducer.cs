@@ -24,11 +24,9 @@ namespace KafkaToRabbitMq
         public RabbitMqProducer()
         {
             var factory = new ConnectionFactory() { HostName = "192.168.0.104", UserName = "admin", Password = "130469" };
-
             _connection = factory.CreateConnection();
             _channel = _connection.CreateModel();
             _channel.ExchangeDeclare(exchange: "logs", type: ExchangeType.Fanout);
-
         }
 
         public void Dispose()

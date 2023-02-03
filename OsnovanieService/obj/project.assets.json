@@ -1311,11 +1311,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\OsnovanieService\\OsnovanieService.csproj",
+      "projectUniqueName": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\OsnovanieService\\OsnovanieService.csproj",
       "projectName": "OsnovanieService",
-      "projectPath": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\OsnovanieService\\OsnovanieService.csproj",
+      "projectPath": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\OsnovanieService\\OsnovanieService.csproj",
       "packagesPath": "C:\\Users\\Professional\\.nuget\\packages\\",
-      "outputPath": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\OsnovanieService\\obj\\",
+      "outputPath": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\OsnovanieService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Professional\\AppData\\Roaming\\NuGet\\NuGet.Config",

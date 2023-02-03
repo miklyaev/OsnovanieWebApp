@@ -2316,11 +2316,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\KafkaToRabbitMq\\KafkaToRabbitMq.csproj",
+      "projectUniqueName": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\KafkaToRabbitMq\\KafkaToRabbitMq.csproj",
       "projectName": "KafkaToRabbitMq",
-      "projectPath": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\KafkaToRabbitMq\\KafkaToRabbitMq.csproj",
+      "projectPath": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\KafkaToRabbitMq\\KafkaToRabbitMq.csproj",
       "packagesPath": "C:\\Users\\Professional\\.nuget\\packages\\",
-      "outputPath": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\KafkaToRabbitMq\\obj\\",
+      "outputPath": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\KafkaToRabbitMq\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Professional\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2338,8 +2338,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\KafkaLibNetCore\\KafkaLibNetCore.csproj": {
-              "projectPath": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\KafkaLibNetCore\\KafkaLibNetCore.csproj"
+            "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\KafkaLibNetCore\\KafkaLibNetCore.csproj": {
+              "projectPath": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\KafkaLibNetCore\\KafkaLibNetCore.csproj"
             }
           }
         }

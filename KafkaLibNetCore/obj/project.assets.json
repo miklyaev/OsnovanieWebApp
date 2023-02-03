@@ -627,11 +627,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\KafkaLibNetCore\\KafkaLibNetCore.csproj",
+      "projectUniqueName": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\KafkaLibNetCore\\KafkaLibNetCore.csproj",
       "projectName": "KafkaLibNetCore",
-      "projectPath": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\KafkaLibNetCore\\KafkaLibNetCore.csproj",
+      "projectPath": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\KafkaLibNetCore\\KafkaLibNetCore.csproj",
       "packagesPath": "C:\\Users\\Professional\\.nuget\\packages\\",
-      "outputPath": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\KafkaLibNetCore\\obj\\",
+      "outputPath": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\KafkaLibNetCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Professional\\AppData\\Roaming\\NuGet\\NuGet.Config",

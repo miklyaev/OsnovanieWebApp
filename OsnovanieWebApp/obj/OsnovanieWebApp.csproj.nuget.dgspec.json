@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\OsnovanieWebApp\\OsnovanieWebApp.csproj": {}
+    "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\OsnovanieWebApp\\OsnovanieWebApp.csproj": {}
   },
   "projects": {
-    "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\OsnovanieService\\OsnovanieService.csproj": {
+    "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\OsnovanieService\\OsnovanieService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\OsnovanieService\\OsnovanieService.csproj",
+        "projectUniqueName": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\OsnovanieService\\OsnovanieService.csproj",
         "projectName": "OsnovanieService",
-        "projectPath": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\OsnovanieService\\OsnovanieService.csproj",
+        "projectPath": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\OsnovanieService\\OsnovanieService.csproj",
         "packagesPath": "C:\\Users\\Professional\\.nuget\\packages\\",
-        "outputPath": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\OsnovanieService\\obj\\",
+        "outputPath": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\OsnovanieService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Professional\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -116,14 +116,14 @@
         }
       }
     },
-    "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\OsnovanieWebApp\\OsnovanieWebApp.csproj": {
+    "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\OsnovanieWebApp\\OsnovanieWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\OsnovanieWebApp\\OsnovanieWebApp.csproj",
+        "projectUniqueName": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\OsnovanieWebApp\\OsnovanieWebApp.csproj",
         "projectName": "OsnovanieWebApp",
-        "projectPath": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\OsnovanieWebApp\\OsnovanieWebApp.csproj",
+        "projectPath": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\OsnovanieWebApp\\OsnovanieWebApp.csproj",
         "packagesPath": "C:\\Users\\Professional\\.nuget\\packages\\",
-        "outputPath": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\OsnovanieWebApp\\obj\\",
+        "outputPath": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\OsnovanieWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Professional\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -141,8 +141,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\OsnovanieService\\OsnovanieService.csproj": {
-                "projectPath": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\OsnovanieService\\OsnovanieService.csproj"
+              "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\OsnovanieService\\OsnovanieService.csproj": {
+                "projectPath": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\OsnovanieService\\OsnovanieService.csproj"
               }
             }
           }

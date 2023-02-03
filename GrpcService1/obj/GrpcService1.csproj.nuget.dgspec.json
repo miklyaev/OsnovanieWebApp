@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\GrpcService1\\GrpcService1.csproj": {}
+    "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\GrpcService1\\GrpcService1.csproj": {}
   },
   "projects": {
-    "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\GrpcService1\\GrpcService1.csproj": {
+    "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\GrpcService1\\GrpcService1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\GrpcService1\\GrpcService1.csproj",
+        "projectUniqueName": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\GrpcService1\\GrpcService1.csproj",
         "projectName": "GrpcService1",
-        "projectPath": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\GrpcService1\\GrpcService1.csproj",
+        "projectPath": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\GrpcService1\\GrpcService1.csproj",
         "packagesPath": "C:\\Users\\Professional\\.nuget\\packages\\",
-        "outputPath": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\GrpcService1\\obj\\",
+        "outputPath": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\GrpcService1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Professional\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\KafkaLibNetCore\\KafkaLibNetCore.csproj": {
-                "projectPath": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\KafkaLibNetCore\\KafkaLibNetCore.csproj"
+              "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\KafkaLibNetCore\\KafkaLibNetCore.csproj": {
+                "projectPath": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\KafkaLibNetCore\\KafkaLibNetCore.csproj"
               }
             }
           }
@@ -133,14 +133,14 @@
         }
       }
     },
-    "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\KafkaLibNetCore\\KafkaLibNetCore.csproj": {
+    "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\KafkaLibNetCore\\KafkaLibNetCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\KafkaLibNetCore\\KafkaLibNetCore.csproj",
+        "projectUniqueName": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\KafkaLibNetCore\\KafkaLibNetCore.csproj",
         "projectName": "KafkaLibNetCore",
-        "projectPath": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\KafkaLibNetCore\\KafkaLibNetCore.csproj",
+        "projectPath": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\KafkaLibNetCore\\KafkaLibNetCore.csproj",
         "packagesPath": "C:\\Users\\Professional\\.nuget\\packages\\",
-        "outputPath": "D:\\SamplesProjC#\\Astral\\OsnovanieWebApp\\KafkaLibNetCore\\obj\\",
+        "outputPath": "D:\\SamplesProjC#\\Astral\\GitHub\\OsnovanieWebApp\\KafkaLibNetCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Professional\\AppData\\Roaming\\NuGet\\NuGet.Config",
