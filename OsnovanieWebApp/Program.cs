@@ -27,6 +27,7 @@ builder.Host.UseSerilog((hostingContext, loggerConfiguration) =>
     // Used to filter out potentially bad data due debugging.
     // Very useful when doing Seq dashboards and want to remove logs under debugging session.
     loggerConfiguration.Enrich.WithProperty("DebuggerAttached", Debugger.IsAttached);
+
 #endif
 });
 
