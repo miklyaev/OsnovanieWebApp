@@ -1,0 +1,123 @@
+{
+  "statusId": 4,
+    "status": "Готово",
+    "requestId": 1090040,
+    "list": [
+      {
+        "typeId": 1,
+        "typeName": "Application"
+      },
+      {
+        "typeId": 2,
+        "typeName": "Procuration"
+      }
+    ],
+    "smevChecks": [
+      {
+        "status": 1,
+        "initialStatus": 4,
+        "requestType": 0,
+        "title": "СНИЛС заявителя",
+        "name": "СНИЛС заявителя",
+        "comment": "Проверка пройдена",
+        "launchDate": "2022-11-11T14:54:15.9001788",
+        "smevIntegrationId": 3
+      },
+      {
+        "status": 1,
+        "initialStatus": 4,
+        "requestType": 1,
+        "title": "ИНН заявителя",
+        "name": "ИНН заявителя",
+        "comment": "Проверка пройдена",
+        "launchDate": "2022-11-11T14:54:15.9173184",
+        "smevIntegrationId": 3
+      },
+      {
+        "status": 1,
+        "initialStatus": 4,
+        "requestType": 4,
+        "title": "ОГРН",
+        "name": "ОГРН",
+        "comment": "Проверка пройдена",
+        "launchDate": "2022-11-11T14:54:15.9357868",
+        "smevIntegrationId": 1
+      },
+      {
+        "status": 1,
+        "initialStatus": 4,
+        "requestType": 2,
+        "title": "Паспорт заявителя",
+        "name": "Паспорт заявителя",
+        "comment": "Проверка пройдена",
+        "launchDate": "2022-11-11T14:54:26.0411259",
+        "smevIntegrationId": 1
+      }
+    ],
+    "info": {
+      "firstName": "Дмитрий",
+      "lastName": "Мухин",
+      "middleName": "Павлович",
+      "headFirstName": "Дмитрий",
+      "headLastName": "Мухин",
+      "headMiddleName": "Павлович",
+      "company": "ООО \"НЕЙТОН\"",
+      "companyFull": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"НЕЙТОН\"",
+      "position": "Генеральный директор",
+      "department": null,
+      "passportSerial": "2017",
+      "passportNumber": "036411",
+      "identificationDocumentType": 1,
+      "passportDate": "26.01.2017",
+      "passportDivision": "ОТДЕЛОМ УФМС РОССИИ ПО ВОРОНЕЖСКОЙ ОБЛАСТИ В ЛЕВОБЕРЕЖНОМ РАЙОНЕ Г. ВОРОНЕЖА",
+      "idSmevMvd": null,
+      "idSmevEGRUL": null,
+      "idSmevEGRIP": null,
+      "idSmevINNFL": null,
+      "idSmevSNILS": null,
+      "passportCode": "360-003",
+      "birthDate": "03.01.2003",
+      "gender": "M",
+      "inn": "9727013256",
+      "personInn": "366311936047",
+      "ogrn": "1227700706507",
+      "ogrnip": null,
+      "kpp": "772701001",
+      "snils": "19508962517",
+      "email": "dima.mukhin.03@list.ru",
+      "phone": "84842788999",
+      "companyPhone": "84842788999",
+      "country": null,
+      "region": 77,
+      "city": "г. Москва",
+      "address": "ул. Южнобутовская 50 помещ.5А ком.16",
+      "index": "117042",
+      "type": 3,
+      "products": [
+        7740
+      ],
+      "headPosition": "Генеральный директор",
+      "offerJoining": true,
+      "regionLaw": 77,
+      "cityLaw": "г. Москва",
+      "addressLaw": "ул. Южнобутовская 50 помещ.5А ком.16",
+      "createDate": "11.11.2022 14:54:13",
+      "comment": null,
+      "identificationKind": 0,
+      "forInfoSys": null,
+      "managerComment": null,
+      "basisOfActs": null,
+      "checkCertInFNSStatus": 2,
+      "fnsCode": null,
+      "existingCertsInFNS": [
+                              {
+                                "sn": "0ABCDEF12345",
+                                "issued": "25.01.2022 10:13:00"
+                              },
+                              {
+                                "sn": "0ABCDEF12346",
+                                "issued": "25.01.2022 10:15:00"
+                              }
+                            ]
+    }
+}

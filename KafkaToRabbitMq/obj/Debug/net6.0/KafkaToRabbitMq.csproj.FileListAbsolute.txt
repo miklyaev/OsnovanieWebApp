@@ -1,0 +1,5 @@
+D:\SamplesProjC#\Astral\OsnovanieWebApp\KafkaToRabbitMq\obj\Debug\net6.0\KafkaToRabbitMq.csproj.AssemblyReference.cache
+D:\SamplesProjC#\Astral\OsnovanieWebApp\KafkaToRabbitMq\obj\Debug\net6.0\KafkaToRabbitMq.GeneratedMSBuildEditorConfig.editorconfig
+D:\SamplesProjC#\Astral\OsnovanieWebApp\KafkaToRabbitMq\obj\Debug\net6.0\KafkaToRabbitMq.AssemblyInfoInputs.cache
+D:\SamplesProjC#\Astral\OsnovanieWebApp\KafkaToRabbitMq\obj\Debug\net6.0\KafkaToRabbitMq.AssemblyInfo.cs
+D:\SamplesProjC#\Astral\OsnovanieWebApp\KafkaToRabbitMq\obj\Debug\net6.0\KafkaToRabbitMq.csproj.CoreCompileInputs.cache

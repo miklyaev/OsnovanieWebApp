@@ -1,0 +1,86 @@
+2023-01-16 23:09:16.713 +07:00 [INF] Инициализация. Завершена успешно.
+2023-01-16 23:09:16.730 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-16 23:09:16.735 +07:00 [INF] Hosting environment: Development
+2023-01-16 23:09:16.736 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\OsnovanieWebApp\KafkaToRabbitMq
+2023-01-16 23:09:17.132 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=5, key=15.01.2023 02:08:44.509, message={
+  "UserId": 0,
+  "UserName": "John",
+  "Password": "Biden",
+  "Age": 90
+}
+
+2023-01-16 23:09:18.151 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=6, key=15.01.2023 02:09:03.640, message={
+  "UserId": 0,
+  "UserName": "John2",
+  "Password": "Biden2",
+  "Age": 90
+}
+
+2023-01-16 23:09:19.157 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=7, key=15.01.2023 02:29:47.614, message={
+  "UserId": 0,
+  "UserName": "Ivan",
+  "Password": "Putin",
+  "Age": 60
+}
+
+2023-01-16 23:25:08.753 +07:00 [INF] Инициализация. Завершена успешно.
+2023-01-16 23:25:09.779 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-16 23:25:09.785 +07:00 [INF] Hosting environment: Development
+2023-01-16 23:25:09.786 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\OsnovanieWebApp\KafkaToRabbitMq
+2023-01-16 23:25:32.887 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=5, key=15.01.2023 02:08:44.509, message={
+  "UserId": 0,
+  "UserName": "John",
+  "Password": "Biden",
+  "Age": 90
+}
+
+2023-01-16 23:25:34.932 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=6, key=15.01.2023 02:09:03.640, message={
+  "UserId": 0,
+  "UserName": "John2",
+  "Password": "Biden2",
+  "Age": 90
+}
+
+2023-01-16 23:25:36.951 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=7, key=15.01.2023 02:29:47.614, message={
+  "UserId": 0,
+  "UserName": "Ivan",
+  "Password": "Putin",
+  "Age": 60
+}
+
+2023-01-16 23:25:38.971 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=8, key=16.01.2023 23:22:41.678, message={
+  "UserId": 0,
+  "UserName": "Vovan",
+  "Password": "Vovan",
+  "Age": 50
+}
+
+2023-01-16 23:25:40.987 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=9, key=16.01.2023 23:22:59.624, message={
+  "UserId": 0,
+  "UserName": "Vovan2",
+  "Password": "Vovan2",
+  "Age": 50
+}
+
+2023-01-16 23:28:03.801 +07:00 [INF] Инициализация. Завершена успешно.
+2023-01-16 23:28:04.826 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-16 23:28:04.831 +07:00 [INF] Hosting environment: Development
+2023-01-16 23:28:04.832 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\OsnovanieWebApp\KafkaToRabbitMq
+2023-01-16 23:29:04.465 +07:00 [INF] Application is shutting down...
+2023-01-16 23:33:44.738 +07:00 [INF] Инициализация успешно завершена.
+2023-01-16 23:33:45.764 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-16 23:33:45.770 +07:00 [INF] Hosting environment: Development
+2023-01-16 23:33:45.771 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\OsnovanieWebApp\KafkaToRabbitMq
+2023-01-16 23:33:54.910 +07:00 [INF] Application is shutting down...
+2023-01-16 23:33:54.924 +07:00 [INF] stoppingToken.IsCancellationRequested = True
+2023-01-16 23:35:46.409 +07:00 [INF] Инициализация успешно завершена.
+2023-01-16 23:35:47.450 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-16 23:35:47.456 +07:00 [INF] Hosting environment: Development
+2023-01-16 23:35:47.458 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\OsnovanieWebApp\KafkaToRabbitMq
+2023-01-16 23:35:56.468 +07:00 [INF] Инициализация успешно завершена.
+2023-01-16 23:35:57.506 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-16 23:35:57.512 +07:00 [INF] Hosting environment: Development
+2023-01-16 23:35:57.513 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\OsnovanieWebApp\KafkaToRabbitMq
+2023-01-16 23:36:08.312 +07:00 [INF] Application is shutting down...
+2023-01-16 23:36:08.315 +07:00 [INF] Получена команда Stop. cancellationToken.IsCancellationRequested = False
+2023-01-16 23:36:08.326 +07:00 [INF] stoppingToken.IsCancellationRequested = True

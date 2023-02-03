@@ -1,0 +1,15 @@
+﻿{
+  //параметры подключения к Kafka
+  "KAFKA_URL": "192.168.0.104:9092",
+  "KAFKA_GROUP_ID": "test-consumer-group",
+  "SECURITY_PROTOCOL": "PLAIN_TEXT",
+  "SASL_MECHANISM": "GSS_API",
+  "KAFKA_TOPIC": "CSharp_Topic",
+  //Считываем сначала,
+  //чтобы все незакомиченные сообщения в прошлом были считаны
+  "AUTO_OFFSET_RESET": "EARLIEST",
+  //Коммиты делаем вручную
+  //Если сообщение не закомичено, это будет зафиксировано кафкой и в очередном цикле считывания оно должно попасть в консюмер
+  "ENABLE_AUTO_COMMIT": false,
+  "POLLING_INTERVAL": 1000
+}

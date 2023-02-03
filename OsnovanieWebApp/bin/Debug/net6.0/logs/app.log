@@ -1,0 +1,40 @@
+12-11-2022 01:08:35 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+12-11-2022 01:08:35 [Information] Unable to bind to "http://localhost:5000" on the "IPv4 loopback" interface: '"Сделана попытка доступа к сокету методом, запрещенным правами доступа."'.
+12-11-2022 01:08:35 [Information] Unable to bind to "https://localhost:5001" on the "IPv4 loopback" interface: '"Сделана попытка доступа к сокету методом, запрещенным правами доступа."'.
+12-11-2022 01:08:35 [Information] Now listening on: "http://localhost:5000"
+12-11-2022 01:08:35 [Information] Now listening on: "https://localhost:5001"
+12-11-2022 01:08:35 [Information] Application started. Press Ctrl+C to shut down.
+12-11-2022 01:08:35 [Information] Hosting environment: "Production"
+12-11-2022 01:08:35 [Information] Content root path: "D:\SamplesProjC#\Astral\OsnovanieWebApp\OsnovanieWebApp\bin\Debug\net6.0\"
+12-11-2022 01:10:10 [Information] Request starting HTTP/1.1 GET http://localhost:5000/ - -
+12-11-2022 01:10:10 [Information] Request finished HTTP/1.1 GET http://localhost:5000/ - - - 307 0 - 24.7646ms
+12-11-2022 01:10:10 [Information] Request starting HTTP/2 GET https://localhost:5001/ - -
+12-11-2022 01:10:10 [Information] Request finished HTTP/2 GET https://localhost:5001/ - - - 404 0 - 3.0258ms
+12-11-2022 01:10:41 [Information] Request starting HTTP/2 GET https://localhost:5001/HelloWorld - -
+12-11-2022 01:10:41 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.HelloWorldController.GetHelloWorld (OsnovanieWebApp)"'
+12-11-2022 01:10:41 [Information] Route matched with "{action = \"GetHelloWorld\", controller = \"HelloWorld\"}". Executing controller action with signature "System.String GetHelloWorld()" on controller "OsnovanieWebApp.Controllers.HelloWorldController" ("OsnovanieWebApp").
+12-11-2022 01:10:41 [Information] Hello world!!!
+12-11-2022 01:10:41 [Information] Executing "ObjectResult", writing value of type '"System.String"'.
+12-11-2022 01:10:41 [Information] Executed action "OsnovanieWebApp.Controllers.HelloWorldController.GetHelloWorld (OsnovanieWebApp)" in 10.6308ms
+12-11-2022 01:10:41 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.HelloWorldController.GetHelloWorld (OsnovanieWebApp)"'
+12-11-2022 01:10:41 [Information] Request finished HTTP/2 GET https://localhost:5001/HelloWorld - - - 200 - text/plain;+charset=utf-8 39.9685ms
+12-11-2022 01:10:41 [Information] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+12-11-2022 01:10:41 [Information] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 1.3209ms
+12-11-2022 01:10:56 [Information] Request starting HTTP/2 GET https://localhost:5001/swagger - -
+12-11-2022 01:10:56 [Information] Request finished HTTP/2 GET https://localhost:5001/swagger - - - 404 0 - 0.8807ms
+12-11-2022 01:11:24 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+12-11-2022 01:11:24 [Information] Unable to bind to "http://localhost:5000" on the "IPv4 loopback" interface: '"Сделана попытка доступа к сокету методом, запрещенным правами доступа."'.
+12-11-2022 01:11:24 [Information] Unable to bind to "https://localhost:5001" on the "IPv4 loopback" interface: '"Сделана попытка доступа к сокету методом, запрещенным правами доступа."'.
+12-11-2022 01:11:24 [Information] Now listening on: "http://localhost:5000"
+12-11-2022 01:11:24 [Information] Now listening on: "https://localhost:5001"
+12-11-2022 01:11:24 [Information] Application started. Press Ctrl+C to shut down.
+12-11-2022 01:11:24 [Information] Hosting environment: "Production"
+12-11-2022 01:11:24 [Information] Content root path: "D:\SamplesProjC#\Astral\OsnovanieWebApp\OsnovanieWebApp\bin\Debug\net6.0\"
+12-11-2022 01:12:12 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+12-11-2022 01:12:12 [Information] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 307 0 - 23.9343ms
+12-11-2022 01:12:12 [Information] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+12-11-2022 01:12:12 [Information] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 404 0 - 60.4413ms
+12-11-2022 01:12:38 [Information] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+12-11-2022 01:12:38 [Information] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 307 0 - 0.7851ms
+12-11-2022 01:12:38 [Information] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+12-11-2022 01:12:38 [Information] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 404 0 - 0.7997ms

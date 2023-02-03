@@ -1,0 +1,60 @@
+syntax = "proto3";
+
+option csharp_namespace = "OsnovanieService";
+
+package greet;
+import "google/protobuf/empty.proto";
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply);
+  rpc GetAll(google.protobuf.Empty) returns (PersonReply);
+  rpc GetUser(UniqueID) returns (User);
+  rpc GetAllUsers(google.protobuf.Empty) returns (ListOfUsers);
+  rpc AddUser(User) returns (UniqueID);
+  rpc WriteToKafka(User) returns (PersonReply);
+  rpc ReadFromKafka(Kafka) returns(ListOfUsers);
+}
+
+message Kafka {
+	string topicName = 1;
+	bool success = 2;
+	string msg = 3;
+	int32 offset = 4;
+	string key = 5;
+}
+
+message UniqueID {
+	int32 userId = 1;
+}
+
+message User {
+	int32 userId = 1;
+	string userName = 2;
+	string password = 3;
+	int32 age = 4;
+}
+
+message ListOfUsers{
+	repeated User data = 1;
+}
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+  int32 age = 2;
+}
+
+// The response message containing the greetings.
+message HelloReply {
+  string message = 1;
+}
+
+message PersonReply {
+  string message = 1;
+}
+
+message Empty {
+
+}
+

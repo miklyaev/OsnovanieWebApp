@@ -1,0 +1,15 @@
+D:\7733TPQC\7733_Backend\components\7733_Producer_ProductData\KafkaLibNetCore\bin\Release\net5.0\KafkaLibNetCore.deps.json
+D:\7733TPQC\7733_Backend\components\7733_Producer_ProductData\KafkaLibNetCore\bin\Release\net5.0\KafkaLibNetCore.dll
+D:\7733TPQC\7733_Backend\components\7733_Producer_ProductData\KafkaLibNetCore\bin\Release\net5.0\ref\KafkaLibNetCore.dll
+D:\7733TPQC\7733_Backend\components\7733_Producer_ProductData\KafkaLibNetCore\bin\Release\net5.0\KafkaLibNetCore.pdb
+D:\7733TPQC\7733_Backend\components\7733_Producer_ProductData\KafkaLibNetCore\bin\Release\net5.0\ZSMK_ET_Common.dll
+D:\7733TPQC\7733_Backend\components\7733_Producer_ProductData\KafkaLibNetCore\bin\Release\net5.0\ZSMK_ET_Common.pdb
+D:\7733TPQC\7733_Backend\components\7733_Producer_ProductData\KafkaLibNetCore\obj\Release\net5.0\KafkaLibNetCore.csproj.AssemblyReference.cache
+D:\7733TPQC\7733_Backend\components\7733_Producer_ProductData\KafkaLibNetCore\obj\Release\net5.0\KafkaLibNetCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\7733TPQC\7733_Backend\components\7733_Producer_ProductData\KafkaLibNetCore\obj\Release\net5.0\KafkaLibNetCore.AssemblyInfoInputs.cache
+D:\7733TPQC\7733_Backend\components\7733_Producer_ProductData\KafkaLibNetCore\obj\Release\net5.0\KafkaLibNetCore.AssemblyInfo.cs
+D:\7733TPQC\7733_Backend\components\7733_Producer_ProductData\KafkaLibNetCore\obj\Release\net5.0\KafkaLibNetCore.csproj.CoreCompileInputs.cache
+D:\7733TPQC\7733_Backend\components\7733_Producer_ProductData\KafkaLibNetCore\obj\Release\net5.0\KafkaLibNetCore.csproj.CopyComplete
+D:\7733TPQC\7733_Backend\components\7733_Producer_ProductData\KafkaLibNetCore\obj\Release\net5.0\KafkaLibNetCore.dll
+D:\7733TPQC\7733_Backend\components\7733_Producer_ProductData\KafkaLibNetCore\obj\Release\net5.0\ref\KafkaLibNetCore.dll
+D:\7733TPQC\7733_Backend\components\7733_Producer_ProductData\KafkaLibNetCore\obj\Release\net5.0\KafkaLibNetCore.pdb
