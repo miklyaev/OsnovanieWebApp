@@ -55,6 +55,10 @@
               "target": "Package",
               "version": "[2.50.0, )"
             },
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -160,6 +164,10 @@
             "AutoWrapper.Core": {
               "target": "Package",
               "version": "[4.5.0, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[7.0.2, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",

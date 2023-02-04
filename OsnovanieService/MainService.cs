@@ -1,4 +1,5 @@
 ﻿using Grpc.Net.Client;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using OsnovanieService.Model;
@@ -19,6 +20,7 @@ namespace OsnovanieService
         public Task<User> GetUser(int userId);
         public Task<ListOfUsers> GetAllUsers();
         public Task<UniqueID> AddUser(User user);
+        public Task<UniqueID> AddRegion(Region region);
         public Task<PersonReply> AddUserToKafka(User user);
 
         public Task<ListOfUsers> ReadFromKafka(string topic);
@@ -27,11 +29,13 @@ namespace OsnovanieService
     {
         public readonly IConfiguration _configuration;
         public readonly ILogger _logger;
+        public readonly IDistributedCache _cache;
 
-        public MainService(IConfiguration config, ILogger log)
+        public MainService(IConfiguration config, ILogger log, IDistributedCache distributedCache)
         {
             _configuration = config;
             _logger = log;
+            _cache = distributedCache;
         }
         public string GetHelloWorld()
         {
@@ -57,7 +61,7 @@ namespace OsnovanieService
             var client = new Greeter.GreeterClient(channel);
             UniqueID request = new UniqueID
             {
-                UserId = userId
+                Id = userId
             };
             var reply = await client.GetUserAsync(request);
             return reply;
@@ -93,6 +97,13 @@ namespace OsnovanieService
             {
                 TopicName = topic
             });
+        }
+
+        public async Task<UniqueID> AddRegion(Region region)
+        {
+            using var channel = GrpcChannel.ForAddress("https://localhost:7195");
+            var client = new Greeter.GreeterClient(channel);
+            return await client.AddRegionAsync(region);
         }
     }
 }

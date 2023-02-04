@@ -15,6 +15,7 @@ service Greeter {
   rpc AddUser(User) returns (UniqueID);
   rpc WriteToKafka(User) returns (PersonReply);
   rpc ReadFromKafka(Kafka) returns(ListOfUsers);
+  rpc AddRegion(Region) returns (UniqueID);
 }
 
 message Kafka {
@@ -26,7 +27,7 @@ message Kafka {
 }
 
 message UniqueID {
-	int32 userId = 1;
+	int32 Id = 1;
 }
 
 message User {
@@ -34,6 +35,12 @@ message User {
 	string userName = 2;
 	string password = 3;
 	int32 age = 4;
+}
+
+message Region {
+	int32 regionId = 1;
+	int32 regionCode = 2;
+	string regionName = 3;
 }
 
 message ListOfUsers{

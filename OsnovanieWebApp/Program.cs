@@ -34,6 +34,12 @@ builder.Host.UseSerilog((hostingContext, loggerConfiguration) =>
 builder.Services.AddAuthentication(Microsoft.AspNetCore.Server.IISIntegration.IISDefaults.AuthenticationScheme);
 builder.Services.AddScoped<IMainService, MainService>();
 //--------------------------------
+// добавление кэширования
+builder.Services.AddStackExchangeRedisCache(options => {
+    options.Configuration = "192.168.0.104";
+    options.InstanceName = "mylinux";
+});
+//--------------------------------
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

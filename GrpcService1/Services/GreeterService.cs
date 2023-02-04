@@ -89,7 +89,7 @@ namespace GrpcService1.Services
         }
         public override Task<User> GetUser(UniqueID request, ServerCallContext context)
         {
-            User user = _pgSqlService.GetById(request.UserId);
+            User user = _pgSqlService.GetById(request.Id);
             return Task.FromResult(user);
         }
 
@@ -98,7 +98,17 @@ namespace GrpcService1.Services
             int id = _pgSqlService.AddUser(request);
             return Task.FromResult(new UniqueID
             {
-                UserId = id
+                Id = id
+            });
+
+        }
+
+        public override Task<UniqueID> AddRegion(Region request, ServerCallContext context)
+        {
+            int id = _pgSqlService.AddRegion(request);
+            return Task.FromResult(new UniqueID
+            {
+                Id = id
             });
 
         }

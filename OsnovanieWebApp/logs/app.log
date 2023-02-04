@@ -2844,3 +2844,247 @@ AutoWrapper.Wrappers.ApiException: One or more errors occurred. (Status(StatusCo
   "age": 40
 } Responded with [200] in 15849ms
 04-02-2023 01:34:38 [Information] Request finished HTTP/2 POST https://localhost:7139/api/User/addUser application/json 75 - 200 81 application/json 15858.3027ms
+05-02-2023 00:55:38 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05-02-2023 00:55:38 [Information] Now listening on: "https://localhost:7139"
+05-02-2023 00:55:38 [Information] Now listening on: "http://localhost:5139"
+05-02-2023 00:55:38 [Information] Application started. Press Ctrl+C to shut down.
+05-02-2023 00:55:38 [Information] Hosting environment: "Development"
+05-02-2023 00:55:38 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+05-02-2023 00:55:41 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+05-02-2023 00:55:42 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 413.8264ms
+05-02-2023 00:55:42 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+05-02-2023 00:55:42 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 5.9033ms
+05-02-2023 00:55:42 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+05-02-2023 00:55:42 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 72.8813ms
+05-02-2023 00:55:42 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+05-02-2023 00:55:42 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 100.5255ms
+05-02-2023 01:38:37 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05-02-2023 01:38:38 [Information] Now listening on: "https://localhost:7139"
+05-02-2023 01:38:38 [Information] Now listening on: "http://localhost:5139"
+05-02-2023 01:38:38 [Information] Application started. Press Ctrl+C to shut down.
+05-02-2023 01:38:38 [Information] Hosting environment: "Development"
+05-02-2023 01:38:38 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+05-02-2023 01:38:40 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+05-02-2023 01:38:40 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 286.3392ms
+05-02-2023 01:38:40 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+05-02-2023 01:38:40 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.6280ms
+05-02-2023 01:38:40 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+05-02-2023 01:38:40 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.9885ms
+05-02-2023 01:38:40 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+05-02-2023 01:38:40 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 95.8145ms
+05-02-2023 01:40:06 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Region/addRegion application/json 96
+05-02-2023 01:40:06 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.RegionController.AddRegion (OsnovanieWebApp)"'
+05-02-2023 01:40:06 [Information] Route matched with "{action = \"AddRegion\", controller = \"Region\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddRegion(OsnovanieService.Region)" on controller "OsnovanieWebApp.Controllers.RegionController" ("OsnovanieWebApp").
+05-02-2023 01:40:06 [Information] Executed action "OsnovanieWebApp.Controllers.RegionController.AddRegion (OsnovanieWebApp)" in 1.4349ms
+05-02-2023 01:40:06 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.RegionController.AddRegion (OsnovanieWebApp)"'
+05-02-2023 01:40:06 [Error] [500]: Unhandled Exception occurred. Unable to process the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'OsnovanieWebApp.Controllers.RegionController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+05-02-2023 01:40:07 [Information] Source:[::1] Request: POST https localhost:7139/api/Region/addRegion  {
+  "regionId": 0,
+  "regionCode": 42,
+  "regionName": "Кемеровская область"
+} Responded with [500] in 230ms
+05-02-2023 01:40:07 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Region/addRegion application/json 96 - 500 143 application/json 241.1875ms
+05-02-2023 01:40:12 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Region/addRegion application/json 96
+05-02-2023 01:40:12 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.RegionController.AddRegion (OsnovanieWebApp)"'
+05-02-2023 01:40:12 [Information] Route matched with "{action = \"AddRegion\", controller = \"Region\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddRegion(OsnovanieService.Region)" on controller "OsnovanieWebApp.Controllers.RegionController" ("OsnovanieWebApp").
+05-02-2023 01:40:12 [Information] Executed action "OsnovanieWebApp.Controllers.RegionController.AddRegion (OsnovanieWebApp)" in 0.417ms
+05-02-2023 01:40:12 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.RegionController.AddRegion (OsnovanieWebApp)"'
+05-02-2023 01:40:12 [Error] [500]: Unhandled Exception occurred. Unable to process the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'OsnovanieWebApp.Controllers.RegionController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+05-02-2023 01:40:12 [Information] Source:[::1] Request: POST https localhost:7139/api/Region/addRegion  {
+  "regionId": 0,
+  "regionCode": 42,
+  "regionName": "Кемеровская область"
+} Responded with [500] in 11ms
+05-02-2023 01:40:12 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Region/addRegion application/json 96 - 500 143 application/json 15.8790ms
+05-02-2023 01:40:49 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Region/addRegion application/json 96
+05-02-2023 01:40:49 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.RegionController.AddRegion (OsnovanieWebApp)"'
+05-02-2023 01:40:49 [Information] Route matched with "{action = \"AddRegion\", controller = \"Region\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddRegion(OsnovanieService.Region)" on controller "OsnovanieWebApp.Controllers.RegionController" ("OsnovanieWebApp").
+05-02-2023 01:40:49 [Information] Executed action "OsnovanieWebApp.Controllers.RegionController.AddRegion (OsnovanieWebApp)" in 0.3414ms
+05-02-2023 01:40:49 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.RegionController.AddRegion (OsnovanieWebApp)"'
+05-02-2023 01:40:49 [Error] [500]: Unhandled Exception occurred. Unable to process the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'OsnovanieWebApp.Controllers.RegionController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+05-02-2023 01:40:49 [Information] Source:[::1] Request: POST https localhost:7139/api/Region/addRegion  {
+  "regionId": 0,
+  "regionCode": 42,
+  "regionName": "Кемеровская область"
+} Responded with [500] in 9ms
+05-02-2023 01:40:49 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Region/addRegion application/json 96 - 500 143 application/json 15.8975ms
+05-02-2023 01:41:30 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05-02-2023 01:41:30 [Information] Now listening on: "https://localhost:7139"
+05-02-2023 01:41:30 [Information] Now listening on: "http://localhost:5139"
+05-02-2023 01:41:30 [Information] Application started. Press Ctrl+C to shut down.
+05-02-2023 01:41:30 [Information] Hosting environment: "Development"
+05-02-2023 01:41:30 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+05-02-2023 01:41:33 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+05-02-2023 01:41:33 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 286.8585ms
+05-02-2023 01:41:33 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+05-02-2023 01:41:33 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.6006ms
+05-02-2023 01:41:33 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+05-02-2023 01:41:33 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.3898ms
+05-02-2023 01:41:33 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+05-02-2023 01:41:33 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 94.9256ms
+05-02-2023 01:42:00 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Region/addRegion application/json 96
+05-02-2023 01:42:00 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.RegionController.AddRegion (OsnovanieWebApp)"'
+05-02-2023 01:42:00 [Information] Route matched with "{action = \"AddRegion\", controller = \"Region\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddRegion(OsnovanieService.Region)" on controller "OsnovanieWebApp.Controllers.RegionController" ("OsnovanieWebApp").
+05-02-2023 01:42:00 [Information] Executed action "OsnovanieWebApp.Controllers.RegionController.AddRegion (OsnovanieWebApp)" in 1.4059ms
+05-02-2023 01:42:00 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.RegionController.AddRegion (OsnovanieWebApp)"'
+05-02-2023 01:42:00 [Error] [500]: Unhandled Exception occurred. Unable to process the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'OsnovanieWebApp.Controllers.RegionController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+05-02-2023 01:42:00 [Information] Source:[::1] Request: POST https localhost:7139/api/Region/addRegion  {
+  "regionId": 0,
+  "regionCode": 42,
+  "regionName": "Кемеровская область"
+} Responded with [500] in 169ms
+05-02-2023 01:42:00 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Region/addRegion application/json 96 - 500 143 application/json 178.9883ms
+05-02-2023 01:44:15 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05-02-2023 01:44:15 [Information] Now listening on: "https://localhost:7139"
+05-02-2023 01:44:15 [Information] Now listening on: "http://localhost:5139"
+05-02-2023 01:44:15 [Information] Application started. Press Ctrl+C to shut down.
+05-02-2023 01:44:15 [Information] Hosting environment: "Development"
+05-02-2023 01:44:15 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+05-02-2023 01:44:17 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+05-02-2023 01:44:17 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 288.7791ms
+05-02-2023 01:44:17 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+05-02-2023 01:44:17 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.1732ms
+05-02-2023 01:44:17 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+05-02-2023 01:44:17 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.9914ms
+05-02-2023 01:44:17 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+05-02-2023 01:44:17 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 87.5073ms
+05-02-2023 01:45:38 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Region/addRegion application/json 96
+05-02-2023 01:45:38 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.RegionController.AddRegion (OsnovanieWebApp)"'
+05-02-2023 01:45:38 [Information] Route matched with "{action = \"AddRegion\", controller = \"Region\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddRegion(OsnovanieService.Region)" on controller "OsnovanieWebApp.Controllers.RegionController" ("OsnovanieWebApp").
+05-02-2023 01:45:38 [Information] Executed action "OsnovanieWebApp.Controllers.RegionController.AddRegion (OsnovanieWebApp)" in 1.7937ms
+05-02-2023 01:45:38 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.RegionController.AddRegion (OsnovanieWebApp)"'
+05-02-2023 01:45:38 [Error] [500]: Unhandled Exception occurred. Unable to process the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'OsnovanieWebApp.Controllers.RegionController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+05-02-2023 01:45:38 [Information] Source:[::1] Request: POST https localhost:7139/api/Region/addRegion  {
+  "regionId": 1,
+  "regionCode": 42,
+  "regionName": "Кемеровская область"
+} Responded with [500] in 171ms
+05-02-2023 01:45:38 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Region/addRegion application/json 96 - 500 143 application/json 177.8828ms
+05-02-2023 01:47:50 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05-02-2023 01:47:50 [Information] Now listening on: "https://localhost:7139"
+05-02-2023 01:47:50 [Information] Now listening on: "http://localhost:5139"
+05-02-2023 01:47:50 [Information] Application started. Press Ctrl+C to shut down.
+05-02-2023 01:47:50 [Information] Hosting environment: "Development"
+05-02-2023 01:47:50 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+05-02-2023 01:47:52 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+05-02-2023 01:47:52 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 286.7079ms
+05-02-2023 01:47:52 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+05-02-2023 01:47:52 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.0851ms
+05-02-2023 01:47:52 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+05-02-2023 01:47:52 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.5071ms
+05-02-2023 01:47:53 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+05-02-2023 01:47:53 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 87.9298ms
+05-02-2023 01:48:19 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Region/addRegion application/json 96
+05-02-2023 01:48:19 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.RegionController.AddRegion (OsnovanieWebApp)"'
+05-02-2023 01:48:19 [Information] Route matched with "{action = \"AddRegion\", controller = \"Region\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddRegion(OsnovanieService.Region)" on controller "OsnovanieWebApp.Controllers.RegionController" ("OsnovanieWebApp").
+05-02-2023 01:48:27 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+05-02-2023 01:48:27 [Information] Executed action "OsnovanieWebApp.Controllers.RegionController.AddRegion (OsnovanieWebApp)" in 8117.6096ms
+05-02-2023 01:48:27 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.RegionController.AddRegion (OsnovanieWebApp)"'
+05-02-2023 01:48:28 [Information] Source:[::1] Request: POST https localhost:7139/api/Region/addRegion  {
+  "regionId": 0,
+  "regionCode": 42,
+  "regionName": "Кемеровская область"
+} Responded with [200] in 8372ms
+05-02-2023 01:48:28 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Region/addRegion application/json 96 - 200 77 application/json 8379.0195ms
+05-02-2023 01:57:20 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05-02-2023 01:57:20 [Information] Now listening on: "https://localhost:7139"
+05-02-2023 01:57:20 [Information] Now listening on: "http://localhost:5139"
+05-02-2023 01:57:20 [Information] Application started. Press Ctrl+C to shut down.
+05-02-2023 01:57:20 [Information] Hosting environment: "Development"
+05-02-2023 01:57:20 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+05-02-2023 01:57:23 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+05-02-2023 01:57:23 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 301.5223ms
+05-02-2023 01:57:23 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+05-02-2023 01:57:23 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.1663ms
+05-02-2023 01:57:23 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+05-02-2023 01:57:23 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.3176ms
+05-02-2023 01:57:23 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+05-02-2023 01:57:23 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 91.4194ms
+05-02-2023 01:58:02 [Information] Request starting HTTP/2 GET https://localhost:7139/api/User/getAll - -
+05-02-2023 01:58:02 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.UserController.GetAllUsers (OsnovanieWebApp)"'
+05-02-2023 01:58:02 [Information] Route matched with "{action = \"GetAllUsers\", controller = \"User\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse GetAllUsers()" on controller "OsnovanieWebApp.Controllers.UserController" ("OsnovanieWebApp").
+05-02-2023 01:58:16 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+05-02-2023 01:58:16 [Information] Executed action "OsnovanieWebApp.Controllers.UserController.GetAllUsers (OsnovanieWebApp)" in 14098.1431ms
+05-02-2023 01:58:16 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.UserController.GetAllUsers (OsnovanieWebApp)"'
+05-02-2023 01:58:17 [Information] Source:[::1] Request: GET https localhost:7139/api/User/getAll   Responded with [200] in 14328ms
+05-02-2023 01:58:17 [Information] Request finished HTTP/2 GET https://localhost:7139/api/User/getAll - - - 200 930 application/json 14337.0724ms

@@ -6,6 +6,7 @@ namespace GrpcService1.DbService
         public List<User> GetAll();
         public User GetById(int id);
         public int AddUser(User user);
+        public int AddRegion(Region region);
         public void UpdateUser(User user);
         public void DeleteUser(int id);
 
@@ -89,5 +90,19 @@ namespace GrpcService1.DbService
                     }).FirstOrDefault();
         }
 
+        public int AddRegion(Region region)
+        {
+            ApplicationContext db = new ApplicationContext();
+            TRegion tRegion = new TRegion
+            {
+                RegionName = region.RegionName,
+                RegionCode = region.RegionCode,
+                RegionId= region.RegionId,
+            };
+
+            var newRegion = db.Regions.Add(tRegion);
+            db.SaveChanges();
+            return newRegion.Entity.RegionId;
+        }
     }
 }
