@@ -57,6 +57,12 @@ namespace OsnovanieService
 
         public async Task<User> GetUser(int userId)
         {
+            var json = await _cache.GetStringAsync(Convert.ToString(userId));
+            if (!string.IsNullOrEmpty(json))
+            {
+                var fromCache = JsonConvert.DeserializeObject<User>(json);
+                return fromCache;
+            }
             using var channel = GrpcChannel.ForAddress("https://localhost:7195");
             var client = new Greeter.GreeterClient(channel);
             UniqueID request = new UniqueID
@@ -64,6 +70,7 @@ namespace OsnovanieService
                 Id = userId
             };
             var reply = await client.GetUserAsync(request);
+            await _cache.SetStringAsync(Convert.ToString(userId), JsonConvert.SerializeObject(reply));
             return reply;
         }
 

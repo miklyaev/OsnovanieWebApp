@@ -1,6 +1,7 @@
 ﻿using AutoWrapper.Wrappers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Distributed;
 using OsnovanieService;
 using ILogger = Serilog.ILogger;
 
@@ -12,7 +13,7 @@ namespace OsnovanieWebApp.Controllers
     {
         private readonly ILogger _logger;
         private readonly IMainService _svc;
-
+            
         public RegionController(ILogger logger, IMainService svc)
         {
             _logger = logger;
