@@ -142,3 +142,20 @@
 2023-02-05 01:44:14.221 +07:00 [INF] Инициализация успешно завершена.
 2023-02-05 01:47:49.181 +07:00 [INF] Инициализация успешно завершена.
 2023-02-05 01:57:19.883 +07:00 [INF] Инициализация успешно завершена.
+2023-02-11 00:57:37.260 +07:00 [INF] Инициализация успешно завершена.
+2023-02-11 00:57:39.313 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2054ms in state CONNECT)
+2023-02-11 00:57:39.315 +07:00 [ERR] Error Kafka consumer: 1/1 brokers are down
+2023-02-11 00:57:42.307 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2033ms in state CONNECT, 1 identical error(s) suppressed)
+2023-02-11 00:58:12.488 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2043ms in state CONNECT, 10 identical error(s) suppressed)
+2023-02-11 00:58:51.139 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2053ms in state CONNECT, 10 identical error(s) suppressed)
+2023-02-11 00:59:14.532 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2038ms in state CONNECT, 10 identical error(s) suppressed)
+2023-02-11 00:59:44.724 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2050ms in state CONNECT, 10 identical error(s) suppressed)
+2023-02-11 01:03:47.322 +07:00 [INF] Инициализация успешно завершена.
+2023-02-11 01:03:49.368 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2045ms in state CONNECT)
+2023-02-11 01:03:49.370 +07:00 [ERR] Error Kafka consumer: 1/1 brokers are down
+2023-02-11 01:03:52.390 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2040ms in state CONNECT, 1 identical error(s) suppressed)
+2023-02-11 01:04:22.539 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2051ms in state CONNECT, 10 identical error(s) suppressed)
+2023-02-11 01:04:52.750 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2061ms in state CONNECT, 10 identical error(s) suppressed)
+2023-02-11 01:05:22.910 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2054ms in state CONNECT, 10 identical error(s) suppressed)
+2023-02-11 01:05:54.548 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2444ms in state CONNECT, 8 identical error(s) suppressed)
+2023-02-11 01:35:26.793 +07:00 [INF] Инициализация успешно завершена.

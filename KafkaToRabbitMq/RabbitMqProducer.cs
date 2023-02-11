@@ -1,4 +1,5 @@
 ﻿using Confluent.Kafka;
+using KafkaToRabbitMq.Exceptions;
 using RabbitMQ.Client;
 using System;
 using System.Collections.Generic;
@@ -23,10 +24,17 @@ namespace KafkaToRabbitMq
 
         public RabbitMqProducer()
         {
-            var factory = new ConnectionFactory() { HostName = "192.168.0.104", UserName = "admin", Password = "130469" };
-            _connection = factory.CreateConnection();
-            _channel = _connection.CreateModel();
-            _channel.ExchangeDeclare(exchange: "logs", type: ExchangeType.Fanout);
+            try
+            {
+                var factory = new ConnectionFactory() { HostName = "192.168.0.104", UserName = "admin", Password = "130469" };
+                _connection = factory.CreateConnection();
+                _channel = _connection.CreateModel();
+                _channel.ExchangeDeclare(exchange: "logs", type: ExchangeType.Fanout);
+            }
+            catch (Exception exc)
+            {
+                throw new RabbitMqException(exc.Message);
+            }
         }
 
         public void Dispose()

@@ -3088,3 +3088,127 @@ System.InvalidOperationException: Unable to resolve service for type 'Microsoft.
 05-02-2023 01:58:16 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.UserController.GetAllUsers (OsnovanieWebApp)"'
 05-02-2023 01:58:17 [Information] Source:[::1] Request: GET https localhost:7139/api/User/getAll   Responded with [200] in 14328ms
 05-02-2023 01:58:17 [Information] Request finished HTTP/2 GET https://localhost:7139/api/User/getAll - - - 200 930 application/json 14337.0724ms
+11-02-2023 00:33:58 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+11-02-2023 00:33:58 [Information] Creating key {4ca934a8-ff2e-412b-aad4-1f8bb73b8d5c} with creation date 2023-02-10 17:33:58Z, activation date 2023-02-10 17:33:58Z, and expiration date 2023-05-11 17:33:58Z.
+11-02-2023 00:33:58 [Information] Writing data to file '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys\key-4ca934a8-ff2e-412b-aad4-1f8bb73b8d5c.xml"'.
+11-02-2023 00:33:58 [Information] Now listening on: "https://localhost:7139"
+11-02-2023 00:33:58 [Information] Now listening on: "http://localhost:5139"
+11-02-2023 00:33:58 [Information] Application started. Press Ctrl+C to shut down.
+11-02-2023 00:33:58 [Information] Hosting environment: "Development"
+11-02-2023 00:33:58 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+11-02-2023 00:39:54 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+11-02-2023 00:39:54 [Information] Now listening on: "https://localhost:7139"
+11-02-2023 00:39:54 [Information] Now listening on: "http://localhost:5139"
+11-02-2023 00:39:54 [Information] Application started. Press Ctrl+C to shut down.
+11-02-2023 00:39:54 [Information] Hosting environment: "Development"
+11-02-2023 00:39:54 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+11-02-2023 00:39:56 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+11-02-2023 00:39:56 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 202.2852ms
+11-02-2023 00:39:56 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+11-02-2023 00:39:56 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.0893ms
+11-02-2023 00:39:56 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+11-02-2023 00:39:57 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 85.4855ms
+11-02-2023 00:42:38 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+11-02-2023 00:42:38 [Information] Now listening on: "https://localhost:7139"
+11-02-2023 00:42:38 [Information] Now listening on: "http://localhost:5139"
+11-02-2023 00:42:38 [Information] Application started. Press Ctrl+C to shut down.
+11-02-2023 00:42:38 [Information] Hosting environment: "Development"
+11-02-2023 00:42:38 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+11-02-2023 00:42:40 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+11-02-2023 00:42:59 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 18402.1591ms
+11-02-2023 00:42:59 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+11-02-2023 00:42:59 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.0914ms
+11-02-2023 00:42:59 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+11-02-2023 00:42:59 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 75.9949ms
+11-02-2023 00:57:37 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+11-02-2023 00:57:38 [Information] Now listening on: "https://localhost:7139"
+11-02-2023 00:57:38 [Information] Now listening on: "http://localhost:5139"
+11-02-2023 00:57:38 [Information] Application started. Press Ctrl+C to shut down.
+11-02-2023 00:57:38 [Information] Hosting environment: "Development"
+11-02-2023 00:57:38 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+11-02-2023 00:57:40 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+11-02-2023 00:57:40 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 206.3822ms
+11-02-2023 00:57:40 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+11-02-2023 00:57:40 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 2.9630ms
+11-02-2023 00:57:40 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+11-02-2023 00:57:40 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 82.5366ms
+11-02-2023 00:58:38 [Information] Request starting HTTP/2 GET https://localhost:7139/api/User/getUser?userId=2 - -
+11-02-2023 00:58:38 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.UserController.GetUser (OsnovanieWebApp)"'
+11-02-2023 00:58:38 [Information] Route matched with "{action = \"GetUser\", controller = \"User\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse GetUser(Int32)" on controller "OsnovanieWebApp.Controllers.UserController" ("OsnovanieWebApp").
+11-02-2023 00:59:14 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+11-02-2023 00:59:14 [Information] Executed action "OsnovanieWebApp.Controllers.UserController.GetUser (OsnovanieWebApp)" in 35875.4073ms
+11-02-2023 00:59:14 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.UserController.GetUser (OsnovanieWebApp)"'
+11-02-2023 00:59:14 [Information] Source:[::1] Request: GET https localhost:7139/api/User/getUser ?userId=2  Responded with [200] in 36064ms
+11-02-2023 00:59:14 [Information] Request finished HTTP/2 GET https://localhost:7139/api/User/getUser?userId=2 - - - 200 151 application/json 36073.2844ms
+11-02-2023 00:59:27 [Information] Request starting HTTP/2 GET https://localhost:7139/api/User/getUser?userId=2 - -
+11-02-2023 00:59:27 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.UserController.GetUser (OsnovanieWebApp)"'
+11-02-2023 00:59:27 [Information] Route matched with "{action = \"GetUser\", controller = \"User\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse GetUser(Int32)" on controller "OsnovanieWebApp.Controllers.UserController" ("OsnovanieWebApp").
+11-02-2023 00:59:49 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+11-02-2023 00:59:49 [Information] Executed action "OsnovanieWebApp.Controllers.UserController.GetUser (OsnovanieWebApp)" in 22305.8186ms
+11-02-2023 00:59:49 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.UserController.GetUser (OsnovanieWebApp)"'
+11-02-2023 00:59:49 [Information] Source:[::1] Request: GET https localhost:7139/api/User/getUser ?userId=2  Responded with [200] in 22309ms
+11-02-2023 00:59:49 [Information] Request finished HTTP/2 GET https://localhost:7139/api/User/getUser?userId=2 - - - 200 151 application/json 22313.0362ms
+11-02-2023 01:03:48 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+11-02-2023 01:03:48 [Information] Now listening on: "https://localhost:7139"
+11-02-2023 01:03:48 [Information] Now listening on: "http://localhost:5139"
+11-02-2023 01:03:48 [Information] Application started. Press Ctrl+C to shut down.
+11-02-2023 01:03:48 [Information] Hosting environment: "Development"
+11-02-2023 01:03:48 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+11-02-2023 01:03:50 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+11-02-2023 01:03:50 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 194.5009ms
+11-02-2023 01:03:50 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+11-02-2023 01:03:50 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.1116ms
+11-02-2023 01:03:50 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+11-02-2023 01:03:50 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 78.9942ms
+11-02-2023 01:14:12 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+11-02-2023 01:14:12 [Information] Now listening on: "https://localhost:7139"
+11-02-2023 01:14:12 [Information] Now listening on: "http://localhost:5139"
+11-02-2023 01:14:12 [Information] Application started. Press Ctrl+C to shut down.
+11-02-2023 01:14:12 [Information] Hosting environment: "Development"
+11-02-2023 01:14:12 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+11-02-2023 01:14:24 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+11-02-2023 01:14:24 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 191.3421ms
+11-02-2023 01:14:24 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+11-02-2023 01:14:24 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.3579ms
+11-02-2023 01:14:25 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+11-02-2023 01:14:25 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 79.6456ms
+11-02-2023 01:17:46 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+11-02-2023 01:17:46 [Information] Now listening on: "https://localhost:7139"
+11-02-2023 01:17:46 [Information] Now listening on: "http://localhost:5139"
+11-02-2023 01:17:46 [Information] Application started. Press Ctrl+C to shut down.
+11-02-2023 01:17:46 [Information] Hosting environment: "Development"
+11-02-2023 01:17:46 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+11-02-2023 01:17:48 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+11-02-2023 01:17:48 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 191.5066ms
+11-02-2023 01:17:48 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+11-02-2023 01:17:48 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.0405ms
+11-02-2023 01:17:48 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+11-02-2023 01:17:49 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 78.6211ms
+11-02-2023 01:35:27 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+11-02-2023 01:35:28 [Information] Now listening on: "https://localhost:7139"
+11-02-2023 01:35:28 [Information] Now listening on: "http://localhost:5139"
+11-02-2023 01:35:28 [Information] Application started. Press Ctrl+C to shut down.
+11-02-2023 01:35:28 [Information] Hosting environment: "Development"
+11-02-2023 01:35:28 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+11-02-2023 01:35:30 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+11-02-2023 01:35:30 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 199.8914ms
+11-02-2023 01:35:30 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+11-02-2023 01:35:30 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.2704ms
+11-02-2023 01:35:30 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+11-02-2023 01:35:30 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 78.4890ms
+11-02-2023 01:35:47 [Information] Request starting HTTP/2 GET https://localhost:7139/api/User/getAll - -
+11-02-2023 01:35:47 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.UserController.GetAllUsers (OsnovanieWebApp)"'
+11-02-2023 01:35:47 [Information] Route matched with "{action = \"GetAllUsers\", controller = \"User\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse GetAllUsers()" on controller "OsnovanieWebApp.Controllers.UserController" ("OsnovanieWebApp").
+11-02-2023 01:36:07 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+11-02-2023 01:36:07 [Information] Executed action "OsnovanieWebApp.Controllers.UserController.GetAllUsers (OsnovanieWebApp)" in 19785.4001ms
+11-02-2023 01:36:07 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.UserController.GetAllUsers (OsnovanieWebApp)"'
+11-02-2023 01:36:07 [Information] Source:[::1] Request: GET https localhost:7139/api/User/getAll   Responded with [200] in 19932ms
+11-02-2023 01:36:07 [Information] Request finished HTTP/2 GET https://localhost:7139/api/User/getAll - - - 200 930 application/json 19939.3410ms
+11-02-2023 01:36:18 [Information] Request starting HTTP/2 GET https://localhost:7139/api/User/getAll - -
+11-02-2023 01:36:18 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.UserController.GetAllUsers (OsnovanieWebApp)"'
+11-02-2023 01:36:18 [Information] Route matched with "{action = \"GetAllUsers\", controller = \"User\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse GetAllUsers()" on controller "OsnovanieWebApp.Controllers.UserController" ("OsnovanieWebApp").
+11-02-2023 01:36:28 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+11-02-2023 01:36:28 [Information] Executed action "OsnovanieWebApp.Controllers.UserController.GetAllUsers (OsnovanieWebApp)" in 10024.8ms
+11-02-2023 01:36:28 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.UserController.GetAllUsers (OsnovanieWebApp)"'
+11-02-2023 01:36:28 [Information] Source:[::1] Request: GET https localhost:7139/api/User/getAll   Responded with [200] in 10028ms
+11-02-2023 01:36:28 [Information] Request finished HTTP/2 GET https://localhost:7139/api/User/getAll - - - 200 930 application/json 10034.1830ms

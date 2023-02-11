@@ -17,8 +17,8 @@ namespace OsnovanieService
         public string GetHelloWorld();
         public CheckRequestResponse ViewRequest();
         public ListRequestInfo ListRequest();
-        public Task<User> GetUser(int userId);
-        public Task<ListOfUsers> GetAllUsers();
+        public Task<User?> GetUser(int userId);
+        public Task<ListOfUsers?> GetAllUsers();
         public Task<UniqueID> AddUser(User user);
         public Task<UniqueID> AddRegion(Region region);
         public Task<PersonReply> AddUserToKafka(User user);
@@ -55,13 +55,12 @@ namespace OsnovanieService
             return JsonConvert.DeserializeObject<ListRequestInfo>(jsonString);
         }
 
-        public async Task<User> GetUser(int userId)
+        public async Task<User?> GetUser(int userId)
         {
             var json = await _cache.GetStringAsync(Convert.ToString(userId));
             if (!string.IsNullOrEmpty(json))
             {
-                var fromCache = JsonConvert.DeserializeObject<User>(json);
-                return fromCache;
+                return JsonConvert.DeserializeObject<User>(json);
             }
             using var channel = GrpcChannel.ForAddress("https://localhost:7195");
             var client = new Greeter.GreeterClient(channel);
@@ -74,12 +73,19 @@ namespace OsnovanieService
             return reply;
         }
 
-        public async Task<ListOfUsers> GetAllUsers()
+        public async Task<ListOfUsers?> GetAllUsers()
         {
+            var json = await _cache.GetStringAsync("all");
+            if (!string.IsNullOrEmpty(json))
+            {
+                return JsonConvert.DeserializeObject<ListOfUsers?> (json);
+            }
             using var channel = GrpcChannel.ForAddress("https://localhost:7195");
             var client = new Greeter.GreeterClient(channel);
             global::Google.Protobuf.WellKnownTypes.Empty request = new global::Google.Protobuf.WellKnownTypes.Empty();
-            return await client.GetAllUsersAsync(request);
+            var reply = await client.GetAllUsersAsync(request);
+            await _cache.SetStringAsync("all", JsonConvert.SerializeObject(reply));
+            return reply;
         }
 
         public async Task<UniqueID> AddUser(User user)
