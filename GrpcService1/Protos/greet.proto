@@ -16,6 +16,13 @@ service Greeter {
   rpc WriteToKafka(User) returns (PersonReply);
   rpc ReadFromKafka(Kafka) returns (ListOfUsers);
   rpc AddRegion(Region) returns (UniqueID);
+  rpc AddSignalToKafka(Signal) returns (google.protobuf.Empty);
+}
+
+message Signal {
+	string TagName = 1;
+	string TagValue = 2;
+	string TagType = 3;
 }
 
 message UniqueID {
