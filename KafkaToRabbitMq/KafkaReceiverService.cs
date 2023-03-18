@@ -11,7 +11,7 @@ using ILogger = Serilog.ILogger;
 
 namespace KafkaToRabbitMq
 {
-    public interface IReceiverService
+    public interface IKafkaReceiverService
     {
         public void InitializeKafka();
         /// <summary>
@@ -29,7 +29,7 @@ namespace KafkaToRabbitMq
         /// <param name="result"></param>
         public void Commit(ConsumeResult<string, string> res);
     }
-    internal class ReceiverService : IReceiverService
+    internal class KafkaReceiverService : IKafkaReceiverService
     {
         private readonly ILogger _logger;
         private readonly ICustomConsumer<string, string> _consumer;
@@ -37,7 +37,7 @@ namespace KafkaToRabbitMq
 
         private int pollingInterval;
 
-        public ReceiverService(ILogger logger, ICustomConsumer<string, string> consumer, IConfiguration configuration)
+        public KafkaReceiverService(ILogger logger, ICustomConsumer<string, string> consumer, IConfiguration configuration)
         {
             _logger = logger;
             _consumer = consumer;
