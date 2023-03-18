@@ -68,8 +68,6 @@ artifacts/
 *.pidb
 *.svclog
 *.scc
-*.suo
-*.assets.cache
 
 # Chutzpah Test files
 _Chutzpah*
@@ -145,11 +143,11 @@ publish/
 *.publishproj
 
 # NuGet Packages
-#*.nupkg
+*.nupkg
 # The packages folder can be ignored because of Package Restore
-#**/packages/*
+**/packages/*
 # except build/, which is used as an MSBuild target.
-#!**/packages/build/
+!**/packages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/packages/repositories.config
 
@@ -173,7 +171,6 @@ ClientBin/
 *~
 *.dbmdl
 *.dbproj.schemaview
-*.pfx
 *.publishsettings
 node_modules/
 orleans.codegen.cs
@@ -213,8 +210,43 @@ FakesAssemblies/
 # LightSwitch generated files
 GeneratedArtifacts/
 _Pvt_Extensions/
+ModelManifest.xml
+/BusinessTools.Web/BusinessToolsStorage
+/.idea/workspace.xml
+/.idea/vcs.xml
+/.idea/modules.xml
+
+/AstralDoc.Web/FileStorage
+/AstralDoc.Web/.idea
+/AstralDoc.IntegrationTools/Temp
+/AstralDoc.ReflexSynchronizer/Properties/PublishProfiles/1-publish.ps1
+/AstralDoc.ReflexSynchronizer/Properties/PublishProfiles/1.pubxml
+/AstralDoc.ReflexSynchronizer/Properties/PublishProfiles/publish-module.psm1
+/AstralDoc.IntegrationTools/Data
+/AstralDoc.IntegrationTools/Properties/PublishProfiles
+/AstralDoc.Web/logs
+/AstralDoc.Web/wwwroot/.idea
 /.idea
+/AstralDoc.IntegrationTools/logs/internal-nlog.txt
+/AstralDoc.Web/wwwroot/Dist
+/AstralDoc.Web/appsettings.Staging.json
+/AstralDoc.Web/appsettings.json
+/AstralDoc.Web/appsettings.Special.json
+/AstralDoc.IntegrationTools/*.json
+/AstralDoc.ReflexSynchronizer/*.json
+/AstralDoc.API/appsettings.Special.json
+/AstralDoc.API/appsettings.Staging.json
+/AstralDoc.API/appsettings.json
+/AstralDoc.Toolset/appsettings.json
+/AstralDoc.Toolset/appsettings.Special.json
 
 jsconfig.json
 global.json
-packages
+
+/AstralDoc.Web/appsettings.Connection.json
+/AstralDoc.API/appsettings.Connection.json
+/AstralDoc.Toolset/appsettings.Connection.json
+/global.json
+/AstralDoc.Web/tmp
+/Output
+/.vs

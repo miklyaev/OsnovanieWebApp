@@ -22,8 +22,9 @@ namespace OsnovanieService
         public Task<UniqueID> AddUser(User user);
         public Task<UniqueID> AddRegion(Region region);
         public Task<PersonReply> AddUserToKafka(User user);
-
         public Task<ListOfUsers> ReadFromKafka(string topic);
+        public Task<Google.Protobuf.WellKnownTypes.Empty> AddSignalToKafka(Signal signal);
+
     }
     public class MainService : IMainService
     {
@@ -78,7 +79,7 @@ namespace OsnovanieService
             var json = await _cache.GetStringAsync("all");
             if (!string.IsNullOrEmpty(json))
             {
-                return JsonConvert.DeserializeObject<ListOfUsers?> (json);
+                return JsonConvert.DeserializeObject<ListOfUsers?>(json);
             }
             using var channel = GrpcChannel.ForAddress("https://localhost:7195");
             var client = new Greeter.GreeterClient(channel);
@@ -117,6 +118,14 @@ namespace OsnovanieService
             using var channel = GrpcChannel.ForAddress("https://localhost:7195");
             var client = new Greeter.GreeterClient(channel);
             return await client.AddRegionAsync(region);
+        }
+
+        public async Task<Google.Protobuf.WellKnownTypes.Empty> AddSignalToKafka(Signal signal)
+        {
+            using var channel = GrpcChannel.ForAddress("https://localhost:7195");
+            var client = new Greeter.GreeterClient(channel);
+            return await client.AddSignalToKafkaAsync(signal);
+
         }
     }
 }
