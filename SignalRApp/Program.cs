@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Http.Connections;
+using Microsoft.Extensions.DependencyInjection;
 using SignalRApp;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,8 @@ builder.Services.AddSignalR(hubOptions =>
     hubOptions.EnableDetailedErrors = true;
     hubOptions.KeepAliveInterval = TimeSpan.FromMinutes(1);
 });
+
+builder.Services.AddSingleton<IRabbitMqConsumer, RabbitMqConsumer>();
 
 //Настройка только для хаба ChatHub:
 //builder.Services.AddSignalR().AddHubOptions<ChatHub>(options =>
@@ -32,5 +35,4 @@ app.MapHub<ChatHub>("/chat",
         options.LongPolling.PollTimeout = TimeSpan.FromMinutes(1);
         options.Transports = HttpTransportType.LongPolling | HttpTransportType.WebSockets;
     });
-
 app.Run();

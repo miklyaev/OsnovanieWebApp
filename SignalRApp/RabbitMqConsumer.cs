@@ -66,7 +66,7 @@ namespace SignalRApp
             }
         }
 
-        private void OnMessageReceived(object sender, BasicDeliverEventArgs e)
+        private void OnMessageReceived(object? sender, BasicDeliverEventArgs e)
         {
             var body = e.Body.ToArray();
             var message = Encoding.UTF8.GetString(body);
