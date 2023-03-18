@@ -9,6 +9,7 @@ IHost host = (IHost)Host.CreateDefaultBuilder(args)
     {
         configuration.Sources.Clear();
         configuration
+            .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
             .AddJsonFile("kafka_config.json", optional: true, reloadOnChange: true);
     })
     .ConfigureServices((context, services) =>

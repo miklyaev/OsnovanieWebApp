@@ -45,7 +45,7 @@ namespace KafkaToRabbitMq
                 if (Convert.ToBoolean(configuration["PRODUCER"])) //Если режим продюсера
                 {
                     _channel.ExchangeDeclare(exchange: _exchange, type: ExchangeType.Fanout);
-                    Console.WriteLine("Producer started");
+                    Console.WriteLine("RabbitMq producer started");
                 }
                 else  //консюмер
                 {
@@ -68,7 +68,7 @@ namespace KafkaToRabbitMq
                     };
 
                     _channel.BasicConsume(_queue, true, consumer);
-                    Console.WriteLine("Consumer started");
+                    Console.WriteLine("RabbitMq consumer started");
                 }
   
             }
