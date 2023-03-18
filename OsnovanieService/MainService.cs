@@ -23,7 +23,7 @@ namespace OsnovanieService
         public Task<UniqueID> AddRegion(Region region);
         public Task<PersonReply> AddUserToKafka(User user);
         public Task<ListOfUsers> ReadFromKafka(string topic);
-        public Task<Google.Protobuf.WellKnownTypes.Empty> AddSignalToKafka(Signal signal);
+        public Task<ServiceResponse> AddSignalToKafka(Signal signal);
 
     }
     public class MainService : IMainService
@@ -120,12 +120,11 @@ namespace OsnovanieService
             return await client.AddRegionAsync(region);
         }
 
-        public async Task<Google.Protobuf.WellKnownTypes.Empty> AddSignalToKafka(Signal signal)
+        public async Task<ServiceResponse> AddSignalToKafka(Signal signal)
         {
             using var channel = GrpcChannel.ForAddress("https://localhost:7195");
             var client = new Greeter.GreeterClient(channel);
             return await client.AddSignalToKafkaAsync(signal);
-
         }
     }
 }

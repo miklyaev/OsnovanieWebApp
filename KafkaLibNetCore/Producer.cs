@@ -23,7 +23,7 @@ namespace KafkaLibNetCore
         /// <param name="topic"></param>
         /// <param name="key"></param>
         /// <param name="value"></param>
-        void WriteToKafkAsync(string topic, string key, string value);
+        void WriteToKafkaAsync(string topic, string key, string value);
         /// <summary>
         /// Конфигурация продюсера
         /// </summary>
@@ -90,7 +90,7 @@ namespace KafkaLibNetCore
         /// <param name="topic">Топик куда пишем</param>
         /// <param name="key">Ключ (необязательно)</param>
         /// <param name="value">Само сообщение</param>
-        public void WriteToKafkAsync(string topic, string key, string value)
+        public void WriteToKafkaAsync(string topic, string key, string value)
         {
             var dr = _producer.ProduceAsync(topic, new Message<string, string>()
             {

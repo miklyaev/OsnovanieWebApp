@@ -159,3 +159,97 @@
 2023-02-11 01:05:22.910 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2054ms in state CONNECT, 10 identical error(s) suppressed)
 2023-02-11 01:05:54.548 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2444ms in state CONNECT, 8 identical error(s) suppressed)
 2023-02-11 01:35:26.793 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 12:48:17.477 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 12:48:17.885 +07:00 [INF] Consumed message '{
+  "TagName": "Qwerty",
+  "TagValue": "string",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @15'.
+2023-03-18 12:48:17.887 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=15, key=18.03.2023 00:23:20.908, message={
+  "TagName": "Qwerty",
+  "TagValue": "string",
+  "TagType": "string"
+}
+
+2023-03-18 12:53:09.710 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 12:55:18.101 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 12:56:27.543 +07:00 [INF] Consumed message '{
+  "TagName": "FloatTag",
+  "TagValue": "678.9",
+  "TagType": "float"
+}' at: 'CSharp_Topic [[0]] @16'.
+2023-03-18 12:56:27.544 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=16, key=18.03.2023 12:56:20.487, message={
+  "TagName": "FloatTag",
+  "TagValue": "678.9",
+  "TagType": "float"
+}
+
+2023-03-18 12:57:49.299 +07:00 [INF] Consumed message '{
+  "TagName": "FloatTag",
+  "TagValue": "678.9",
+  "TagType": "float"
+}' at: 'CSharp_Topic [[0]] @17'.
+2023-03-18 12:57:49.301 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=17, key=18.03.2023 12:57:38.223, message={
+  "TagName": "FloatTag",
+  "TagValue": "678.9",
+  "TagType": "float"
+}
+
+2023-03-18 12:59:08.938 +07:00 [INF] Consumed message '{
+  "TagName": "FloatTag",
+  "TagValue": "678.9",
+  "TagType": "float"
+}' at: 'CSharp_Topic [[0]] @18'.
+2023-03-18 12:59:08.940 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=18, key=18.03.2023 12:58:29.744, message={
+  "TagName": "FloatTag",
+  "TagValue": "678.9",
+  "TagType": "float"
+}
+
+2023-03-18 13:11:53.333 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 13:20:38.410 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 13:35:37.191 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 13:35:37.216 +07:00 [INF] Consumed message '{
+  "TagName": "Tag4",
+  "TagValue": "string",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @19'.
+2023-03-18 13:35:37.218 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=19, key=18.03.2023 13:24:19.535, message={
+  "TagName": "Tag4",
+  "TagValue": "string",
+  "TagType": "string"
+}
+
+2023-03-18 13:35:37.232 +07:00 [INF] Consumed message '{
+  "TagName": "Tag5",
+  "TagValue": "string",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @20'.
+2023-03-18 13:35:37.233 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=20, key=18.03.2023 13:25:44.033, message={
+  "TagName": "Tag5",
+  "TagValue": "string",
+  "TagType": "string"
+}
+
+2023-03-18 13:35:37.238 +07:00 [INF] Consumed message '{
+  "TagName": "Tag5",
+  "TagValue": "rtyry",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @21'.
+2023-03-18 13:35:37.239 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=21, key=18.03.2023 13:26:14.273, message={
+  "TagName": "Tag5",
+  "TagValue": "rtyry",
+  "TagType": "string"
+}
+
+2023-03-18 13:36:18.391 +07:00 [INF] Consumed message '{
+  "TagName": "Tag5",
+  "TagValue": "234.7",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @22'.
+2023-03-18 13:36:18.398 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=22, key=18.03.2023 13:36:17.389, message={
+  "TagName": "Tag5",
+  "TagValue": "234.7",
+  "TagType": "string"
+}
+

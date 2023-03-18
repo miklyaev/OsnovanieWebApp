@@ -1,16 +1,17 @@
 ﻿using AutoWrapper.Wrappers;
 using Microsoft.AspNetCore.Mvc;
 using OsnovanieService;
+using ILogger = Serilog.ILogger; //важная строка, при её отсутствии метода контроллера не дёргается REST клиентом
 
 namespace OsnovanieWebApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SignaRController : Controller
+    public class SignalRController : Controller
     {
         private readonly ILogger _logger;
         private readonly IMainService _svc;
-        public SignaRController(ILogger logger, IMainService svc)
+        public SignalRController(ILogger logger, IMainService svc)
         {
             _logger = logger;
             _svc = svc;

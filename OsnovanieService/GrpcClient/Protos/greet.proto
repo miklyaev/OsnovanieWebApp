@@ -16,7 +16,12 @@ service Greeter {
   rpc WriteToKafka(User) returns (PersonReply);
   rpc ReadFromKafka(Kafka) returns(ListOfUsers);
   rpc AddRegion(Region) returns (UniqueID);
-  rpc AddSignalToKafka(Signal) returns (google.protobuf.Empty);
+  rpc AddSignalToKafka(Signal) returns (ServiceResponse);
+}
+
+message ServiceResponse {
+	int32 code = 1;
+	string errorMessage = 2;
 }
 
 message Signal {

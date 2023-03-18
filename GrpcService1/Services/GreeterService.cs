@@ -155,21 +155,25 @@ namespace GrpcService1.Services
             }
         }
 
-        public override Task<Google.Protobuf.WellKnownTypes.Empty> AddSignalToKafka(Signal request, ServerCallContext context)
+        public override Task<ServiceResponse> AddSignalToKafka(Signal request, ServerCallContext context)
         {
             string key = DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss.fff");
             string jsonValue = JsonConvert.SerializeObject(request, Formatting.Indented);
             try
             {
-                _producer.WriteToKafka(kafkaTopic, key, jsonValue);
-  
+                _producer.WriteToKafkaAsync("sdfsdf", key, jsonValue);
+
+                return Task.FromResult(new ServiceResponse
+                {
+                    Code = 200,
+                    ErrorMessage = ""
+                });
+
             }
             catch (Exception)
             {
                 throw;
             }
-
-            return null;
         }
         public void OnError(string message)
         {
