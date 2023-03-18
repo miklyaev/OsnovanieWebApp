@@ -9,9 +9,9 @@ namespace KafkaToRabbitMq
     {
         private readonly ILogger _logger;
         private readonly IKafkaReceiverService _receiver;
-        private readonly IRabbitMq _senderRoRabbit;
+        private readonly IRabbitMqProducer _senderRoRabbit;
 
-        public Worker(ILogger logger, IKafkaReceiverService receiver, IRabbitMq sender)
+        public Worker(ILogger logger, IKafkaReceiverService receiver, IRabbitMqProducer sender)
         {
             _logger = logger;
             _receiver = receiver;

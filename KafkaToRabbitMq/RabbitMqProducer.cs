@@ -13,13 +13,13 @@ using static KafkaLibNetCore.ICustomProducer;
 
 namespace KafkaToRabbitMq
 {
-    public interface IRabbitMq
+    public interface IRabbitMqProducer
     {
         public void SendMessage(string message);
 
         public string ReceiveMessage(string topic);
     }
-    public class RabbitMq : IRabbitMq, IDisposable
+    public class RabbitMqProducer : IRabbitMqProducer, IDisposable
     {
         private readonly IModel _channel;
         private readonly IConnection _connection;
@@ -27,7 +27,7 @@ namespace KafkaToRabbitMq
         private readonly string _exchange;
         private readonly string _queue;
 
-        public RabbitMq(IConfiguration configuration)
+        public RabbitMqProducer(IConfiguration configuration)
         {
             _configuration = configuration;
             _exchange = configuration["EXCHANGE"];

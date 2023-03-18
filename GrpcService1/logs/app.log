@@ -953,3 +953,168 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 18-03-2023 13:37:32 [Verbose] Message sent.
 18-03-2023 13:37:32 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
 18-03-2023 13:37:32 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 2521.8706ms
+18-03-2023 18:22:51 [Verbose] Discovering gRPC methods for "GrpcService1.Services.GreeterService".
+18-03-2023 18:22:52 [Verbose] Added gRPC method '"SayHello"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/SayHello"'.
+18-03-2023 18:22:52 [Verbose] Added gRPC method '"GetAll"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetAll"'.
+18-03-2023 18:22:52 [Verbose] Added gRPC method '"GetUser"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetUser"'.
+18-03-2023 18:22:52 [Verbose] Added gRPC method '"GetAllUsers"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetAllUsers"'.
+18-03-2023 18:22:52 [Verbose] Added gRPC method '"AddUser"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddUser"'.
+18-03-2023 18:22:52 [Verbose] Added gRPC method '"WriteToKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/WriteToKafka"'.
+18-03-2023 18:22:52 [Verbose] Added gRPC method '"ReadFromKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/ReadFromKafka"'.
+18-03-2023 18:22:52 [Verbose] Added gRPC method '"AddRegion"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddRegion"'.
+18-03-2023 18:22:52 [Verbose] Added gRPC method '"AddSignalToKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddSignalToKafka"'.
+18-03-2023 18:22:52 [Information] Now listening on: "http://localhost:5195"
+18-03-2023 18:22:52 [Information] Now listening on: "https://localhost:7195"
+18-03-2023 18:22:52 [Information] Application started. Press Ctrl+C to shut down.
+18-03-2023 18:22:52 [Information] Hosting environment: "Development"
+18-03-2023 18:22:52 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\GrpcService1\"
+18-03-2023 18:24:00 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddUser application/grpc -
+18-03-2023 18:24:00 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddUser"'
+18-03-2023 18:24:00 [Debug] Reading message.
+18-03-2023 18:24:00 [Verbose] Deserializing 19 byte message to '"GrpcService1.User"'.
+18-03-2023 18:24:00 [Verbose] Received message.
+18-03-2023 18:24:01 [Information] Информация по кафка успешно считана.
+18-03-2023 18:24:05 [Debug] Sending message.
+18-03-2023 18:24:05 [Verbose] Serialized '"GrpcService1.UniqueID"' to 2 byte message.
+18-03-2023 18:24:05 [Verbose] Message sent.
+18-03-2023 18:24:05 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddUser"'
+18-03-2023 18:24:05 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddUser application/grpc - - 200 - application/grpc 4830.0046ms
+18-03-2023 18:27:49 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+18-03-2023 18:27:49 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+18-03-2023 18:27:49 [Debug] Reading message.
+18-03-2023 18:27:49 [Verbose] Deserializing 22 byte message to '"GrpcService1.Signal"'.
+18-03-2023 18:27:49 [Verbose] Received message.
+18-03-2023 18:27:49 [Information] Информация по кафка успешно считана.
+18-03-2023 18:27:52 [Debug] Sending message.
+18-03-2023 18:27:52 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+18-03-2023 18:27:52 [Verbose] Message sent.
+18-03-2023 18:27:52 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+18-03-2023 18:27:52 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 3558.2521ms
+18-03-2023 18:28:37 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+18-03-2023 18:28:37 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+18-03-2023 18:28:37 [Debug] Reading message.
+18-03-2023 18:28:37 [Verbose] Deserializing 21 byte message to '"GrpcService1.Signal"'.
+18-03-2023 18:28:37 [Verbose] Received message.
+18-03-2023 18:28:37 [Information] Информация по кафка успешно считана.
+18-03-2023 18:29:06 [Debug] Sending message.
+18-03-2023 18:29:08 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+18-03-2023 18:29:08 [Verbose] Message sent.
+18-03-2023 18:29:08 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+18-03-2023 18:29:08 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 30691.8536ms
+18-03-2023 18:33:17 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+18-03-2023 18:33:17 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+18-03-2023 18:33:17 [Debug] Reading message.
+18-03-2023 18:33:17 [Verbose] Deserializing 21 byte message to '"GrpcService1.Signal"'.
+18-03-2023 18:33:17 [Verbose] Received message.
+18-03-2023 18:33:17 [Information] Информация по кафка успешно считана.
+18-03-2023 18:34:19 [Verbose] Discovering gRPC methods for "GrpcService1.Services.GreeterService".
+18-03-2023 18:34:19 [Verbose] Added gRPC method '"SayHello"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/SayHello"'.
+18-03-2023 18:34:19 [Verbose] Added gRPC method '"GetAll"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetAll"'.
+18-03-2023 18:34:19 [Verbose] Added gRPC method '"GetUser"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetUser"'.
+18-03-2023 18:34:19 [Verbose] Added gRPC method '"GetAllUsers"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetAllUsers"'.
+18-03-2023 18:34:19 [Verbose] Added gRPC method '"AddUser"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddUser"'.
+18-03-2023 18:34:19 [Verbose] Added gRPC method '"WriteToKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/WriteToKafka"'.
+18-03-2023 18:34:19 [Verbose] Added gRPC method '"ReadFromKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/ReadFromKafka"'.
+18-03-2023 18:34:19 [Verbose] Added gRPC method '"AddRegion"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddRegion"'.
+18-03-2023 18:34:19 [Verbose] Added gRPC method '"AddSignalToKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddSignalToKafka"'.
+18-03-2023 18:34:19 [Information] Now listening on: "http://localhost:5195"
+18-03-2023 18:34:19 [Information] Now listening on: "https://localhost:7195"
+18-03-2023 18:34:19 [Information] Application started. Press Ctrl+C to shut down.
+18-03-2023 18:34:19 [Information] Hosting environment: "Development"
+18-03-2023 18:34:19 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\GrpcService1\"
+18-03-2023 18:34:31 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+18-03-2023 18:34:31 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+18-03-2023 18:34:31 [Debug] Reading message.
+18-03-2023 18:34:31 [Verbose] Deserializing 24 byte message to '"GrpcService1.Signal"'.
+18-03-2023 18:34:31 [Verbose] Received message.
+18-03-2023 18:34:32 [Information] Информация по кафка успешно считана.
+18-03-2023 18:34:48 [Debug] Sending message.
+18-03-2023 18:34:48 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+18-03-2023 18:34:48 [Verbose] Message sent.
+18-03-2023 18:34:48 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+18-03-2023 18:34:48 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 16720.4268ms
+18-03-2023 18:37:09 [Verbose] Discovering gRPC methods for "GrpcService1.Services.GreeterService".
+18-03-2023 18:37:09 [Verbose] Added gRPC method '"SayHello"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/SayHello"'.
+18-03-2023 18:37:09 [Verbose] Added gRPC method '"GetAll"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetAll"'.
+18-03-2023 18:37:09 [Verbose] Added gRPC method '"GetUser"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetUser"'.
+18-03-2023 18:37:09 [Verbose] Added gRPC method '"GetAllUsers"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetAllUsers"'.
+18-03-2023 18:37:09 [Verbose] Added gRPC method '"AddUser"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddUser"'.
+18-03-2023 18:37:09 [Verbose] Added gRPC method '"WriteToKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/WriteToKafka"'.
+18-03-2023 18:37:09 [Verbose] Added gRPC method '"ReadFromKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/ReadFromKafka"'.
+18-03-2023 18:37:09 [Verbose] Added gRPC method '"AddRegion"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddRegion"'.
+18-03-2023 18:37:09 [Verbose] Added gRPC method '"AddSignalToKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddSignalToKafka"'.
+18-03-2023 18:37:09 [Information] Now listening on: "http://localhost:5195"
+18-03-2023 18:37:09 [Information] Now listening on: "https://localhost:7195"
+18-03-2023 18:37:09 [Information] Application started. Press Ctrl+C to shut down.
+18-03-2023 18:37:09 [Information] Hosting environment: "Development"
+18-03-2023 18:37:09 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\GrpcService1\"
+18-03-2023 18:37:45 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+18-03-2023 18:37:45 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+18-03-2023 18:37:45 [Debug] Reading message.
+18-03-2023 18:37:45 [Verbose] Deserializing 19 byte message to '"GrpcService1.Signal"'.
+18-03-2023 18:37:45 [Verbose] Received message.
+18-03-2023 18:37:45 [Information] Информация по кафка успешно считана.
+18-03-2023 18:37:47 [Debug] Sending message.
+18-03-2023 18:37:47 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+18-03-2023 18:37:47 [Verbose] Message sent.
+18-03-2023 18:37:47 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+18-03-2023 18:37:47 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 2292.5827ms
+18-03-2023 18:40:22 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+18-03-2023 18:40:22 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+18-03-2023 18:40:22 [Debug] Reading message.
+18-03-2023 18:40:22 [Verbose] Deserializing 19 byte message to '"GrpcService1.Signal"'.
+18-03-2023 18:40:22 [Verbose] Received message.
+18-03-2023 18:40:22 [Information] Информация по кафка успешно считана.
+18-03-2023 18:40:25 [Debug] Sending message.
+18-03-2023 18:40:25 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+18-03-2023 18:40:25 [Verbose] Message sent.
+18-03-2023 18:40:25 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+18-03-2023 18:40:25 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 2931.5053ms
+18-03-2023 18:43:37 [Verbose] Discovering gRPC methods for "GrpcService1.Services.GreeterService".
+18-03-2023 18:43:37 [Verbose] Added gRPC method '"SayHello"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/SayHello"'.
+18-03-2023 18:43:37 [Verbose] Added gRPC method '"GetAll"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetAll"'.
+18-03-2023 18:43:37 [Verbose] Added gRPC method '"GetUser"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetUser"'.
+18-03-2023 18:43:37 [Verbose] Added gRPC method '"GetAllUsers"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetAllUsers"'.
+18-03-2023 18:43:37 [Verbose] Added gRPC method '"AddUser"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddUser"'.
+18-03-2023 18:43:37 [Verbose] Added gRPC method '"WriteToKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/WriteToKafka"'.
+18-03-2023 18:43:37 [Verbose] Added gRPC method '"ReadFromKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/ReadFromKafka"'.
+18-03-2023 18:43:37 [Verbose] Added gRPC method '"AddRegion"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddRegion"'.
+18-03-2023 18:43:37 [Verbose] Added gRPC method '"AddSignalToKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddSignalToKafka"'.
+18-03-2023 18:43:37 [Information] Now listening on: "http://localhost:5195"
+18-03-2023 18:43:37 [Information] Now listening on: "https://localhost:7195"
+18-03-2023 18:43:37 [Information] Application started. Press Ctrl+C to shut down.
+18-03-2023 18:43:37 [Information] Hosting environment: "Development"
+18-03-2023 18:43:37 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\GrpcService1\"
+18-03-2023 18:44:34 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+18-03-2023 18:44:34 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+18-03-2023 18:44:34 [Debug] Reading message.
+18-03-2023 18:44:34 [Verbose] Deserializing 21 byte message to '"GrpcService1.Signal"'.
+18-03-2023 18:44:34 [Verbose] Received message.
+18-03-2023 18:44:34 [Information] Информация по кафка успешно считана.
+18-03-2023 18:44:34 [Debug] Sending message.
+18-03-2023 18:44:34 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+18-03-2023 18:44:34 [Verbose] Message sent.
+18-03-2023 18:44:34 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+18-03-2023 18:44:34 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 291.9695ms
+18-03-2023 18:46:28 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+18-03-2023 18:46:28 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+18-03-2023 18:46:28 [Debug] Reading message.
+18-03-2023 18:46:28 [Verbose] Deserializing 21 byte message to '"GrpcService1.Signal"'.
+18-03-2023 18:46:28 [Verbose] Received message.
+18-03-2023 18:46:28 [Information] Информация по кафка успешно считана.
+18-03-2023 18:46:28 [Debug] Sending message.
+18-03-2023 18:46:28 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+18-03-2023 18:46:28 [Verbose] Message sent.
+18-03-2023 18:46:28 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+18-03-2023 18:46:28 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 27.5207ms
+18-03-2023 18:46:37 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+18-03-2023 18:46:37 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+18-03-2023 18:46:37 [Debug] Reading message.
+18-03-2023 18:46:37 [Verbose] Deserializing 23 byte message to '"GrpcService1.Signal"'.
+18-03-2023 18:46:37 [Verbose] Received message.
+18-03-2023 18:46:37 [Information] Информация по кафка успешно считана.
+18-03-2023 18:46:37 [Debug] Sending message.
+18-03-2023 18:46:37 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+18-03-2023 18:46:37 [Verbose] Message sent.
+18-03-2023 18:46:37 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+18-03-2023 18:46:37 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 18.2018ms

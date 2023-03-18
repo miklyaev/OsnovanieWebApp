@@ -16,7 +16,7 @@ IHost host = (IHost)Host.CreateDefaultBuilder(args)
     {
         services.AddSingleton<ICustomConsumer<string, string>, Consumer<string, string>>();
         services.AddSingleton<IKafkaReceiverService, KafkaReceiverService>();
-        services.AddSingleton<IRabbitMq, RabbitMq>();
+        services.AddSingleton<IRabbitMqProducer, RabbitMqProducer>();
         services.AddHostedService<Worker>();
 
         if (OperatingSystem.IsWindows())

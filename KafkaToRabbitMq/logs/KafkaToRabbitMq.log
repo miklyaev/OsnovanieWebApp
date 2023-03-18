@@ -253,3 +253,55 @@
   "TagType": "string"
 }
 
+2023-03-18 18:21:18.051 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 18:22:57.734 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 18:34:19.094 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 18:34:19.121 +07:00 [INF] Consumed message 'Test, Test' at: 'CSharp_Topic [[0]] @23'.
+2023-03-18 18:34:19.122 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=23, key=1, message=Test, Test
+
+2023-03-18 18:37:11.312 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 18:43:36.924 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 18:43:36.942 +07:00 [INF] Consumed message '{
+  "TagName": "Tag5",
+  "TagValue": "333",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @24'.
+2023-03-18 18:43:36.943 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=24, key=18.03.2023 18:37:45.244, message={
+  "TagName": "Tag5",
+  "TagValue": "333",
+  "TagType": "string"
+}
+
+2023-03-18 18:43:36.956 +07:00 [INF] Consumed message '{
+  "TagName": "Tag5",
+  "TagValue": "333",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @25'.
+2023-03-18 18:43:36.958 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=25, key=18.03.2023 18:40:22.803, message={
+  "TagName": "Tag5",
+  "TagValue": "333",
+  "TagType": "string"
+}
+
+2023-03-18 18:44:35.711 +07:00 [INF] Consumed message '{
+  "TagName": "sss",
+  "TagValue": "string",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @26'.
+2023-03-18 18:44:35.717 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=26, key=18.03.2023 18:44:34.703, message={
+  "TagName": "sss",
+  "TagValue": "string",
+  "TagType": "string"
+}
+
+2023-03-18 18:46:29.960 +07:00 [INF] Consumed message '{
+  "TagName": "sss",
+  "TagValue": "string",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @27'.
+2023-03-18 18:46:29.962 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=27, key=18.03.2023 18:46:28.960, message={
+  "TagName": "sss",
+  "TagValue": "string",
+  "TagType": "string"
+}
+

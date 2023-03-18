@@ -161,7 +161,7 @@ namespace GrpcService1.Services
             string jsonValue = JsonConvert.SerializeObject(request, Formatting.Indented);
             try
             {
-                _producer.WriteToKafkaAsync("sdfsdf", key, jsonValue);
+                _producer.WriteToKafkaAsync(kafkaTopic, key, jsonValue);
 
                 return Task.FromResult(new ServiceResponse
                 {
