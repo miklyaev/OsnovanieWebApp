@@ -41,36 +41,54 @@ namespace KafkaToRabbitMq
                                                        };
                 _connection = factory.CreateConnection();
                 _channel = _connection.CreateModel();
-                 
-                if (Convert.ToBoolean(configuration["PRODUCER"])) //Если режим продюсера
-                {
-                    _channel.ExchangeDeclare(exchange: _exchange, type: ExchangeType.Fanout);
-                    Console.WriteLine("RabbitMq producer started");
-                }
-                else  //консюмер
-                {
-                    _channel.ExchangeDeclare(_exchange, ExchangeType.Fanout);
-                    _channel.QueueDeclare(_queue,
-                     durable: true,
-                     exclusive: false,
-                     autoDelete: false,
-                     arguments: null);
+                _channel.ExchangeDeclare(_exchange, ExchangeType.Fanout); //декларируем Exchange
 
-                    _channel.QueueBind(_queue, _exchange, string.Empty);
-                    _channel.BasicQos(0, 10, false);
+                _channel.QueueDeclare(_queue,
+                 durable: true,
+                 exclusive: false,
+                 autoDelete: false,
+                 arguments: null);                                       //декларируем очередь
 
-                    var consumer = new EventingBasicConsumer(_channel);
-                    consumer.Received += (sender, e) =>
-                    {
-                        var body = e.Body.ToArray();
-                        var message = Encoding.UTF8.GetString(body);
-                        Console.WriteLine(message);
-                    };
+                _channel.QueueBind(_queue, _exchange, "");              //привязываем очередь к обменнику
 
-                    _channel.BasicConsume(_queue, true, consumer);
-                    Console.WriteLine("RabbitMq consumer started");
-                }
-  
+                _channel.QueueDeclare("queue2",
+                durable: true,
+                exclusive: false,
+                autoDelete: false,
+                arguments: null);                                       //декларируем 2-ю очередь,ради эксперимента
+
+                _channel.QueueBind("queue2", _exchange, "");            //привязываем очередь к обменнику
+
+                Console.WriteLine("RabbitMq producer started");
+
+                // if (Convert.ToBoolean(configuration["PRODUCER"])) //Если режим продюсера
+                // {
+                //_channel.ExchangeDeclare(exchange: _exchange, type: ExchangeType.Fanout);                   
+                // }
+                //else  //консюмер
+                //{
+                //    _channel.ExchangeDeclare(_exchange, ExchangeType.Fanout);
+                //    _channel.QueueDeclare(_queue,
+                //     durable: true,
+                //     exclusive: false,
+                //     autoDelete: false,
+                //     arguments: null);
+
+                //    _channel.QueueBind(_queue, _exchange, string.Empty);
+                //    _channel.BasicQos(0, 10, false);
+
+                //    var consumer = new EventingBasicConsumer(_channel);
+                //    consumer.Received += (sender, e) =>
+                //    {
+                //        var body = e.Body.ToArray();
+                //        var message = Encoding.UTF8.GetString(body);
+                //        Console.WriteLine(message);
+                //    };
+
+                //    _channel.BasicConsume(_queue, true, consumer);
+                //    Console.WriteLine("RabbitMq consumer started");
+                //}
+
             }
             catch (Exception exc)
             {

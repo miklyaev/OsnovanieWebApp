@@ -16,12 +16,12 @@ namespace RabbitMqConsumer
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
             {
-                channel.ExchangeDeclare(exchange: "logs", type: ExchangeType.Fanout);
+                channel.ExchangeDeclare(exchange: "demo-fanout-exchange", type: ExchangeType.Fanout);
 
-                var queueName = channel.QueueDeclare().QueueName; //рандомное название очереди
+                var queueName = "demo-fanout-queue";//channel.QueueDeclare().QueueName; //рандомное название очереди
 
                 channel.QueueBind(queue: queueName,
-                                  exchange: "logs",
+                                  exchange: "demo-fanout-exchange",
                                   routingKey: "");
 
                 Console.WriteLine(" [*] Waiting for logs.");

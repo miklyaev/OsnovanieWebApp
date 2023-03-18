@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaLibNetCore", "KafkaLib
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaToRabbitMq", "KafkaToRabbitMq\KafkaToRabbitMq.csproj", "{81FEF1C7-B0C6-4F41-920A-73FEEA1377C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRApp", "SignalRApp\SignalRApp.csproj", "{DED97E9D-71FB-4117-8A3C-FF36889804C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRApp", "SignalRApp\SignalRApp.csproj", "{DED97E9D-71FB-4117-8A3C-FF36889804C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqConsumer", "RabbitmqConsole\RabbitMqConsumer\RabbitMqConsumer.csproj", "{5E2B1CCB-7D28-4248-916C-B028195466F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{DED97E9D-71FB-4117-8A3C-FF36889804C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DED97E9D-71FB-4117-8A3C-FF36889804C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DED97E9D-71FB-4117-8A3C-FF36889804C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E2B1CCB-7D28-4248-916C-B028195466F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E2B1CCB-7D28-4248-916C-B028195466F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E2B1CCB-7D28-4248-916C-B028195466F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E2B1CCB-7D28-4248-916C-B028195466F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
