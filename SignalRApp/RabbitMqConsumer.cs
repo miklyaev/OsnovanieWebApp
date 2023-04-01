@@ -5,12 +5,15 @@ using SignalRApp.Model;
 using System;
 using System.Text;
 using System.Threading.Channels;
+using static SignalRApp.RabbitMqConsumer;
+using ILogger = Serilog.ILogger;
 
 namespace SignalRApp
 {
-    interface IRabbitMqConsumer
+    public interface IRabbitMqConsumer
     {
         public void StartReceivingSignal();
+        public event ReceiveHandler? ReceiveNotify;
     }
     public class RabbitMqConsumer : IRabbitMqConsumer, IDisposable
     {
@@ -19,20 +22,22 @@ namespace SignalRApp
         private readonly IConfiguration _configuration;
         private readonly string _exchange;
         private readonly string _queue;
+        public readonly ILogger _logger;
         private readonly EventingBasicConsumer _consumer;
 
-        delegate void ReceiveHandler(string message);
+        public delegate void ReceiveHandler(string message);
         /// <summary>
         /// событие, сигнализирующее, что consumer принял сообщение
         /// </summary>
-        event ReceiveHandler? ReceiveNotify;
+        public event ReceiveHandler? ReceiveNotify;
 
-        public RabbitMqConsumer(IConfiguration configuration)
+        public RabbitMqConsumer(IConfiguration configuration, ILogger logger)
         {
             _configuration = configuration;
             _exchange = configuration["EXCHANGE"];
             _queue = configuration["QUEUE"];
-           
+            _logger = logger;
+
 
             try
             {
@@ -58,7 +63,7 @@ namespace SignalRApp
                 _consumer = new EventingBasicConsumer(_channel);
                 _consumer.Received += OnMessageReceived;
 
-                Console.WriteLine("RabbitMq consumer started");
+                _logger.Information("RabbitMq consumer started");
             }
             catch (Exception exc)
             {
@@ -66,7 +71,7 @@ namespace SignalRApp
             }
         }
 
-        private void OnMessageReceived(object? sender, BasicDeliverEventArgs e)
+        public void OnMessageReceived(object? sender, BasicDeliverEventArgs e)
         {
             var body = e.Body.ToArray();
             var message = Encoding.UTF8.GetString(body);
@@ -80,9 +85,11 @@ namespace SignalRApp
             _channel.Dispose();
             _connection.Close();
             _connection.Dispose();
+            _logger.Information("RabbitMq consumer disposed");
         }
         public void StartReceivingSignal()
         {
+            _logger.Information("RabbitMq consumer started to receive signals");
             _channel.BasicConsume(_queue, true, _consumer);
 
         }

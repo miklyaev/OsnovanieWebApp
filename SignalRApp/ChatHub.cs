@@ -2,7 +2,11 @@
 
 namespace SignalRApp
 {
-    public class ChatHub : Hub
+    public interface IChat
+    {
+        public Task Send(string message, string userName);
+    }
+    public class ChatHub : Hub, IChat
     {
         public async Task Send(string message, string userName)
         {

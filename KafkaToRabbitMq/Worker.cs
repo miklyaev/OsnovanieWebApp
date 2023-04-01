@@ -9,13 +9,13 @@ namespace KafkaToRabbitMq
     {
         private readonly ILogger _logger;
         private readonly IKafkaReceiverService _receiver;
-        private readonly IRabbitMqProducer _senderRoRabbit;
+        private readonly IRabbitMqProducer _senderToRabbit;
 
         public Worker(ILogger logger, IKafkaReceiverService receiver, IRabbitMqProducer sender)
         {
             _logger = logger;
             _receiver = receiver;
-            _senderRoRabbit = sender;
+            _senderToRabbit = sender;
         }
 
         public override Task StartAsync(CancellationToken cancellationToken)
@@ -42,7 +42,7 @@ namespace KafkaToRabbitMq
 
                     if (result != null)
                     {
-                        _senderRoRabbit.SendMessage(result.Value);
+                        _senderToRabbit.SendMessage(result.Value);
                         _receiver.Commit(result);
                     }
                     
