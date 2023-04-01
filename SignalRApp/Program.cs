@@ -21,7 +21,7 @@ builder.Host.UseSerilog((hostingContext, loggerConfiguration) =>
 #endif
 });
 // подключем сервисы SignalR
-//√лобальна¤ настройка хабов:
+//глобальная настройка хабов:
 builder.Services.AddSignalR(hubOptions =>
 {
     hubOptions.EnableDetailedErrors = true;
