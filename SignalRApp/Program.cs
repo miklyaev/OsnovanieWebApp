@@ -20,6 +20,9 @@ builder.Host.UseSerilog((hostingContext, loggerConfiguration) =>
     loggerConfiguration.Enrich.WithProperty("DebuggerAttached", Debugger.IsAttached);
 #endif
 });
+//аыаыаыаыаыаыа
+//пвпвпвпавпвап
+
 // подключем сервисы SignalR
 //глобальная настройка хабов:
 builder.Services.AddSignalR(hubOptions =>
