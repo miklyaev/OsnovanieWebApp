@@ -47,7 +47,8 @@ namespace SignalRApp
 
         public void OnReceiveFromRabbitMq(string message)
         {
-            _chat.Send(message, "system");
+            _chat.Send("Hello", "system");
+            //await this.Clients.All.SendAsync("Receive", message, userName);
         }
     }
 }
