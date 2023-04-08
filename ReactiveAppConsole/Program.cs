@@ -14,6 +14,7 @@ IHost host = (IHost)Host.CreateDefaultBuilder(args)
     })
     .ConfigureServices((context, services) =>
     {
+        services.AddSingleton<IRabbitMqConsumer, RabbitMqConsumer>();
         services.AddHostedService<Worker>();
 
         if (OperatingSystem.IsWindows())

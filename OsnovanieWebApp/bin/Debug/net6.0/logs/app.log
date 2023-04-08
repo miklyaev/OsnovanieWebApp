@@ -38,3 +38,4 @@
 12-11-2022 01:12:38 [Information] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 307 0 - 0.7851ms
 12-11-2022 01:12:38 [Information] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
 12-11-2022 01:12:38 [Information] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 404 0 - 0.7997ms
+03-04-2023 01:05:09 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.

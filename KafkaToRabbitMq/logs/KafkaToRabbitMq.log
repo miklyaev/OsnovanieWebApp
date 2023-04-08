@@ -305,3 +305,96 @@
   "TagType": "string"
 }
 
+2023-04-03 00:54:35.401 +07:00 [INF] Инициализация успешно завершена.
+2023-04-03 00:55:05.267 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "lkjlkj",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @40'.
+2023-04-03 00:55:05.268 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=40, key=03.04.2023 00:55:04.230, message={
+  "TagName": "Tag1",
+  "TagValue": "lkjlkj",
+  "TagType": "string"
+}
+
+2023-04-03 00:57:55.418 +07:00 [INF] Инициализация успешно завершена.
+2023-04-03 00:57:55.453 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "ttttt",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @41'.
+2023-04-03 00:57:55.454 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=41, key=03.04.2023 00:55:10.869, message={
+  "TagName": "Tag1",
+  "TagValue": "ttttt",
+  "TagType": "string"
+}
+
+2023-04-03 00:57:55.470 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "kkkkk",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @42'.
+2023-04-03 00:57:55.470 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=42, key=03.04.2023 00:55:31.865, message={
+  "TagName": "Tag1",
+  "TagValue": "kkkkk",
+  "TagType": "string"
+}
+
+2023-04-03 00:58:23.465 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "99",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @43'.
+2023-04-03 00:58:23.467 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=43, key=03.04.2023 00:58:22.453, message={
+  "TagName": "Tag1",
+  "TagValue": "99",
+  "TagType": "int"
+}
+
+2023-04-03 00:58:29.333 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "4545",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @44'.
+2023-04-03 00:58:29.336 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=44, key=03.04.2023 00:58:28.330, message={
+  "TagName": "Tag1",
+  "TagValue": "4545",
+  "TagType": "int"
+}
+
+2023-04-03 01:08:58.247 +07:00 [INF] Инициализация успешно завершена.
+2023-04-03 01:10:46.201 +07:00 [INF] Инициализация успешно завершена.
+2023-04-03 01:11:11.847 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "qqqq",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @45'.
+2023-04-03 01:11:11.849 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=45, key=03.04.2023 01:09:28.398, message={
+  "TagName": "Tag1",
+  "TagValue": "qqqq",
+  "TagType": "string"
+}
+
+2023-04-03 01:11:11.861 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "rrrr",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @46'.
+2023-04-03 01:11:11.863 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=46, key=03.04.2023 01:09:37.496, message={
+  "TagName": "Tag1",
+  "TagValue": "rrrr",
+  "TagType": "string"
+}
+
+2023-04-03 01:12:11.982 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "uuuu",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @47'.
+2023-04-03 01:12:11.984 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=47, key=03.04.2023 01:12:10.986, message={
+  "TagName": "Tag1",
+  "TagValue": "uuuu",
+  "TagType": "string"
+}
+
+2023-04-03 01:16:10.422 +07:00 [INF] Инициализация успешно завершена.
