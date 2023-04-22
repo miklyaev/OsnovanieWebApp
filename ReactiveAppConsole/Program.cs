@@ -8,8 +8,14 @@ IHost host = (IHost)Host.CreateDefaultBuilder(args)
     .ConfigureAppConfiguration((hostingContext, configuration) =>
     {
         configuration.Sources.Clear();
-        configuration
+        
+#if DEBUG
+         configuration
+            .AddJsonFile("appsettings.Debug.json", optional: true, reloadOnChange: true);
+#else
+         configuration
             .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+#endif
 
     })
     .ConfigureServices((context, services) =>

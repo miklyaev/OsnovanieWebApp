@@ -98,7 +98,8 @@ namespace ReactiveAppConsole
             var messages = Observable.FromEventPattern<EventHandler<BasicDeliverEventArgs>, BasicDeliverEventArgs>(
                      h => _consumer.Received += h,
                      h => _consumer.Received -= h)
-                     .Select(receiveEvent => Encoding.UTF8.GetString(receiveEvent.EventArgs.Body.ToArray()));
+                     .Select(receiveEvent => Encoding.UTF8.GetString(receiveEvent.EventArgs.Body.ToArray()))
+                     .Synchronize();
 
             //_dictionary.AddOrUpdate(DateTime.Now, messages);
 

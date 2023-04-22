@@ -398,3 +398,60 @@
 }
 
 2023-04-03 01:16:10.422 +07:00 [INF] Инициализация успешно завершена.
+2023-04-15 00:27:41.541 +07:00 [INF] Инициализация успешно завершена.
+2023-04-15 00:29:35.181 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "qwerty",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @51'.
+2023-04-15 00:29:35.185 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=51, key=15.04.2023 00:29:34.140, message={
+  "TagName": "Tag1",
+  "TagValue": "qwerty",
+  "TagType": "string"
+}
+
+2023-04-15 00:35:25.716 +07:00 [INF] Инициализация успешно завершена.
+2023-04-15 00:35:35.187 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "eterte",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @52'.
+2023-04-15 00:35:35.189 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=52, key=15.04.2023 00:29:48.900, message={
+  "TagName": "Tag1",
+  "TagValue": "eterte",
+  "TagType": "string"
+}
+
+2023-04-15 00:35:59.538 +07:00 [INF] Consumed message '{
+  "TagName": "Tag2",
+  "TagValue": "12",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @53'.
+2023-04-15 00:35:59.545 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=53, key=15.04.2023 00:30:02.452, message={
+  "TagName": "Tag2",
+  "TagValue": "12",
+  "TagType": "int"
+}
+
+2023-04-15 00:36:04.606 +07:00 [INF] Consumed message '{
+  "TagName": "Tag2",
+  "TagValue": "567",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @54'.
+2023-04-15 00:36:04.609 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=54, key=15.04.2023 00:30:08.587, message={
+  "TagName": "Tag2",
+  "TagValue": "567",
+  "TagType": "int"
+}
+
+2023-04-15 00:36:06.190 +07:00 [INF] Consumed message '{
+  "TagName": "Tag2",
+  "TagValue": "578",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @55'.
+2023-04-15 00:36:06.192 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=55, key=15.04.2023 00:30:14.133, message={
+  "TagName": "Tag2",
+  "TagValue": "578",
+  "TagType": "int"
+}
+
