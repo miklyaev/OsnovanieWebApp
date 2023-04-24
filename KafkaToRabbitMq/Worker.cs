@@ -38,7 +38,7 @@ namespace KafkaToRabbitMq
                 while (!stoppingToken.IsCancellationRequested)
                 {
 
-                    var result = _receiver.ReadFromKafka().Result;                   
+                    var result = await _receiver.ReadFromKafka();                   
 
                     if (result != null)
                     {

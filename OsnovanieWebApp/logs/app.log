@@ -4151,3 +4151,363 @@ AutoWrapper.Wrappers.ApiException: One or more errors occurred. (Status(StatusCo
 23-04-2023 00:56:10 [Information] Application started. Press Ctrl+C to shut down.
 23-04-2023 00:56:10 [Information] Hosting environment: "Development"
 23-04-2023 00:56:10 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+25-04-2023 00:09:31 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+25-04-2023 00:09:31 [Information] Now listening on: "https://localhost:7139"
+25-04-2023 00:09:31 [Information] Now listening on: "http://localhost:5139"
+25-04-2023 00:09:31 [Information] Application started. Press Ctrl+C to shut down.
+25-04-2023 00:09:31 [Information] Hosting environment: "Development"
+25-04-2023 00:09:31 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+25-04-2023 00:09:34 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+25-04-2023 00:09:34 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 456.2174ms
+25-04-2023 00:09:34 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+25-04-2023 00:09:34 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 10.6731ms
+25-04-2023 00:09:34 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+25-04-2023 00:09:35 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 100.9258ms
+25-04-2023 00:09:40 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+25-04-2023 00:09:40 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 99.9524ms
+25-04-2023 00:10:06 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 64
+25-04-2023 00:10:06 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:10:06 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 00:10:07 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 00:10:07 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 761.8692ms
+25-04-2023 00:10:07 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:10:07 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "Tag1",
+  "tagValue": "100",
+  "tagType": "int"
+} Responded with [200] in 1040ms
+25-04-2023 00:10:07 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 64 - 200 106 application/json 1050.4550ms
+25-04-2023 00:10:33 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 64
+25-04-2023 00:10:33 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:10:33 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 00:10:33 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 00:10:33 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 38.7946ms
+25-04-2023 00:10:33 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:10:33 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "Tag1",
+  "tagValue": "101",
+  "tagType": "int"
+} Responded with [200] in 43ms
+25-04-2023 00:10:33 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 64 - 200 106 application/json 51.3526ms
+25-04-2023 00:10:45 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 64
+25-04-2023 00:10:45 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:10:45 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 00:10:45 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 00:10:45 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 25.7306ms
+25-04-2023 00:10:45 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:10:45 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "Tag1",
+  "tagValue": "200",
+  "tagType": "int"
+} Responded with [200] in 30ms
+25-04-2023 00:10:45 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 64 - 200 106 application/json 33.1097ms
+25-04-2023 00:10:55 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 64
+25-04-2023 00:10:55 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:10:55 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 00:10:55 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 00:10:55 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 21.2963ms
+25-04-2023 00:10:55 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:10:55 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "Tag1",
+  "tagValue": "200",
+  "tagType": "int"
+} Responded with [200] in 25ms
+25-04-2023 00:10:55 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 64 - 200 106 application/json 29.5584ms
+25-04-2023 00:11:12 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 64
+25-04-2023 00:11:12 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:11:12 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 00:11:12 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 00:11:12 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 23.7628ms
+25-04-2023 00:11:12 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:11:12 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "Tag1",
+  "tagValue": "300",
+  "tagType": "int"
+} Responded with [200] in 27ms
+25-04-2023 00:11:12 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 64 - 200 106 application/json 30.4990ms
+25-04-2023 00:13:09 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 70
+25-04-2023 00:13:09 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:13:09 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 00:13:09 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 00:13:09 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 58.6945ms
+25-04-2023 00:13:09 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:13:09 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "Tag2",
+  "tagValue": "qwerty",
+  "tagType": "string"
+} Responded with [200] in 62ms
+25-04-2023 00:13:09 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 70 - 200 106 application/json 69.8348ms
+25-04-2023 00:55:04 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+25-04-2023 00:55:04 [Information] Now listening on: "https://localhost:7139"
+25-04-2023 00:55:04 [Information] Now listening on: "http://localhost:5139"
+25-04-2023 00:55:04 [Information] Application started. Press Ctrl+C to shut down.
+25-04-2023 00:55:04 [Information] Hosting environment: "Development"
+25-04-2023 00:55:04 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+25-04-2023 00:55:06 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+25-04-2023 00:55:07 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 306.5637ms
+25-04-2023 00:55:07 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+25-04-2023 00:55:07 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.6551ms
+25-04-2023 00:55:07 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+25-04-2023 00:55:07 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.6048ms
+25-04-2023 00:55:07 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+25-04-2023 00:55:07 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 86.4008ms
+25-04-2023 00:55:25 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 73
+25-04-2023 00:55:25 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:55:25 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 00:55:25 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 00:55:25 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 598.4341ms
+25-04-2023 00:55:25 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:55:26 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "Tag1",
+  "tagValue": "string",
+  "tagType": "qweqweqwe"
+} Responded with [200] in 839ms
+25-04-2023 00:55:26 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 73 - 200 106 application/json 847.9617ms
+25-04-2023 00:55:34 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 70
+25-04-2023 00:55:34 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:55:34 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 00:55:34 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 00:55:34 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 28.907ms
+25-04-2023 00:55:34 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:55:34 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "Tag1",
+  "tagValue": "string",
+  "tagType": "ertert"
+} Responded with [200] in 34ms
+25-04-2023 00:55:34 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 70 - 200 106 application/json 39.9399ms
+25-04-2023 00:55:41 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 69
+25-04-2023 00:55:41 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:55:41 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 00:55:41 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 00:55:41 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 22.776ms
+25-04-2023 00:55:41 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:55:41 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "Tag1",
+  "tagValue": "string",
+  "tagType": "wwwww"
+} Responded with [200] in 27ms
+25-04-2023 00:55:41 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 69 - 200 106 application/json 31.3807ms
+25-04-2023 00:56:55 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 68
+25-04-2023 00:56:55 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:56:55 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 00:56:55 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 00:56:55 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 32.693ms
+25-04-2023 00:56:55 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 00:56:55 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "Tag1",
+  "tagValue": "string",
+  "tagType": "uuuu"
+} Responded with [200] in 42ms
+25-04-2023 00:56:55 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 68 - 200 106 application/json 46.2394ms
+25-04-2023 00:59:21 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+25-04-2023 00:59:21 [Information] Now listening on: "https://localhost:7139"
+25-04-2023 00:59:21 [Information] Now listening on: "http://localhost:5139"
+25-04-2023 00:59:21 [Information] Application started. Press Ctrl+C to shut down.
+25-04-2023 00:59:21 [Information] Hosting environment: "Development"
+25-04-2023 00:59:21 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+25-04-2023 00:59:23 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+25-04-2023 00:59:24 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 288.3579ms
+25-04-2023 00:59:24 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+25-04-2023 00:59:24 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 2.9931ms
+25-04-2023 00:59:24 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+25-04-2023 00:59:24 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.0294ms
+25-04-2023 00:59:24 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+25-04-2023 00:59:24 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 85.6316ms
+25-04-2023 01:03:15 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+25-04-2023 01:03:15 [Information] Now listening on: "https://localhost:7139"
+25-04-2023 01:03:15 [Information] Now listening on: "http://localhost:5139"
+25-04-2023 01:03:15 [Information] Application started. Press Ctrl+C to shut down.
+25-04-2023 01:03:15 [Information] Hosting environment: "Development"
+25-04-2023 01:03:15 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+25-04-2023 01:03:17 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+25-04-2023 01:03:18 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 285.3061ms
+25-04-2023 01:03:18 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+25-04-2023 01:03:18 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.1067ms
+25-04-2023 01:03:18 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+25-04-2023 01:03:18 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.2640ms
+25-04-2023 01:03:18 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+25-04-2023 01:03:18 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 86.7693ms
+25-04-2023 01:03:40 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 64
+25-04-2023 01:03:40 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:03:40 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 01:03:40 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 01:03:40 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 594.5264ms
+25-04-2023 01:03:40 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:03:41 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "Tag1",
+  "tagValue": "132",
+  "tagType": "int"
+} Responded with [200] in 845ms
+25-04-2023 01:03:41 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 64 - 200 106 application/json 851.9732ms
+25-04-2023 01:03:44 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 64
+25-04-2023 01:03:44 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:03:44 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 01:03:44 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 01:03:44 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 31.4623ms
+25-04-2023 01:03:44 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:03:44 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "Tag1",
+  "tagValue": "111",
+  "tagType": "int"
+} Responded with [200] in 36ms
+25-04-2023 01:03:44 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 64 - 200 106 application/json 38.9830ms
+25-04-2023 01:03:53 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 65
+25-04-2023 01:03:53 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:03:53 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 01:03:53 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 01:03:53 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 20.1664ms
+25-04-2023 01:03:53 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:03:53 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "Tag1",
+  "tagValue": "2342",
+  "tagType": "int"
+} Responded with [200] in 25ms
+25-04-2023 01:03:53 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 65 - 200 106 application/json 27.6739ms
+25-04-2023 01:05:08 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 63
+25-04-2023 01:05:08 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:05:08 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 01:05:08 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 01:05:08 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 40.0941ms
+25-04-2023 01:05:08 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:05:08 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "Tag1",
+  "tagValue": "33",
+  "tagType": "int"
+} Responded with [200] in 45ms
+25-04-2023 01:05:08 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 63 - 200 106 application/json 56.2681ms
+25-04-2023 01:05:12 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 63
+25-04-2023 01:05:12 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:05:12 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 01:05:12 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 01:05:12 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 17.5101ms
+25-04-2023 01:05:12 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:05:12 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "Tag1",
+  "tagValue": "36",
+  "tagType": "int"
+} Responded with [200] in 23ms
+25-04-2023 01:05:12 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 63 - 200 106 application/json 26.8168ms
+25-04-2023 01:15:25 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+25-04-2023 01:15:25 [Information] Now listening on: "https://localhost:7139"
+25-04-2023 01:15:25 [Information] Now listening on: "http://localhost:5139"
+25-04-2023 01:15:25 [Information] Application started. Press Ctrl+C to shut down.
+25-04-2023 01:15:25 [Information] Hosting environment: "Development"
+25-04-2023 01:15:25 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+25-04-2023 01:15:27 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+25-04-2023 01:15:27 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 292.5394ms
+25-04-2023 01:15:27 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+25-04-2023 01:15:27 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 4.4743ms
+25-04-2023 01:15:27 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+25-04-2023 01:15:28 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.9062ms
+25-04-2023 01:15:28 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+25-04-2023 01:15:28 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 89.8187ms
+25-04-2023 01:16:19 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 65
+25-04-2023 01:16:19 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:16:19 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 01:16:19 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 01:16:19 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 599.1707ms
+25-04-2023 01:16:19 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:16:20 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "T1",
+  "tagValue": "qqq",
+  "tagType": "string"
+} Responded with [200] in 848ms
+25-04-2023 01:16:20 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 65 - 200 106 application/json 858.2525ms
+25-04-2023 01:16:24 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 65
+25-04-2023 01:16:24 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:16:24 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 01:16:24 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 01:16:24 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 31.5205ms
+25-04-2023 01:16:24 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:16:24 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "T1",
+  "tagValue": "qqq",
+  "tagType": "string"
+} Responded with [200] in 37ms
+25-04-2023 01:16:24 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 65 - 200 106 application/json 40.7101ms
+25-04-2023 01:16:31 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 65
+25-04-2023 01:16:31 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:16:31 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 01:16:31 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 01:16:31 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 19.2394ms
+25-04-2023 01:16:31 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:16:31 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "T1",
+  "tagValue": "www",
+  "tagType": "string"
+} Responded with [200] in 22ms
+25-04-2023 01:16:31 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 65 - 200 106 application/json 26.8742ms
+25-04-2023 01:16:38 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 66
+25-04-2023 01:16:38 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:16:38 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 01:16:38 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 01:16:38 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 29.2279ms
+25-04-2023 01:16:38 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:16:38 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "T1",
+  "tagValue": "eeee",
+  "tagType": "string"
+} Responded with [200] in 34ms
+25-04-2023 01:16:38 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 66 - 200 106 application/json 37.3687ms
+25-04-2023 01:17:47 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 65
+25-04-2023 01:17:47 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:17:47 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 01:17:47 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 01:17:47 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 38.9865ms
+25-04-2023 01:17:47 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:17:47 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "T1",
+  "tagValue": "uuu",
+  "tagType": "string"
+} Responded with [200] in 43ms
+25-04-2023 01:17:47 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 65 - 200 106 application/json 52.9866ms
+25-04-2023 01:19:28 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 65
+25-04-2023 01:19:28 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:19:28 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 01:19:50 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 01:19:50 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 21405.3999ms
+25-04-2023 01:19:50 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:19:50 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "T1",
+  "tagValue": "ttt",
+  "tagType": "string"
+} Responded with [200] in 21409ms
+25-04-2023 01:19:50 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 65 - 200 106 application/json 21417.6845ms
+25-04-2023 01:19:59 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 65
+25-04-2023 01:19:59 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:19:59 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 01:20:05 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 01:20:05 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 6132.0427ms
+25-04-2023 01:20:05 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:20:05 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "T1",
+  "tagValue": "eeu",
+  "tagType": "string"
+} Responded with [200] in 6139ms
+25-04-2023 01:20:05 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 65 - 200 106 application/json 6144.0203ms
+25-04-2023 01:20:17 [Information] Request starting HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 65
+25-04-2023 01:20:17 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:20:17 [Information] Route matched with "{action = \"AddSignal\", controller = \"SignalR\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddSignal(OsnovanieService.Signal)" on controller "OsnovanieWebApp.Controllers.SignalRController" ("OsnovanieWebApp").
+25-04-2023 01:20:19 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+25-04-2023 01:20:19 [Information] Executed action "OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)" in 1810.2788ms
+25-04-2023 01:20:19 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.SignalRController.AddSignal (OsnovanieWebApp)"'
+25-04-2023 01:20:19 [Information] Source:[::1] Request: POST https localhost:7139/api/SignalR/addSignal  {
+  "tagName": "T1",
+  "tagValue": "asd",
+  "tagType": "string"
+} Responded with [200] in 1815ms
+25-04-2023 01:20:19 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 65 - 200 106 application/json 1818.8753ms
+25-04-2023 01:23:44 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+25-04-2023 01:23:44 [Information] Now listening on: "https://localhost:7139"
+25-04-2023 01:23:44 [Information] Now listening on: "http://localhost:5139"
+25-04-2023 01:23:44 [Information] Application started. Press Ctrl+C to shut down.
+25-04-2023 01:23:44 [Information] Hosting environment: "Development"
+25-04-2023 01:23:44 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+25-04-2023 01:23:52 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+25-04-2023 01:23:52 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 286.8138ms
+25-04-2023 01:23:52 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+25-04-2023 01:23:52 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.6570ms
+25-04-2023 01:23:52 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+25-04-2023 01:23:52 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.9451ms
+25-04-2023 01:23:52 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+25-04-2023 01:23:52 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 85.9326ms
