@@ -120,11 +120,12 @@ namespace GrpcService1.Services
             try
             {
                 _producer.WriteToKafka(kafkaTopic, key, jsonValue);
+                _logger.Information($"В топик кафка {kafkaTopic} записано значение {jsonValue}");
 
                 return Task.FromResult(new PersonReply
                 {
-                    Message = "Success"
-                });
+                    Message = "Success"                  
+                }); ;
             }
             catch (Exception)
             {
@@ -162,6 +163,7 @@ namespace GrpcService1.Services
             try
             {
                 _producer.WriteToKafkaAsync(kafkaTopic, key, jsonValue);
+                _logger.Information($"В топик кафка {kafkaTopic} записано значение {jsonValue}");
 
                 return Task.FromResult(new ServiceResponse
                 {

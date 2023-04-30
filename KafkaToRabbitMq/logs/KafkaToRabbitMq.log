@@ -731,3 +731,282 @@
   "TagType": "string"
 }
 
+2023-04-30 23:50:16.170 +07:00 [INF] Инициализация успешно завершена.
+2023-04-30 23:50:16.198 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-30 23:50:16.205 +07:00 [INF] Hosting environment: Development
+2023-04-30 23:50:16.208 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-04-30 23:53:35.527 +07:00 [INF] Инициализация успешно завершена.
+2023-04-30 23:53:35.551 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-30 23:53:35.558 +07:00 [INF] Hosting environment: Development
+2023-04-30 23:53:35.561 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-05-01 00:09:47.510 +07:00 [INF] Инициализация успешно завершена.
+2023-05-01 00:09:47.529 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-01 00:09:47.534 +07:00 [INF] Hosting environment: Development
+2023-05-01 00:09:47.536 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-05-01 00:13:04.895 +07:00 [ERR] Error Kafka consumer: GroupCoordinator: 192.168.0.104:9092: Disconnected (after 197364ms in state UP)
+2023-05-01 00:13:04.896 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/0: Disconnected (after 197381ms in state UP)
+2023-05-01 00:13:04.897 +07:00 [ERR] Error Kafka consumer: 2/2 brokers are down
+2023-05-01 00:13:06.876 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/0: Disconnected: verify that security.protocol is correctly configured, broker might require SASL authentication (after 1472ms in state UP)
+2023-05-01 00:13:06.878 +07:00 [ERR] Error Kafka consumer: 2/2 brokers are down
+2023-05-01 00:13:08.686 +07:00 [ERR] Error Kafka consumer: GroupCoordinator: 192.168.0.104:9092: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 3791ms in state CONNECT)
+2023-05-01 00:13:09.197 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/0: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2320ms in state CONNECT)
+2023-05-01 00:13:11.229 +07:00 [ERR] Error Kafka consumer: GroupCoordinator: 192.168.0.104:9092: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2240ms in state CONNECT, 1 identical error(s) suppressed)
+2023-05-01 00:13:11.857 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/0: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2222ms in state CONNECT, 1 identical error(s) suppressed)
+2023-05-01 00:13:42.069 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/0: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 0ms in state CONNECT, 23 identical error(s) suppressed)
+2023-05-01 00:13:44.609 +07:00 [ERR] Error Kafka consumer: GroupCoordinator: 192.168.0.104:9092: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 16ms in state CONNECT, 4 identical error(s) suppressed)
+2023-05-01 00:19:32.206 +07:00 [INF] Инициализация успешно завершена.
+2023-05-01 00:19:32.224 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-01 00:19:32.230 +07:00 [INF] Hosting environment: Development
+2023-05-01 00:19:32.231 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-05-01 00:19:32.308 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "Fifa1",
+  "Password": "wrwr",
+  "Age": 60
+}' at: 'CSharp_Topic [[0]] @79'.
+2023-05-01 00:19:32.309 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=79, key=01.05.2023 00:10:15.595, message={
+  "UserId": 0,
+  "UserName": "Fifa1",
+  "Password": "wrwr",
+  "Age": 60
+}
+
+2023-05-01 00:19:40.800 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "Fifa2",
+  "Password": "12345",
+  "Age": 60
+}' at: 'CSharp_Topic [[0]] @80'.
+2023-05-01 00:19:40.802 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=80, key=01.05.2023 00:11:04.354, message={
+  "UserId": 0,
+  "UserName": "Fifa2",
+  "Password": "12345",
+  "Age": 60
+}
+
+2023-05-01 00:58:59.349 +07:00 [INF] Инициализация успешно завершена.
+2023-05-01 00:58:59.368 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-01 00:58:59.374 +07:00 [INF] Hosting environment: Development
+2023-05-01 00:58:59.378 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-05-01 01:04:46.893 +07:00 [INF] Инициализация успешно завершена.
+2023-05-01 01:04:46.920 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-01 01:04:46.928 +07:00 [INF] Hosting environment: Development
+2023-05-01 01:04:46.933 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-05-01 01:04:53.687 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "Fifa3",
+  "Password": "string",
+  "Age": 30
+}' at: 'CSharp_Topic [[0]] @81'.
+2023-05-01 01:04:53.688 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=81, key=01.05.2023 01:00:31.042, message={
+  "UserId": 0,
+  "UserName": "Fifa3",
+  "Password": "string",
+  "Age": 30
+}
+
+2023-05-01 01:04:55.248 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "Fifa4",
+  "Password": "57575757",
+  "Age": 30
+}' at: 'CSharp_Topic [[0]] @82'.
+2023-05-01 01:04:55.258 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=82, key=01.05.2023 01:02:46.237, message={
+  "UserId": 0,
+  "UserName": "Fifa4",
+  "Password": "57575757",
+  "Age": 30
+}
+
+2023-05-01 01:05:53.435 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "Fifa5",
+  "Password": "fhgfgh",
+  "Age": 40
+}' at: 'CSharp_Topic [[0]] @83'.
+2023-05-01 01:05:53.444 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=83, key=01.05.2023 01:05:48.132, message={
+  "UserId": 0,
+  "UserName": "Fifa5",
+  "Password": "fhgfgh",
+  "Age": 40
+}
+
+2023-05-01 01:05:54.742 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "Fifa5",
+  "Password": "fhgfgh",
+  "Age": 40
+}' at: 'CSharp_Topic [[0]] @83'.
+2023-05-01 01:05:54.751 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=83, key=01.05.2023 01:05:48.132, message={
+  "UserId": 0,
+  "UserName": "Fifa5",
+  "Password": "fhgfgh",
+  "Age": 40
+}
+
+2023-05-01 01:06:47.275 +07:00 [INF] Consumed message '{
+  "UserId": 30,
+  "UserName": "Fifa6",
+  "Password": "fhgfgh",
+  "Age": 40
+}' at: 'CSharp_Topic [[0]] @84'.
+2023-05-01 01:06:47.291 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=84, key=01.05.2023 01:06:43.073, message={
+  "UserId": 30,
+  "UserName": "Fifa6",
+  "Password": "fhgfgh",
+  "Age": 40
+}
+
+2023-05-01 01:06:49.632 +07:00 [INF] Consumed message '{
+  "UserId": 30,
+  "UserName": "Fifa6",
+  "Password": "fhgfgh",
+  "Age": 40
+}' at: 'CSharp_Topic [[0]] @84'.
+2023-05-01 01:06:49.646 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=84, key=01.05.2023 01:06:43.073, message={
+  "UserId": 30,
+  "UserName": "Fifa6",
+  "Password": "fhgfgh",
+  "Age": 40
+}
+
+2023-05-01 01:26:20.904 +07:00 [INF] Инициализация успешно завершена.
+2023-05-01 01:26:20.940 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-01 01:26:20.954 +07:00 [INF] Hosting environment: Development
+2023-05-01 01:26:20.961 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-05-01 01:30:26.703 +07:00 [INF] Инициализация успешно завершена.
+2023-05-01 01:30:26.729 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-01 01:30:26.742 +07:00 [INF] Hosting environment: Development
+2023-05-01 01:30:26.748 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-05-01 01:31:23.515 +07:00 [INF] Consumed message '{
+  "TagName": "T10",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @85'.
+2023-05-01 01:31:23.517 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=85, key=01.05.2023 01:31:18.854, message={
+  "TagName": "T10",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:31:24.964 +07:00 [INF] Consumed message '{
+  "TagName": "T10",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @85'.
+2023-05-01 01:31:24.970 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=85, key=01.05.2023 01:31:18.854, message={
+  "TagName": "T10",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:34:08.187 +07:00 [INF] Consumed message '{
+  "TagName": "T11",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @86'.
+2023-05-01 01:34:08.197 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=86, key=01.05.2023 01:34:04.035, message={
+  "TagName": "T11",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:34:17.219 +07:00 [INF] Consumed message '{
+  "TagName": "T11",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @86'.
+2023-05-01 01:34:18.932 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=86, key=01.05.2023 01:34:04.035, message={
+  "TagName": "T11",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:41:03.619 +07:00 [INF] Consumed message '{
+  "TagName": "T12",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @87'.
+2023-05-01 01:41:03.634 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=87, key=01.05.2023 01:40:47.252, message={
+  "TagName": "T12",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:41:31.344 +07:00 [INF] Consumed message '{
+  "TagName": "T13",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @88'.
+2023-05-01 01:41:31.364 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=88, key=01.05.2023 01:41:27.728, message={
+  "TagName": "T13",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:41:44.386 +07:00 [INF] Consumed message '{
+  "TagName": "T13",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @88'.
+2023-05-01 01:41:44.396 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=88, key=01.05.2023 01:41:27.728, message={
+  "TagName": "T13",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:42:03.140 +07:00 [INF] Consumed message '{
+  "TagName": "T14",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @89'.
+2023-05-01 01:42:03.149 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=89, key=01.05.2023 01:41:53.683, message={
+  "TagName": "T14",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:42:20.366 +07:00 [INF] Consumed message '{
+  "TagName": "T15",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @90'.
+2023-05-01 01:42:20.374 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=90, key=01.05.2023 01:42:17.677, message={
+  "TagName": "T15",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:42:32.516 +07:00 [INF] Consumed message '{
+  "TagName": "T15",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @90'.
+2023-05-01 01:42:32.530 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=90, key=01.05.2023 01:42:17.677, message={
+  "TagName": "T15",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:42:47.685 +07:00 [INF] Consumed message '{
+  "TagName": "T16",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @91'.
+2023-05-01 01:42:47.694 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=91, key=01.05.2023 01:42:40.073, message={
+  "TagName": "T16",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:43:18.471 +07:00 [INF] Consumed message '{
+  "TagName": "T16",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @91'.
+2023-05-01 01:43:18.492 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=91, key=01.05.2023 01:42:40.073, message={
+  "TagName": "T16",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+

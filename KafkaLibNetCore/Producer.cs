@@ -1,6 +1,7 @@
 ﻿using Confluent.Kafka;
 using Microsoft.Extensions.Configuration;
 using Serilog;
+using System.Threading.Tasks;
 
 namespace KafkaLibNetCore
 {
@@ -23,7 +24,7 @@ namespace KafkaLibNetCore
         /// <param name="topic"></param>
         /// <param name="key"></param>
         /// <param name="value"></param>
-        void WriteToKafkaAsync(string topic, string key, string value);
+        Task WriteToKafkaAsync(string topic, string key, string value);
         /// <summary>
         /// Конфигурация продюсера
         /// </summary>
@@ -90,7 +91,7 @@ namespace KafkaLibNetCore
         /// <param name="topic">Топик куда пишем</param>
         /// <param name="key">Ключ (необязательно)</param>
         /// <param name="value">Само сообщение</param>
-        public void WriteToKafkaAsync(string topic, string key, string value)
+        public Task WriteToKafkaAsync(string topic, string key, string value)
         {
             var dr = _producer.ProduceAsync(topic, new Message<string, string>()
             {
@@ -109,8 +110,10 @@ namespace KafkaLibNetCore
                 {
                     SuccessNotify?.Invoke($"Success sending to kafka topic = {topic}, key= {key}, value = {value}");
                 }
+            
             });
 
+            return Task.CompletedTask;
         }
         /// <summary>
         /// Запись в кафка (синхронно), должна вызываться из внешнего потока в блоке try/catch
