@@ -1,12 +1,22 @@
+using ClickHouseApp.DbService;
+using Microsoft.Extensions.Options;
+
 namespace ClickHouseApp
 {
     public class Worker : BackgroundService
     {
         private readonly ILogger<Worker> _logger;
-
-        public Worker(ILogger<Worker> logger)
+        private readonly IClickHouseService _clickHouseService;
+        public Worker(ILogger<Worker> logger, IClickHouseService clickHouseService)
         {
             _logger = logger;
+            _clickHouseService = clickHouseService;
+            _clickHouseService.AddUser(new Dto.User
+            {
+                UserId = 1,
+                UserName = "Test",
+                Age = 30,
+            });
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)

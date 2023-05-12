@@ -1,10 +1,16 @@
 ﻿using ClickHouseApp.DbService.Model;
 using ClickHouseApp.Dto;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using Octonica.ClickHouseClient;
+using Polly;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace ClickHouseApp.DbService
 {
@@ -20,10 +26,18 @@ namespace ClickHouseApp.DbService
     {
         public readonly IConfiguration _configuration;
         private readonly ILogger<ClickHouseService> _logger;
-        public ClickHouseService(IConfiguration config, ILogger<ClickHouseService> log)
+        private readonly ClickHouseConnection _connection;
+
+        public ClickHouseService(IConfiguration config, ILogger<ClickHouseService> log, IOptions<ClickhouseOptions> clickhouseOptions)
         {
             _configuration = config;
             _logger = log;
+            var connectionString = clickhouseOptions.Value.ConnectionString;
+            log.LogInformation("Using Clickhouse {ClickhouseConnectionString}", connectionString);
+
+            //var sb = new ClickHouseConnectionStringBuilder(connectionString);
+            //_connection = new ClickHouseConnection(sb);
+            //_connection.Open();
         }
 
         public void UpdateUser(User user)
