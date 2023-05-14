@@ -1,6 +1,5 @@
 using ClickHouseApp;
 using ClickHouseApp.DbService;
-using Microsoft.Extensions.Configuration;
 
 
 IConfigurationRoot? configuration = null;

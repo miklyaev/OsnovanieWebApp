@@ -13,9 +13,9 @@ namespace ClickHouseApp
             _clickHouseService = clickHouseService;
             _clickHouseService.AddUser(new Dto.User
             {
-                UserId = 1,
-                UserName = "Test",
-                Age = 30,
+                UserId = 10,
+                UserName= "Second",
+                Weight= 3.6
             });
         }
 

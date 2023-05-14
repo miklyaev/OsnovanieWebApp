@@ -14,17 +14,6 @@ namespace ClickHouseApp.Dto
 
         public string? UserName { get; set; }
 
-        public string? Password { get; set; }
-
-        public int? Age { get; set; }
-        public string? FirstName { get; set; }
-
-        public string? LastName { get; set; }
-
-        public string? Patronymic { get; set; }
-
-        //public DateTime CreationTime { get; set; }
-
-        //public DateTime? OffTime { get; set; }
+        public double? Weight { get; set; }
     }
 }
