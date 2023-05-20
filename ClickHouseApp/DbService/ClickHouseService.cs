@@ -21,6 +21,8 @@ namespace ClickHouseApp.DbService
         public Task AddUser(User user);
         public void UpdateUser(User user);
         public void DeleteUser(int id);
+        public Task AddSignal(Signal signal);
+        public Task AddSignals(List<Signal> signals);
 
     }
 
@@ -117,6 +119,23 @@ namespace ClickHouseApp.DbService
             //db.Users.Remove(user);
             //db.SaveChanges();
         }
+        public Task AddSignals(List<Signal> signals)
+        {
+            return Task.FromResult(signals);
+        }
+        public async Task AddSignal(Signal signal)
+        {
+            var sql = $"INSERT INTO t_signal (id, TagName, TagType, TagValue) values ('{signal.SignalId}', '{signal.TagName}', '{signal.TagType}', '{signal.TagValue}')";
 
+            var responseFinal = await _insertPolicy.ExecuteAsync(async () =>
+            {
+                var response = await ExecuteInternalAsync(sql, isIgnoreFail: true).ConfigureAwait(false);
+                return response;
+            });
+            if (responseFinal.StatusCode != HttpStatusCode.OK)
+            {
+                throw new Exception("Отправка пакета не удалась");
+            }
+        }
     }
 }

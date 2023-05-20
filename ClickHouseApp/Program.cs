@@ -22,6 +22,7 @@ IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {        
         services.AddSingleton<IClickHouseService, ClickHouseService>();
+        services.AddSingleton<IValueGenerator, ValueGenerator>();
         services.AddHostedService<Worker>()
          .Configure<ClickhouseOptions>(configuration?.GetSection("Clickhouse"));
 
