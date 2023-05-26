@@ -25,7 +25,7 @@ namespace ClickHouseApp.DbService
 
         public List<Signal> GenerateValues(int qty)
         {
-            List<Signal> signals = new List<Signal>();
+            List<Signal> signals = new List<Signal>(100);
             int cnt = 0;
             while (cnt < qty)
             {

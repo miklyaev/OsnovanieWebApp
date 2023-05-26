@@ -1,4 +1,5 @@
 ﻿
+using ClickHouseApp.DbService.Exceptions;
 using ClickHouseApp.Dto;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -119,9 +120,29 @@ namespace ClickHouseApp.DbService
             //db.Users.Remove(user);
             //db.SaveChanges();
         }
-        public Task AddSignals(List<Signal> signals)
+        public async Task<bool> AddSignals(List<Signal> signals)
         {
-            return Task.FromResult(signals);
+            StringBuilder builder= new StringBuilder();
+
+            foreach(var signal in signals) 
+            {
+                var sql = $"INSERT INTO t_signal (id, TagName, TagType, TagValue) values ('{signal.SignalId}', '{signal.TagName}', '{signal.TagType}', '{signal.TagValue}');";
+                builder.AppendLine(sql);
+            }
+            
+
+            var responseFinal = await _insertPolicy.ExecuteAsync(async () =>
+            {
+                var response = await ExecuteInternalAsync(builder.ToString(), isIgnoreFail: true).ConfigureAwait(false);
+                return response;
+            });
+
+            if (responseFinal.StatusCode != HttpStatusCode.OK)
+            {
+                throw new ClickHouseException("Отправка пакета не удалась");
+            }
+
+            return true;
         }
         public async Task AddSignal(Signal signal)
         {
