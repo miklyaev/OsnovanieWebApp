@@ -86,7 +86,7 @@ namespace ReactiveAppConsole
                      h => _consumer.Received -= h)
                      .Select(receiveEvent => Encoding.UTF8.GetString(receiveEvent.EventArgs.Body.ToArray()))
                      .Synchronize();
-
+            //Пока просто пишем в консоль принятые объекты
             _subscription= messages.Subscribe(message => _logger.LogInformation($"message = {message}")
                                     , exc => _logger.LogError($"error = {exc}")
                                     , () => _logger.LogInformation("completed")
