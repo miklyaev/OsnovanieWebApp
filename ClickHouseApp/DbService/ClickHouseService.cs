@@ -158,5 +158,10 @@ namespace ClickHouseApp.DbService
                 throw new Exception("Отправка пакета не удалась");
             }
         }
+
+        Task IClickHouseService.AddSignals(List<Signal> signals)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

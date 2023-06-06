@@ -58,7 +58,7 @@ namespace ReactiveAppConsole
                 _channel.BasicQos(0, 10, false);
 
                 _consumer = new EventingBasicConsumer(_channel);
-
+                _channel.BasicConsume(_queue, true, _consumer);
                 _logger.LogInformation("RabbitMq consumer started");
             }
             catch (Exception exc)
@@ -79,7 +79,9 @@ namespace ReactiveAppConsole
         public void StartReceivingSignal()
         {
             _logger.LogInformation("RabbitMq consumer started to receive signals");
-            _channel.BasicConsume(_queue, true, _consumer);
+           
+
+            //SynchronizationContext uiContext = SynchronizationContext.Current; //чтобы переключить на UI поток
 
             var messages = Observable.FromEventPattern<EventHandler<BasicDeliverEventArgs>, BasicDeliverEventArgs>(
                      h => _consumer.Received += h,
@@ -87,9 +89,12 @@ namespace ReactiveAppConsole
                      .Select(receiveEvent => Encoding.UTF8.GetString(receiveEvent.EventArgs.Body.ToArray()))
                      .Synchronize();
             //Пока просто пишем в консоль принятые объекты
-            _subscription= messages.Subscribe(message => _logger.LogInformation($"message = {message}")
-                                    , exc => _logger.LogError($"error = {exc}")
-                                    , () => _logger.LogInformation("completed")
+            _subscription= messages
+                //.ObserveOn(uiContext!) //переключаем на UI поток
+                .Timeout(TimeSpan.FromSeconds(5))
+                .Subscribe(message => _logger.LogInformation($"Получено сообщение = {message}")
+                                    , exc => _logger.LogError($"Ошибка = {exc}")
+                                    , () => _logger.LogInformation("Завершено")
                                     );
 
         }

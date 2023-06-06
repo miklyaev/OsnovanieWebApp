@@ -36,9 +36,24 @@ namespace ReactiveAppConsole
             //                 () => _logger.LogInformation($"{DateTime.Now.Second}: Ending group"));
             //             });
 
-            _consumer.StartReceivingSignal();
-            return Task.CompletedTask;
 
+            try
+            {
+                while (!stoppingToken.IsCancellationRequested)
+                {
+
+                    _consumer.StartReceivingSignal();
+                    _logger.LogInformation($"StartReceivingSignal = {stoppingToken.IsCancellationRequested}");
+                    Thread.Sleep(5000);
+                }
+            }
+            catch (OperationCanceledException ex)
+            {
+                _logger.LogInformation($"stoppingToken.IsCancellationRequested = {stoppingToken.IsCancellationRequested}");
+                return Task.FromException(ex);
+            }
+
+            return Task.CompletedTask;
         }
     }
 }

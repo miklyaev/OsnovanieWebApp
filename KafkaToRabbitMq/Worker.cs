@@ -1,4 +1,5 @@
 using Confluent.Kafka;
+using Microsoft.Extensions.Configuration;
 using System.Reflection;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using ILogger = Serilog.ILogger;
@@ -10,12 +11,14 @@ namespace KafkaToRabbitMq
         private readonly ILogger _logger;
         private readonly IKafkaReceiverService _receiver;
         private readonly IRabbitMqProducer _senderToRabbit;
+        private readonly IConfiguration _configuration;
 
-        public Worker(ILogger logger, IKafkaReceiverService receiver, IRabbitMqProducer sender)
+        public Worker(ILogger logger, IKafkaReceiverService receiver, IRabbitMqProducer sender, IConfiguration configuration)
         {
             _logger = logger;
             _receiver = receiver;
             _senderToRabbit = sender;
+            _configuration = configuration;
         }
 
         public override Task StartAsync(CancellationToken cancellationToken)
@@ -45,7 +48,8 @@ namespace KafkaToRabbitMq
                         _senderToRabbit.SendMessage(result.Value);
                         _receiver.Commit(result);
                     }
-                    
+
+                    Thread.Sleep(Convert.ToInt16(_configuration["POLLING_INTERVAL"]));                 
                 }
             }
             catch (OperationCanceledException)
