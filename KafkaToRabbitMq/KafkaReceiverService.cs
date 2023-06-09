@@ -46,7 +46,7 @@ namespace KafkaToRabbitMq
 
         public async Task<ConsumeResult<string, string>?> ReadFromKafka()
         {
-            var result = await Task.Run(() =>_consumer.ReadFromKafka(Convert.ToInt32(_configuration["POLLING_INTERVAL"]))).ConfigureAwait(false);
+            var result = await Task.Run(() =>_consumer.ReadFromKafka(Convert.ToInt32(_configuration["POLLING_INTERVAL"]))).ConfigureAwait(true);
 
             if (result != null)
             {

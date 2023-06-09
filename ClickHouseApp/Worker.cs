@@ -7,7 +7,8 @@ namespace ClickHouseApp
     {
         private readonly ILogger<Worker> _logger;
         private readonly IClickHouseService _clickHouseService;
-        public Worker(ILogger<Worker> logger, IClickHouseService clickHouseService)
+        private readonly IConfiguration _configuration;
+        public Worker(ILogger<Worker> logger, IClickHouseService clickHouseService, IConfiguration configuration)
         {
             _logger = logger;
             _clickHouseService = clickHouseService;
@@ -17,6 +18,8 @@ namespace ClickHouseApp
                 UserName= "Second",
                 Weight= 3.6
             });
+
+            _configuration = configuration;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -24,7 +27,7 @@ namespace ClickHouseApp
             while (!stoppingToken.IsCancellationRequested)
             {
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                await Task.Delay(1000, stoppingToken);
+                await Task.Delay(Convert.ToInt32(_configuration["POLLING_INTERVAL"]), stoppingToken);
             }
         }
     }

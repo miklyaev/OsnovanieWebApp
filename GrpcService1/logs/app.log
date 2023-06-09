@@ -2136,3 +2136,225 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 01-05-2023 01:42:40 [Verbose] Message sent.
 01-05-2023 01:42:40 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
 01-05-2023 01:42:40 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 24.6715ms
+10-06-2023 00:35:54 [Verbose] Discovering gRPC methods for "GrpcService1.Services.GreeterService".
+10-06-2023 00:35:54 [Verbose] Added gRPC method '"SayHello"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/SayHello"'.
+10-06-2023 00:35:54 [Verbose] Added gRPC method '"GetAll"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetAll"'.
+10-06-2023 00:35:54 [Verbose] Added gRPC method '"GetUser"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetUser"'.
+10-06-2023 00:35:54 [Verbose] Added gRPC method '"GetAllUsers"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetAllUsers"'.
+10-06-2023 00:35:54 [Verbose] Added gRPC method '"AddUser"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddUser"'.
+10-06-2023 00:35:54 [Verbose] Added gRPC method '"WriteToKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/WriteToKafka"'.
+10-06-2023 00:35:54 [Verbose] Added gRPC method '"ReadFromKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/ReadFromKafka"'.
+10-06-2023 00:35:54 [Verbose] Added gRPC method '"AddRegion"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddRegion"'.
+10-06-2023 00:35:54 [Verbose] Added gRPC method '"AddSignalToKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddSignalToKafka"'.
+10-06-2023 00:35:54 [Information] Now listening on: "http://localhost:5195"
+10-06-2023 00:35:54 [Information] Now listening on: "https://localhost:7195"
+10-06-2023 00:35:54 [Information] Application started. Press Ctrl+C to shut down.
+10-06-2023 00:35:54 [Information] Hosting environment: "Development"
+10-06-2023 00:35:54 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\GrpcService1\"
+10-06-2023 00:37:29 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+10-06-2023 00:37:29 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 00:37:29 [Debug] Reading message.
+10-06-2023 00:37:30 [Verbose] Deserializing 14 byte message to '"GrpcService1.Signal"'.
+10-06-2023 00:37:30 [Verbose] Received message.
+10-06-2023 00:37:30 [Information] Информация по кафка успешно считана.
+10-06-2023 00:37:30 [Information] В топик кафка CSharp_Topic записано значение {
+  "TagName": "M1",
+  "TagValue": "123",
+  "TagType": "int"
+}
+10-06-2023 00:37:30 [Debug] Sending message.
+10-06-2023 00:37:30 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+10-06-2023 00:37:30 [Verbose] Message sent.
+10-06-2023 00:37:30 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 00:37:30 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 387.7681ms
+10-06-2023 00:38:11 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+10-06-2023 00:38:11 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 00:38:11 [Debug] Reading message.
+10-06-2023 00:38:11 [Verbose] Deserializing 15 byte message to '"GrpcService1.Signal"'.
+10-06-2023 00:38:11 [Verbose] Received message.
+10-06-2023 00:38:11 [Information] Информация по кафка успешно считана.
+10-06-2023 00:38:11 [Information] В топик кафка CSharp_Topic записано значение {
+  "TagName": "M2",
+  "TagValue": "5675",
+  "TagType": "int"
+}
+10-06-2023 00:38:11 [Debug] Sending message.
+10-06-2023 00:38:11 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+10-06-2023 00:38:11 [Verbose] Message sent.
+10-06-2023 00:38:11 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 00:38:11 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 15.1045ms
+10-06-2023 00:41:01 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+10-06-2023 00:41:01 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 00:41:01 [Debug] Reading message.
+10-06-2023 00:41:01 [Verbose] Deserializing 13 byte message to '"GrpcService1.Signal"'.
+10-06-2023 00:41:01 [Verbose] Received message.
+10-06-2023 00:41:01 [Information] Информация по кафка успешно считана.
+10-06-2023 00:41:01 [Information] В топик кафка CSharp_Topic записано значение {
+  "TagName": "M3",
+  "TagValue": "33",
+  "TagType": "int"
+}
+10-06-2023 00:41:01 [Debug] Sending message.
+10-06-2023 00:41:01 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+10-06-2023 00:41:01 [Verbose] Message sent.
+10-06-2023 00:41:01 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 00:41:01 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 16.2627ms
+10-06-2023 00:41:36 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+10-06-2023 00:41:36 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 00:41:36 [Debug] Reading message.
+10-06-2023 00:41:36 [Verbose] Deserializing 13 byte message to '"GrpcService1.Signal"'.
+10-06-2023 00:41:36 [Verbose] Received message.
+10-06-2023 00:41:36 [Information] Информация по кафка успешно считана.
+10-06-2023 00:41:36 [Information] В топик кафка CSharp_Topic записано значение {
+  "TagName": "M3",
+  "TagValue": "33",
+  "TagType": "int"
+}
+10-06-2023 00:41:36 [Debug] Sending message.
+10-06-2023 00:41:36 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+10-06-2023 00:41:36 [Verbose] Message sent.
+10-06-2023 00:41:36 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 00:41:36 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 16.1279ms
+10-06-2023 01:03:37 [Verbose] Discovering gRPC methods for "GrpcService1.Services.GreeterService".
+10-06-2023 01:03:37 [Verbose] Added gRPC method '"SayHello"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/SayHello"'.
+10-06-2023 01:03:37 [Verbose] Added gRPC method '"GetAll"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetAll"'.
+10-06-2023 01:03:37 [Verbose] Added gRPC method '"GetUser"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetUser"'.
+10-06-2023 01:03:37 [Verbose] Added gRPC method '"GetAllUsers"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetAllUsers"'.
+10-06-2023 01:03:37 [Verbose] Added gRPC method '"AddUser"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddUser"'.
+10-06-2023 01:03:37 [Verbose] Added gRPC method '"WriteToKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/WriteToKafka"'.
+10-06-2023 01:03:37 [Verbose] Added gRPC method '"ReadFromKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/ReadFromKafka"'.
+10-06-2023 01:03:37 [Verbose] Added gRPC method '"AddRegion"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddRegion"'.
+10-06-2023 01:03:37 [Verbose] Added gRPC method '"AddSignalToKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddSignalToKafka"'.
+10-06-2023 01:03:38 [Information] Now listening on: "http://localhost:5195"
+10-06-2023 01:03:38 [Information] Now listening on: "https://localhost:7195"
+10-06-2023 01:03:38 [Information] Application started. Press Ctrl+C to shut down.
+10-06-2023 01:03:38 [Information] Hosting environment: "Development"
+10-06-2023 01:03:38 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\GrpcService1\"
+10-06-2023 01:04:43 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+10-06-2023 01:04:43 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 01:04:43 [Debug] Reading message.
+10-06-2023 01:04:43 [Verbose] Deserializing 19 byte message to '"GrpcService1.Signal"'.
+10-06-2023 01:04:43 [Verbose] Received message.
+10-06-2023 01:04:43 [Information] Информация по кафка успешно считана.
+10-06-2023 01:04:43 [Information] В топик кафка CSharp_Topic записано значение {
+  "TagName": "B1",
+  "TagValue": "43243",
+  "TagType": "string"
+}
+10-06-2023 01:04:43 [Debug] Sending message.
+10-06-2023 01:04:43 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+10-06-2023 01:04:43 [Verbose] Message sent.
+10-06-2023 01:04:43 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 01:04:43 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 290.8241ms
+10-06-2023 01:06:21 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+10-06-2023 01:06:21 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 01:06:21 [Debug] Reading message.
+10-06-2023 01:06:21 [Verbose] Deserializing 18 byte message to '"GrpcService1.Signal"'.
+10-06-2023 01:06:21 [Verbose] Received message.
+10-06-2023 01:06:21 [Information] Информация по кафка успешно считана.
+10-06-2023 01:06:21 [Information] В топик кафка CSharp_Topic записано значение {
+  "TagName": "B2",
+  "TagValue": "0890",
+  "TagType": "string"
+}
+10-06-2023 01:06:21 [Debug] Sending message.
+10-06-2023 01:06:21 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+10-06-2023 01:06:21 [Verbose] Message sent.
+10-06-2023 01:06:21 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 01:06:21 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 20.8732ms
+10-06-2023 01:06:34 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+10-06-2023 01:06:34 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 01:06:34 [Debug] Reading message.
+10-06-2023 01:06:34 [Verbose] Deserializing 18 byte message to '"GrpcService1.Signal"'.
+10-06-2023 01:06:34 [Verbose] Received message.
+10-06-2023 01:06:34 [Information] Информация по кафка успешно считана.
+10-06-2023 01:06:34 [Information] В топик кафка CSharp_Topic записано значение {
+  "TagName": "B3",
+  "TagValue": "0890",
+  "TagType": "string"
+}
+10-06-2023 01:06:34 [Debug] Sending message.
+10-06-2023 01:06:34 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+10-06-2023 01:06:34 [Verbose] Message sent.
+10-06-2023 01:06:34 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 01:06:34 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 19.0315ms
+10-06-2023 01:06:46 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+10-06-2023 01:06:46 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 01:06:46 [Debug] Reading message.
+10-06-2023 01:06:46 [Verbose] Deserializing 18 byte message to '"GrpcService1.Signal"'.
+10-06-2023 01:06:46 [Verbose] Received message.
+10-06-2023 01:06:46 [Information] Информация по кафка успешно считана.
+10-06-2023 01:06:46 [Information] В топик кафка CSharp_Topic записано значение {
+  "TagName": "B4",
+  "TagValue": "7979",
+  "TagType": "string"
+}
+10-06-2023 01:06:46 [Debug] Sending message.
+10-06-2023 01:06:46 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+10-06-2023 01:06:46 [Verbose] Message sent.
+10-06-2023 01:06:46 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 01:06:46 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 18.7814ms
+10-06-2023 01:07:03 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+10-06-2023 01:07:03 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 01:07:03 [Debug] Reading message.
+10-06-2023 01:07:03 [Verbose] Deserializing 18 byte message to '"GrpcService1.Signal"'.
+10-06-2023 01:07:03 [Verbose] Received message.
+10-06-2023 01:07:03 [Information] Информация по кафка успешно считана.
+10-06-2023 01:07:03 [Information] В топик кафка CSharp_Topic записано значение {
+  "TagName": "B5",
+  "TagValue": "8888",
+  "TagType": "string"
+}
+10-06-2023 01:07:03 [Debug] Sending message.
+10-06-2023 01:07:03 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+10-06-2023 01:07:03 [Verbose] Message sent.
+10-06-2023 01:07:03 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 01:07:03 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 25.4159ms
+10-06-2023 01:09:36 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+10-06-2023 01:09:36 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 01:09:36 [Debug] Reading message.
+10-06-2023 01:09:36 [Verbose] Deserializing 18 byte message to '"GrpcService1.Signal"'.
+10-06-2023 01:09:36 [Verbose] Received message.
+10-06-2023 01:09:36 [Information] Информация по кафка успешно считана.
+10-06-2023 01:09:36 [Information] В топик кафка CSharp_Topic записано значение {
+  "TagName": "B6",
+  "TagValue": "8989",
+  "TagType": "string"
+}
+10-06-2023 01:09:36 [Debug] Sending message.
+10-06-2023 01:09:36 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+10-06-2023 01:09:36 [Verbose] Message sent.
+10-06-2023 01:09:36 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 01:09:36 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 16.6559ms
+10-06-2023 01:11:42 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+10-06-2023 01:11:42 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 01:11:42 [Debug] Reading message.
+10-06-2023 01:11:42 [Verbose] Deserializing 15 byte message to '"GrpcService1.Signal"'.
+10-06-2023 01:11:42 [Verbose] Received message.
+10-06-2023 01:11:42 [Information] Информация по кафка успешно считана.
+10-06-2023 01:11:42 [Information] В топик кафка CSharp_Topic записано значение {
+  "TagName": "B7",
+  "TagValue": "8989",
+  "TagType": "int"
+}
+10-06-2023 01:11:42 [Debug] Sending message.
+10-06-2023 01:11:42 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+10-06-2023 01:11:42 [Verbose] Message sent.
+10-06-2023 01:11:42 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 01:11:42 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 13.7569ms
+10-06-2023 01:12:03 [Information] Request starting HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc -
+10-06-2023 01:12:03 [Information] Executing endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 01:12:03 [Debug] Reading message.
+10-06-2023 01:12:03 [Verbose] Deserializing 15 byte message to '"GrpcService1.Signal"'.
+10-06-2023 01:12:03 [Verbose] Received message.
+10-06-2023 01:12:03 [Information] Информация по кафка успешно считана.
+10-06-2023 01:12:03 [Information] В топик кафка CSharp_Topic записано значение {
+  "TagName": "B8",
+  "TagValue": "8989",
+  "TagType": "int"
+}
+10-06-2023 01:12:03 [Debug] Sending message.
+10-06-2023 01:12:03 [Verbose] Serialized '"GrpcService1.ServiceResponse"' to 3 byte message.
+10-06-2023 01:12:03 [Verbose] Message sent.
+10-06-2023 01:12:03 [Information] Executed endpoint '"gRPC - /greet.Greeter/AddSignalToKafka"'
+10-06-2023 01:12:03 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/AddSignalToKafka application/grpc - - 200 - application/grpc 25.4741ms
