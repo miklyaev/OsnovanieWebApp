@@ -23,7 +23,7 @@ namespace ClickHouseApp.DbService
         public void UpdateUser(User user);
         public void DeleteUser(int id);
         public Task AddSignal(Signal signal);
-        public Task AddSignals(List<Signal> signals);
+        public Task<bool> AddSignals(List<Signal> signals);
 
     }
 
@@ -123,17 +123,18 @@ namespace ClickHouseApp.DbService
         public async Task<bool> AddSignals(List<Signal> signals)
         {
             StringBuilder builder= new StringBuilder();
+            var sql = $"INSERT INTO t_signal (id, TagName, TagType, TagValue) values ";
 
-            foreach(var signal in signals) 
+            foreach (var signal in signals) 
             {
-                var sql = $"INSERT INTO t_signal (id, TagName, TagType, TagValue) values ('{signal.SignalId}', '{signal.TagName}', '{signal.TagType}', '{signal.TagValue}');";
-                builder.AppendLine(sql);
+                builder.Append($"('{signal.SignalId}', '{signal.TagName}', '{signal.TagType}', '{signal.TagValue}'),");
             }
-            
+            sql += builder.ToString();
+            var outStr = sql.TrimEnd(',') + ";" ;
 
             var responseFinal = await _insertPolicy.ExecuteAsync(async () =>
             {
-                var response = await ExecuteInternalAsync(builder.ToString(), isIgnoreFail: true).ConfigureAwait(false);
+                var response = await ExecuteInternalAsync(outStr, isIgnoreFail: true).ConfigureAwait(false);
                 return response;
             });
 
@@ -159,9 +160,9 @@ namespace ClickHouseApp.DbService
             }
         }
 
-        Task IClickHouseService.AddSignals(List<Signal> signals)
-        {
-            throw new NotImplementedException();
-        }
+        //Task IClickHouseService.AddSignals(List<Signal> signals)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

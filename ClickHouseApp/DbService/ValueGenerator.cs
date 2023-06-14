@@ -39,11 +39,11 @@ namespace ClickHouseApp.DbService
         private Signal RandomizeSignal()
         {
             //Создание объекта для генерации чисел
-            Random rndTag = new Random(100);
+            Random rndTag = new Random();
             //Получить очередное (в данном случае - первое) случайное число
-            int tagNumber = rndTag.Next();
+            int tagNumber = rndTag.Next(0, 100);
 
-            Random rndType = new Random(4);
+            Random rndType = new Random();
             int tagType = rndType.Next(1, 4);
 
             Signal signal = new Signal
@@ -57,15 +57,15 @@ namespace ClickHouseApp.DbService
             return signal;
         }
 
-        private object GetValue(TagTypeInfo type)
+        private T GetValue<T>(TagTypeInfo type)
         {
-            object? result = null; 
+            T? result; 
             switch (type)
             {
                 case TagTypeInfo.Int:
                     {
                         Random rndInt = new Random();
-                        result = (object)rndInt.Next(0, 10000);
+                        result = rndInt.Next(0, 10000);
                     }
                     break;
                 case TagTypeInfo.Float:
