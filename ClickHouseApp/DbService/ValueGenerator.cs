@@ -57,9 +57,9 @@ namespace ClickHouseApp.DbService
             return signal;
         }
 
-        private T GetValue<T>(TagTypeInfo type)
+        private object GetValue(TagTypeInfo type)
         {
-            T? result; 
+            object result = null; 
             switch (type)
             {
                 case TagTypeInfo.Int:
@@ -71,7 +71,7 @@ namespace ClickHouseApp.DbService
                 case TagTypeInfo.Float:
                     {
                         Random rndFloat = new Random();
-                        result = rndFloat.Next(0, 10000) / 100;
+                        result = (float)rndFloat.Next(0, 10000) / 100;
                     }
                     break;
             }
