@@ -17,9 +17,18 @@ namespace ClickHouseApp.DbService
     {
 
         public readonly IClickHouseService _clickHouseService;
-        public ValueGenerator(IClickHouseService clickHouseService)
+        private readonly ILogger<ValueGenerator> _logger;
+
+        public readonly string[] _dictionary = new string[10]
+        {
+            "qwerty", "sos", "very", "good", "bad", "hello", "world", "john", "zzzz", "bbbbbb"
+        };
+
+        private static int _counter = 0;
+        public ValueGenerator(IClickHouseService clickHouseService, ILogger<ValueGenerator> logger)
         {
             _clickHouseService = clickHouseService;
+            _logger = logger;
         }
 
 
@@ -74,6 +83,13 @@ namespace ClickHouseApp.DbService
                         result = (float)rndFloat.Next(0, 10000) / 100;
                     }
                     break;
+                case TagTypeInfo.String:
+                    {
+                        Random rndFloat = new Random();
+                        var ind = rndFloat.Next(0, 9);
+                        result = _dictionary[ind];
+                    }
+                   break;
             }
 
             return result;
@@ -81,8 +97,10 @@ namespace ClickHouseApp.DbService
         }
         public Task Execute(IJobExecutionContext context)
         {
+            
             List<Signal> signals = GenerateValues(100);
              _clickHouseService.AddSignals(signals);
+            _logger.LogInformation($"Запись сигналов в clickhouse {ValueGenerator._counter++}");
             return Task.CompletedTask;
 
         }
