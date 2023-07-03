@@ -18,14 +18,16 @@ service Greeter {
   rpc ReadFromKafka(Kafka) returns (ListOfUsers);
   rpc AddRegion(Region) returns (UniqueID);
   rpc AddSignalToKafka(Signal) returns (ServiceResponse);
-  rpc AddAuthor(Author) returns (UniqueID);
-  rpc AddBook(Book) returns (UniqueID);
+  rpc AddAuthor(Author) returns (ServiceResponse);
+  rpc AddBook(Book) returns (ServiceResponse);
+  rpc UpdateAuthor(Author) returns (ServiceResponse);
   rpc UpdateBook(Book) returns (ServiceResponse);
 }
 
 message ServiceResponse {
 	int32 code = 1;
-	string errorMessage = 2;
+	int32 entityId = 2;
+	string errorMessage = 3;
 }
 
 message Author {

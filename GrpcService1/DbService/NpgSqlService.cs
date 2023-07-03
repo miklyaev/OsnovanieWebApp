@@ -59,19 +59,23 @@ namespace GrpcService1.DbService
         public int AddBook(Book book)
         {
             ApplicationContext db = new ApplicationContext();
-            //TBooks = new List<TBook>
            
             TBook tBook = new TBook
             {
-                //BookId = book.BookId,
                 Title = book.Title,
                 Pages = book.Pages,
-                IssueDate = book.IssueDate.ToDateTime(),
-                Author = GetAuthorById(book.AuthorId)               
+                IssueDate = book.IssueDate.ToDateTime(),                            
             };
 
             var newBook = db.Books.Add(tBook);
             db.SaveChanges();
+
+            if (book.AuthorId != 0)
+            {
+                newBook.Entity.Author = GetAuthorById(book.AuthorId);
+                db.SaveChanges();
+            }
+            
             return newBook.Entity.BookId;
         }
 

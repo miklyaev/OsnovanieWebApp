@@ -2,7 +2,9 @@ using Confluent.Kafka;
 using Grpc.Core;
 using GrpcService1.DbService;
 using KafkaLibNetCore;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using Npgsql;
 using Formatting = Newtonsoft.Json.Formatting;
 
 namespace GrpcService1.Services
@@ -104,24 +106,39 @@ namespace GrpcService1.Services
         }
 
 
-        public override Task<UniqueID> AddAuthor(Author request, ServerCallContext context)
+        public override Task<ServiceResponse> AddAuthor(Author request, ServerCallContext context)
         {
             int id = _pgSqlService.AddAuthor(request);
-            return Task.FromResult(new UniqueID
+            return Task.FromResult(new ServiceResponse
             {
-                Id = id
+                Code = 200,
+                EntityId = id,
+                ErrorMessage = "OK"
             });
 
         }
 
-        public override Task<UniqueID> AddBook(Book request, ServerCallContext context)
+        public override Task<ServiceResponse> AddBook(Book request, ServerCallContext context)
         {
-            int id = _pgSqlService.AddBook(request);
-            return Task.FromResult(new UniqueID
+            try
             {
-                Id = id
-            });
+                int id = _pgSqlService.AddBook(request);
+                return Task.FromResult(new ServiceResponse
+                {
+                    Code = 200,
+                    EntityId = id,
+                    ErrorMessage = "OK"
+                });
+            }
+            catch (DbUpdateException ex)
+            {
+                if (ex.GetBaseException() is PostgresException pgException)
+                {
+                    throw new RpcException(new Status(StatusCode.Internal, $"Method AddBook. Œ¯Ë·Í‡ ¡ƒ: {pgException.Message}"));
+                }
 
+                throw new RpcException(new Status(StatusCode.Internal, $"Method AddBook. {ex.Message}"));
+            }
         }
 
         public override Task<UniqueID> AddRegion(Region request, ServerCallContext context)
