@@ -23,6 +23,7 @@ IHost host = Host.CreateDefaultBuilder(args)
     {        
         services.AddSingleton<IClickHouseService, ClickHouseService>();
         services.AddSingleton<IValueGenerator, ValueGenerator>();
+        services.AddSingleton<IClickHouseConsumer, ClickHouseConsumer>();
         services.AddQuartz(q =>
         {
             q.UseMicrosoftDependencyInjectionJobFactory();
@@ -56,5 +57,20 @@ var trigger = TriggerBuilder.Create()
     .Build();
 
 await scheduler.ScheduleJob(job, trigger);
+
+var job2 = JobBuilder.Create<ClickHouseConsumer>()
+    .WithIdentity("myJob2", "group2")
+    .Build();
+
+// Trigger the job to run now, and then every 40 seconds
+var trigger2 = TriggerBuilder.Create()
+    .WithIdentity("myTrigger2", "group2")
+    .StartNow()
+    .WithSimpleSchedule(x => x
+        .WithIntervalInSeconds(20)
+        .RepeatForever())
+    .Build();
+
+await scheduler.ScheduleJob(job2, trigger2);
 
 await host.RunAsync();

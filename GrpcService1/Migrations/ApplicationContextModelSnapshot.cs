@@ -22,6 +22,59 @@ namespace GrpcService1.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("GrpcService1.DbService.Model.TAuthor", b =>
+                {
+                    b.Property<int>("AuthorId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("author_id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("AuthorId"));
+
+                    b.Property<int?>("Age")
+                        .HasColumnType("integer")
+                        .HasColumnName("age");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("text")
+                        .HasColumnName("name");
+
+                    b.HasKey("AuthorId");
+
+                    b.ToTable("t_author");
+                });
+
+            modelBuilder.Entity("GrpcService1.DbService.Model.TBook", b =>
+                {
+                    b.Property<int>("BookId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("book_id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("BookId"));
+
+                    b.Property<DateTime?>("IssueDate")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("issue_date");
+
+                    b.Property<int?>("Pages")
+                        .HasColumnType("integer")
+                        .HasColumnName("pages");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("text")
+                        .HasColumnName("title");
+
+                    b.Property<int?>("author_id")
+                        .HasColumnType("integer");
+
+                    b.HasKey("BookId");
+
+                    b.HasIndex("author_id");
+
+                    b.ToTable("t_book");
+                });
+
             modelBuilder.Entity("GrpcService1.DbService.Model.TGroup", b =>
                 {
                     b.Property<int>("GroupId")
@@ -222,6 +275,15 @@ namespace GrpcService1.Migrations
                     b.ToTable("t_user_role");
                 });
 
+            modelBuilder.Entity("GrpcService1.DbService.Model.TBook", b =>
+                {
+                    b.HasOne("GrpcService1.DbService.Model.TAuthor", "Author")
+                        .WithMany("Books")
+                        .HasForeignKey("author_id");
+
+                    b.Navigation("Author");
+                });
+
             modelBuilder.Entity("GrpcService1.DbService.Model.TOffice", b =>
                 {
                     b.HasOne("GrpcService1.DbService.Model.TRegion", "Region")
@@ -276,6 +338,11 @@ namespace GrpcService1.Migrations
                     b.Navigation("Role");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("GrpcService1.DbService.Model.TAuthor", b =>
+                {
+                    b.Navigation("Books");
                 });
 
             modelBuilder.Entity("GrpcService1.DbService.Model.TOffice", b =>

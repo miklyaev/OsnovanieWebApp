@@ -4,6 +4,7 @@ option csharp_namespace = "OsnovanieService";
 
 package greet;
 import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
 
 // The greeting service definition.
 service Greeter {
@@ -14,9 +15,12 @@ service Greeter {
   rpc GetAllUsers(google.protobuf.Empty) returns (ListOfUsers);
   rpc AddUser(User) returns (UniqueID);
   rpc WriteToKafka(User) returns (PersonReply);
-  rpc ReadFromKafka(Kafka) returns(ListOfUsers);
+  rpc ReadFromKafka(Kafka) returns (ListOfUsers);
   rpc AddRegion(Region) returns (UniqueID);
   rpc AddSignalToKafka(Signal) returns (ServiceResponse);
+  rpc AddAuthor(Author) returns (UniqueID);
+  rpc AddBook(Book) returns (UniqueID);
+  rpc UpdateBook(Book) returns (ServiceResponse);
 }
 
 message ServiceResponse {
@@ -24,10 +28,29 @@ message ServiceResponse {
 	string errorMessage = 2;
 }
 
+message Author {
+	int32 authorId = 1;
+	string name = 2;
+	int32 age = 3;
+	repeated int32 bookIds = 4;
+}
+
+message Book {
+	int32 bookId = 1;
+	string title = 2;
+	int32 pages = 3;
+	int32 authorId = 4;
+	google.protobuf.Timestamp issueDate = 5;
+}
+
 message Signal {
 	string TagName = 1;
 	string TagValue = 2;
 	string TagType = 3;
+}
+
+message UniqueID {
+	int32 Id = 1;
 }
 
 message Kafka {
@@ -37,11 +60,6 @@ message Kafka {
 	int32 offset = 4;
 	string key = 5;
 }
-
-message UniqueID {
-	int32 Id = 1;
-}
-
 message User {
 	int32 userId = 1;
 	string userName = 2;
@@ -76,4 +94,3 @@ message PersonReply {
 message Empty {
 
 }
-

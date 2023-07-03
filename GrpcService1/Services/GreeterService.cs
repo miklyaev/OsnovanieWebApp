@@ -103,6 +103,27 @@ namespace GrpcService1.Services
 
         }
 
+
+        public override Task<UniqueID> AddAuthor(Author request, ServerCallContext context)
+        {
+            int id = _pgSqlService.AddAuthor(request);
+            return Task.FromResult(new UniqueID
+            {
+                Id = id
+            });
+
+        }
+
+        public override Task<UniqueID> AddBook(Book request, ServerCallContext context)
+        {
+            int id = _pgSqlService.AddBook(request);
+            return Task.FromResult(new UniqueID
+            {
+                Id = id
+            });
+
+        }
+
         public override Task<UniqueID> AddRegion(Region request, ServerCallContext context)
         {
             int id = _pgSqlService.AddRegion(request);

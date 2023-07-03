@@ -5052,3 +5052,382 @@ AutoWrapper.Wrappers.ApiException: One or more errors occurred. (Status(StatusCo
   "tagType": "int"
 } Responded with [200] in 49ms
 10-06-2023 01:12:03 [Information] Request finished HTTP/2 POST https://localhost:7139/api/SignalR/addSignal application/json 63 - 200 106 application/json 51.4371ms
+02-07-2023 01:32:43 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02-07-2023 01:32:43 [Information] Now listening on: "https://localhost:7139"
+02-07-2023 01:32:43 [Information] Now listening on: "http://localhost:5139"
+02-07-2023 01:32:43 [Information] Application started. Press Ctrl+C to shut down.
+02-07-2023 01:32:43 [Information] Hosting environment: "Development"
+02-07-2023 01:32:43 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+02-07-2023 01:32:47 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+02-07-2023 01:32:47 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 364.3775ms
+02-07-2023 01:32:47 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+02-07-2023 01:32:47 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 9.6883ms
+02-07-2023 01:32:47 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+02-07-2023 01:32:47 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.5468ms
+02-07-2023 01:32:47 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+02-07-2023 01:32:47 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 88.5546ms
+02-07-2023 01:33:33 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Book/addAuthor application/json 60
+02-07-2023 01:33:33 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)"'
+02-07-2023 01:33:33 [Information] Route matched with "{action = \"AddAuthor\", controller = \"Book\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddAuthor(OsnovanieService.Author)" on controller "OsnovanieWebApp.Controllers.BookController" ("OsnovanieWebApp").
+02-07-2023 01:33:33 [Information] Executed action "OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)" in 2.053ms
+02-07-2023 01:33:33 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)"'
+02-07-2023 01:33:33 [Error] [500]: Unhandled Exception occurred. Unable to process the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'OsnovanieWebApp.Controllers.BookController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+02-07-2023 01:33:34 [Information] Source:[::1] Request: POST https localhost:7139/api/Book/addAuthor  {
+  "authorId": 0,
+  "name": "Шолохов",
+  "age": 50
+} Responded with [500] in 270ms
+02-07-2023 01:33:34 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Book/addAuthor application/json 60 - 500 143 application/json 276.5179ms
+02-07-2023 01:40:45 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Book/addAuthor application/json 60
+02-07-2023 01:40:45 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)"'
+02-07-2023 01:40:45 [Information] Route matched with "{action = \"AddAuthor\", controller = \"Book\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddAuthor(OsnovanieService.Author)" on controller "OsnovanieWebApp.Controllers.BookController" ("OsnovanieWebApp").
+02-07-2023 01:40:45 [Information] Executed action "OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)" in 0.3536ms
+02-07-2023 01:40:45 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)"'
+02-07-2023 01:40:45 [Error] [500]: Unhandled Exception occurred. Unable to process the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'OsnovanieWebApp.Controllers.BookController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+02-07-2023 01:40:45 [Information] Source:[::1] Request: POST https localhost:7139/api/Book/addAuthor  {
+  "authorId": 0,
+  "name": "Шолохов",
+  "age": 50
+} Responded with [500] in 8ms
+02-07-2023 01:40:45 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Book/addAuthor application/json 60 - 500 143 application/json 14.4702ms
+02-07-2023 01:41:21 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Book/addAuthor application/json 60
+02-07-2023 01:41:21 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)"'
+02-07-2023 01:41:21 [Information] Route matched with "{action = \"AddAuthor\", controller = \"Book\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddAuthor(OsnovanieService.Author)" on controller "OsnovanieWebApp.Controllers.BookController" ("OsnovanieWebApp").
+02-07-2023 01:41:21 [Information] Executed action "OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)" in 0.2853ms
+02-07-2023 01:41:21 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)"'
+02-07-2023 01:41:21 [Error] [500]: Unhandled Exception occurred. Unable to process the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'OsnovanieWebApp.Controllers.BookController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+02-07-2023 01:41:21 [Information] Source:[::1] Request: POST https localhost:7139/api/Book/addAuthor  {
+  "authorId": 0,
+  "name": "Шолохов",
+  "age": 50
+} Responded with [500] in 8ms
+02-07-2023 01:41:21 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Book/addAuthor application/json 60 - 500 143 application/json 14.4041ms
+02-07-2023 01:44:24 [Information] Request starting HTTP/2 POST https://localhost:7139/api/User/addUser application/json 77
+02-07-2023 01:44:24 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.UserController.AddUser (OsnovanieWebApp)"'
+02-07-2023 01:44:24 [Information] Route matched with "{action = \"AddUser\", controller = \"User\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUser(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.UserController" ("OsnovanieWebApp").
+02-07-2023 01:44:48 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+02-07-2023 01:44:48 [Information] Executed action "OsnovanieWebApp.Controllers.UserController.AddUser (OsnovanieWebApp)" in 24597.8781ms
+02-07-2023 01:44:48 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.UserController.AddUser (OsnovanieWebApp)"'
+02-07-2023 01:44:48 [Information] Source:[::1] Request: POST https localhost:7139/api/User/addUser  {
+  "userId": 0,
+  "userName": "Georg",
+  "password": "string",
+  "age": 60
+} Responded with [200] in 24720ms
+02-07-2023 01:44:48 [Information] Request finished HTTP/2 POST https://localhost:7139/api/User/addUser application/json 77 - 200 78 application/json 24730.1867ms
+02-07-2023 01:49:15 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Book/addAuthor application/json 60
+02-07-2023 01:49:15 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)"'
+02-07-2023 01:49:15 [Information] Route matched with "{action = \"AddAuthor\", controller = \"Book\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddAuthor(OsnovanieService.Author)" on controller "OsnovanieWebApp.Controllers.BookController" ("OsnovanieWebApp").
+02-07-2023 01:49:15 [Information] Executed action "OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)" in 0.522ms
+02-07-2023 01:49:15 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)"'
+02-07-2023 01:49:15 [Error] [500]: Unhandled Exception occurred. Unable to process the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'OsnovanieWebApp.Controllers.BookController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+02-07-2023 01:49:15 [Information] Source:[::1] Request: POST https localhost:7139/api/Book/addAuthor  {
+  "authorId": 0,
+  "name": "Шолохов",
+  "age": 50
+} Responded with [500] in 9ms
+02-07-2023 01:49:15 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Book/addAuthor application/json 60 - 500 143 application/json 15.4202ms
+02-07-2023 01:50:39 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02-07-2023 01:50:39 [Information] Now listening on: "https://localhost:7139"
+02-07-2023 01:50:39 [Information] Now listening on: "http://localhost:5139"
+02-07-2023 01:50:39 [Information] Application started. Press Ctrl+C to shut down.
+02-07-2023 01:50:39 [Information] Hosting environment: "Development"
+02-07-2023 01:50:39 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+02-07-2023 01:50:41 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+02-07-2023 01:50:42 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 286.7105ms
+02-07-2023 01:50:42 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+02-07-2023 01:50:42 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.2003ms
+02-07-2023 01:50:42 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+02-07-2023 01:50:42 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.9490ms
+02-07-2023 01:50:42 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+02-07-2023 01:50:42 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 90.8078ms
+02-07-2023 01:51:27 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Book/addAuthor application/json 57
+02-07-2023 01:51:27 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)"'
+02-07-2023 01:51:27 [Information] Route matched with "{action = \"AddAuthor\", controller = \"Book\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddAuthor(OsnovanieService.Author)" on controller "OsnovanieWebApp.Controllers.BookController" ("OsnovanieWebApp").
+02-07-2023 01:51:27 [Information] Executed action "OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)" in 1.5375ms
+02-07-2023 01:51:27 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)"'
+02-07-2023 01:51:27 [Error] [500]: Unhandled Exception occurred. Unable to process the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'OsnovanieWebApp.Controllers.BookController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+02-07-2023 01:51:27 [Information] Source:[::1] Request: POST https localhost:7139/api/Book/addAuthor  {
+  "authorId": 0,
+  "name": "Автор1",
+  "age": 70
+} Responded with [500] in 176ms
+02-07-2023 01:51:27 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Book/addAuthor application/json 57 - 500 143 application/json 181.7082ms
+02-07-2023 01:55:37 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02-07-2023 01:55:38 [Information] Now listening on: "https://localhost:7139"
+02-07-2023 01:55:38 [Information] Now listening on: "http://localhost:5139"
+02-07-2023 01:55:38 [Information] Application started. Press Ctrl+C to shut down.
+02-07-2023 01:55:38 [Information] Hosting environment: "Development"
+02-07-2023 01:55:38 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+02-07-2023 01:55:40 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+02-07-2023 01:55:40 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 289.5888ms
+02-07-2023 01:55:40 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+02-07-2023 01:55:40 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.2681ms
+02-07-2023 01:55:40 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+02-07-2023 01:55:40 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.1825ms
+02-07-2023 01:55:40 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+02-07-2023 01:55:40 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 88.8383ms
+02-07-2023 01:56:37 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Book/addAuthor application/json 57
+02-07-2023 01:56:37 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)"'
+02-07-2023 01:56:37 [Information] Route matched with "{action = \"AddAuthor\", controller = \"Book\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddAuthor(OsnovanieService.Author)" on controller "OsnovanieWebApp.Controllers.BookController" ("OsnovanieWebApp").
+02-07-2023 01:57:31 [Information] Executed action "OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)" in 53752.6476ms
+02-07-2023 01:57:31 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)"'
+02-07-2023 01:57:31 [Error] [500]: One or more errors occurred. (Status(StatusCode="Unimplemented", Detail=""))
+AutoWrapper.Wrappers.ApiException: One or more errors occurred. (Status(StatusCode="Unimplemented", Detail=""))
+   at OsnovanieWebApp.Controllers.BookController.AddAuthor(Author author) in D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\Controllers\BookController.cs:line 48
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+02-07-2023 01:57:31 [Information] Source:[::1] Request: POST https localhost:7139/api/Book/addAuthor  {
+  "authorId": 0,
+  "name": "Автор1",
+  "age": 20
+} Responded with [500] in 53960ms
+02-07-2023 01:57:31 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Book/addAuthor application/json 57 - 500 163 application/json 53966.9056ms
+02-07-2023 02:02:55 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02-07-2023 02:02:55 [Information] Now listening on: "https://localhost:7139"
+02-07-2023 02:02:55 [Information] Now listening on: "http://localhost:5139"
+02-07-2023 02:02:55 [Information] Application started. Press Ctrl+C to shut down.
+02-07-2023 02:02:55 [Information] Hosting environment: "Development"
+02-07-2023 02:02:55 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+02-07-2023 02:02:57 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+02-07-2023 02:02:57 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 288.0913ms
+02-07-2023 02:02:57 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+02-07-2023 02:02:57 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 2.9794ms
+02-07-2023 02:02:57 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+02-07-2023 02:02:57 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.1011ms
+02-07-2023 02:02:58 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+02-07-2023 02:02:58 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 91.1965ms
+02-07-2023 02:03:20 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Book/addAuthor application/json 57
+02-07-2023 02:03:20 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)"'
+02-07-2023 02:03:20 [Information] Route matched with "{action = \"AddAuthor\", controller = \"Book\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddAuthor(OsnovanieService.Author)" on controller "OsnovanieWebApp.Controllers.BookController" ("OsnovanieWebApp").
+02-07-2023 02:03:56 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+02-07-2023 02:03:56 [Information] Executed action "OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)" in 35980.6382ms
+02-07-2023 02:03:56 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)"'
+02-07-2023 02:03:57 [Information] Source:[::1] Request: POST https localhost:7139/api/Book/addAuthor  {
+  "authorId": 0,
+  "name": "Автор1",
+  "age": 20
+} Responded with [200] in 36220ms
+02-07-2023 02:03:57 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Book/addAuthor application/json 57 - 200 77 application/json 36227.2817ms
+02-07-2023 02:04:40 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Book/addAuthor application/json 57
+02-07-2023 02:04:40 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)"'
+02-07-2023 02:04:40 [Information] Route matched with "{action = \"AddAuthor\", controller = \"Book\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddAuthor(OsnovanieService.Author)" on controller "OsnovanieWebApp.Controllers.BookController" ("OsnovanieWebApp").
+02-07-2023 02:04:53 [Information] Executing "ObjectResult", writing value of type '"AutoWrapper.Wrappers.ApiResponse"'.
+02-07-2023 02:04:53 [Information] Executed action "OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)" in 12816.2561ms
+02-07-2023 02:04:53 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.BookController.AddAuthor (OsnovanieWebApp)"'
+02-07-2023 02:04:53 [Information] Source:[::1] Request: POST https localhost:7139/api/Book/addAuthor  {
+  "authorId": 0,
+  "name": "Автор2",
+  "age": 30
+} Responded with [200] in 12820ms
+02-07-2023 02:04:53 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Book/addAuthor application/json 57 - 200 77 application/json 12826.7034ms
+02-07-2023 02:23:43 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02-07-2023 02:23:43 [Information] Now listening on: "https://localhost:7139"
+02-07-2023 02:23:43 [Information] Now listening on: "http://localhost:5139"
+02-07-2023 02:23:43 [Information] Application started. Press Ctrl+C to shut down.
+02-07-2023 02:23:43 [Information] Hosting environment: "Development"
+02-07-2023 02:23:43 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+02-07-2023 02:23:46 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+02-07-2023 02:23:46 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 288.5570ms
+02-07-2023 02:23:46 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+02-07-2023 02:23:46 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.4146ms
+02-07-2023 02:23:46 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+02-07-2023 02:23:46 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.0445ms
+02-07-2023 02:23:46 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+02-07-2023 02:23:46 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 90.8312ms
+02-07-2023 02:24:15 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Book/addBook application/json 109
+02-07-2023 02:24:15 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.BookController.AddBook (OsnovanieWebApp)"'
+02-07-2023 02:24:15 [Information] Route matched with "{action = \"AddBook\", controller = \"Book\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddBook(OsnovanieWebApp.Info.BookInfo)" on controller "OsnovanieWebApp.Controllers.BookController" ("OsnovanieWebApp").
+02-07-2023 02:26:12 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02-07-2023 02:26:12 [Information] Now listening on: "https://localhost:7139"
+02-07-2023 02:26:12 [Information] Now listening on: "http://localhost:5139"
+02-07-2023 02:26:12 [Information] Application started. Press Ctrl+C to shut down.
+02-07-2023 02:26:12 [Information] Hosting environment: "Development"
+02-07-2023 02:26:12 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+02-07-2023 02:26:14 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+02-07-2023 02:26:14 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 295.5920ms
+02-07-2023 02:26:14 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+02-07-2023 02:26:14 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.0231ms
+02-07-2023 02:26:14 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+02-07-2023 02:26:14 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.0972ms
+02-07-2023 02:26:15 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+02-07-2023 02:26:15 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 87.6463ms
+02-07-2023 02:26:34 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Book/addBook application/json 109
+02-07-2023 02:26:34 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.BookController.AddBook (OsnovanieWebApp)"'
+02-07-2023 02:26:34 [Information] Route matched with "{action = \"AddBook\", controller = \"Book\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddBook(OsnovanieWebApp.Info.BookInfo)" on controller "OsnovanieWebApp.Controllers.BookController" ("OsnovanieWebApp").
+02-07-2023 02:27:13 [Information] Executed action "OsnovanieWebApp.Controllers.BookController.AddBook (OsnovanieWebApp)" in 39239.4116ms
+02-07-2023 02:27:13 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.BookController.AddBook (OsnovanieWebApp)"'
+02-07-2023 02:27:13 [Error] [500]: One or more errors occurred. (Status(StatusCode="Unknown", Detail="Exception was thrown by handler."))
+AutoWrapper.Wrappers.ApiException: One or more errors occurred. (Status(StatusCode="Unknown", Detail="Exception was thrown by handler."))
+   at OsnovanieWebApp.Controllers.BookController.AddBook(BookInfo book) in D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\Controllers\BookController.cs:line 42
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+02-07-2023 02:27:14 [Information] Source:[::1] Request: POST https localhost:7139/api/Book/addBook  {
+  "title": "Название1",
+  "pages": 40,
+  "authorId": 1,
+  "issueDate": "2023-07-01T19:26:18.408Z"
+} Responded with [500] in 39428ms
+02-07-2023 02:27:14 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Book/addBook application/json 109 - 500 189 application/json 39434.4976ms
+02-07-2023 02:27:35 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Book/addBook application/json 109
+02-07-2023 02:27:35 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.BookController.AddBook (OsnovanieWebApp)"'
+02-07-2023 02:27:35 [Information] Route matched with "{action = \"AddBook\", controller = \"Book\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddBook(OsnovanieWebApp.Info.BookInfo)" on controller "OsnovanieWebApp.Controllers.BookController" ("OsnovanieWebApp").
+02-07-2023 02:31:29 [Information] Executed action "OsnovanieWebApp.Controllers.BookController.AddBook (OsnovanieWebApp)" in 233280.7069ms
+02-07-2023 02:31:29 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.BookController.AddBook (OsnovanieWebApp)"'
+02-07-2023 02:31:29 [Error] [500]: One or more errors occurred. (Status(StatusCode="Unknown", Detail="Exception was thrown by handler."))
+AutoWrapper.Wrappers.ApiException: One or more errors occurred. (Status(StatusCode="Unknown", Detail="Exception was thrown by handler."))
+   at OsnovanieWebApp.Controllers.BookController.AddBook(BookInfo book) in D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\Controllers\BookController.cs:line 42
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+02-07-2023 02:31:29 [Information] Source:[::1] Request: POST https localhost:7139/api/Book/addBook  {
+  "title": "Название1",
+  "pages": 40,
+  "authorId": 1,
+  "issueDate": "2023-07-01T19:26:18.408Z"
+} Responded with [500] in 233292ms
+02-07-2023 02:31:29 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Book/addBook application/json 109 - 500 189 application/json 233299.3516ms
+02-07-2023 02:31:46 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Book/addBook application/json 109
+02-07-2023 02:31:46 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.BookController.AddBook (OsnovanieWebApp)"'
+02-07-2023 02:31:46 [Information] Route matched with "{action = \"AddBook\", controller = \"Book\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddBook(OsnovanieWebApp.Info.BookInfo)" on controller "OsnovanieWebApp.Controllers.BookController" ("OsnovanieWebApp").
+02-07-2023 02:34:18 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02-07-2023 02:34:18 [Information] Now listening on: "https://localhost:7139"
+02-07-2023 02:34:18 [Information] Now listening on: "http://localhost:5139"
+02-07-2023 02:34:18 [Information] Application started. Press Ctrl+C to shut down.
+02-07-2023 02:34:18 [Information] Hosting environment: "Development"
+02-07-2023 02:34:18 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+02-07-2023 02:34:21 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+02-07-2023 02:34:21 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 294.0944ms
+02-07-2023 02:34:21 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+02-07-2023 02:34:21 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.5832ms
+02-07-2023 02:34:21 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+02-07-2023 02:34:21 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.3146ms
+02-07-2023 02:34:21 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+02-07-2023 02:34:21 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 87.6599ms

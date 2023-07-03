@@ -4,6 +4,7 @@ option csharp_namespace = "GrpcService1";
 
 package greet;
 import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
 
 // The greeting service definition.
 service Greeter {
@@ -17,11 +18,30 @@ service Greeter {
   rpc ReadFromKafka(Kafka) returns (ListOfUsers);
   rpc AddRegion(Region) returns (UniqueID);
   rpc AddSignalToKafka(Signal) returns (ServiceResponse);
+  rpc AddAuthor(Author) returns (UniqueID);
+  rpc AddBook(Book) returns (UniqueID);
+  rpc UpdateAuthor(Author) returns (ServiceResponse);
+  rpc UpdateBook(Book) returns (ServiceResponse);
 }
 
 message ServiceResponse {
 	int32 code = 1;
 	string errorMessage = 2;
+}
+
+message Author {
+	int32 authorId = 1;
+	string name = 2;
+	int32 age = 3;
+	repeated int32 bookIds = 4;
+}
+
+message Book {
+	int32 bookId = 1;
+	string title = 2;
+	int32 pages = 3;
+	int32 authorId = 4;
+	google.protobuf.Timestamp issueDate = 5;
 }
 
 message Signal {

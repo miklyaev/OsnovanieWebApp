@@ -24,6 +24,9 @@ namespace OsnovanieService
         public Task<PersonReply> AddUserToKafka(User user);
         public Task<ListOfUsers> ReadFromKafka(string topic);
         public Task<ServiceResponse> AddSignalToKafka(Signal signal);
+        public Task<UniqueID> AddAuthor(Author author);
+        public Task<UniqueID> AddBook(Book book);
+        public Task<ServiceResponse> UpdateBook(Book book);
 
     }
     public class MainService : IMainService
@@ -126,5 +129,28 @@ namespace OsnovanieService
             var client = new Greeter.GreeterClient(channel);
             return await client.AddSignalToKafkaAsync(signal);
         }
+
+        public async Task<UniqueID> AddAuthor(Author author)
+        {
+            using var channel = GrpcChannel.ForAddress("https://localhost:7195");
+            var client = new Greeter.GreeterClient(channel);
+            return await client.AddAuthorAsync(author);
+        }
+
+        public async Task<UniqueID> AddBook(Book book)
+        {
+            using var channel = GrpcChannel.ForAddress("https://localhost:7195");
+            var client = new Greeter.GreeterClient(channel);
+            return await client.AddBookAsync(book);
+        }
+
+        public async Task<ServiceResponse> UpdateBook(Book book)
+        {
+            using var channel = GrpcChannel.ForAddress("https://localhost:7195");
+            var client = new Greeter.GreeterClient(channel);
+            return await client.UpdateBookAsync(book);
+        }
+
+
     }
 }

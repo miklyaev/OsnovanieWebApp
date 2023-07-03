@@ -37,6 +37,8 @@ namespace GrpcService1.DbService.Model
 
         [ForeignKey("office_id")]
         public TOffice? Office { get; set; }
+
+
     }
 
 }

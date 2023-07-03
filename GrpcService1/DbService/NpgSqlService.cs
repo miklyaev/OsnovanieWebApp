@@ -6,6 +6,10 @@ namespace GrpcService1.DbService
         public List<User> GetAll();
         public User GetById(int id);
         public int AddUser(User user);
+
+        public int AddAuthor(Author author);
+        public TAuthor? GetAuthorById(int id);
+        public int AddBook(Book book);
         public int AddRegion(Region region);
         public void UpdateUser(User user);
         public void DeleteUser(int id);
@@ -33,6 +37,56 @@ namespace GrpcService1.DbService
 
             db.Users.Update(tUser);
             db.SaveChanges();
+        }
+
+        public int AddAuthor(Author author)
+        {
+            ApplicationContext db = new ApplicationContext();
+            List<TBook> books = db.Books.Where(x => author.BookIds.Contains(x.BookId)).ToList();
+
+            TAuthor tAuthor = new TAuthor
+            {
+                Name = author.Name,
+                Age = author.Age,
+                Books = books
+            };
+
+            var newUser = db.Authors.Add(tAuthor);
+            db.SaveChanges();
+            return newUser.Entity.AuthorId;
+        }
+
+        public int AddBook(Book book)
+        {
+            ApplicationContext db = new ApplicationContext();
+            //TBooks = new List<TBook>
+           
+            TBook tBook = new TBook
+            {
+                //BookId = book.BookId,
+                Title = book.Title,
+                Pages = book.Pages,
+                IssueDate = book.IssueDate.ToDateTime(),
+                Author = GetAuthorById(book.AuthorId)               
+            };
+
+            var newBook = db.Books.Add(tBook);
+            db.SaveChanges();
+            return newBook.Entity.BookId;
+        }
+
+        public TAuthor? GetAuthorById(int id)
+        {
+            ApplicationContext db = new ApplicationContext();
+            return (from x in db.Authors
+                    where x.AuthorId == id
+                    select new TAuthor
+                    {
+                        AuthorId = x.AuthorId,
+                        Name = x.Name,
+                        Age = x.Age ?? 0,
+                        Books = x.Books
+                    }).FirstOrDefault();
         }
         public int AddUser(User user)
         {
