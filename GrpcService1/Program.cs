@@ -1,6 +1,8 @@
+using Confluent.Kafka;
 using GrpcService1.DbService;
 using GrpcService1.Services;
 using KafkaLibNetCore;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 using System.Diagnostics;
 
@@ -28,6 +30,12 @@ builder.Services.AddGrpc();
 builder.Services.AddSingleton<INpgSqlService, NpgSqlService>();
 builder.Services.AddSingleton<ICustomProducer, Producer>();
 builder.Services.AddSingleton<ICustomConsumer<string, string>, Consumer<string, string>>();
+
+string? connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContextFactory<ApplicationContext>(options =>
+ {
+     options.UseNpgsql(connectionString, o => o.CommandTimeout(600));
+ });
 
 var app = builder.Build();
 

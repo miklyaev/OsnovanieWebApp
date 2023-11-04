@@ -248,6 +248,8 @@ namespace GrpcService1.Migrations
 
                     b.HasIndex("office_id");
 
+                    b.HasIndex(new[] { "Age" }, "Age_Index");
+
                     b.ToTable("t_user");
                 });
 

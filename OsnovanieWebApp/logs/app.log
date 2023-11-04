@@ -5885,3 +5885,494 @@ AutoWrapper.Wrappers.ApiException: One or more errors occurred. (Status(StatusCo
   "issueDate": "2023-07-03T18:58:36.888Z"
 } Responded with [200] in 5838ms
 04-07-2023 01:58:53 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Book/addBook application/json 103 - 200 128 application/json 5845.2550ms
+28-10-2023 00:19:23 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+28-10-2023 00:19:23 [Information] Creating key {13fdc294-36fa-4a07-ac9f-c6a6230a8f1d} with creation date 2023-10-27 17:19:23Z, activation date 2023-10-27 17:19:23Z, and expiration date 2024-01-25 17:19:23Z.
+28-10-2023 00:19:23 [Information] Writing data to file '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys\key-13fdc294-36fa-4a07-ac9f-c6a6230a8f1d.xml"'.
+28-10-2023 00:19:24 [Information] Now listening on: "https://localhost:7139"
+28-10-2023 00:19:24 [Information] Now listening on: "http://localhost:5139"
+28-10-2023 00:19:24 [Information] Application started. Press Ctrl+C to shut down.
+28-10-2023 00:19:24 [Information] Hosting environment: "Development"
+28-10-2023 00:19:24 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+28-10-2023 00:19:26 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+28-10-2023 00:19:26 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 380.3851ms
+28-10-2023 00:19:26 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/swagger-ui-standalone-preset.js - -
+28-10-2023 00:19:26 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+28-10-2023 00:19:26 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+28-10-2023 00:19:26 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/swagger-ui-bundle.js - -
+28-10-2023 00:19:26 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/swagger-ui.css - -
+28-10-2023 00:19:26 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12362 application/javascript;+charset=utf-8 6.3009ms
+28-10-2023 00:19:26 [Information] The file "/swagger-ui.css" was not modified
+28-10-2023 00:19:26 [Information] The file "/swagger-ui-bundle.js" was not modified
+28-10-2023 00:19:26 [Information] The file "/swagger-ui-standalone-preset.js" was not modified
+28-10-2023 00:19:26 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/swagger-ui.css - - - 304 - text/css 16.5082ms
+28-10-2023 00:19:26 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 16.7595ms
+28-10-2023 00:19:26 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 17.4653ms
+28-10-2023 00:19:26 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.1943ms
+28-10-2023 00:19:27 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+28-10-2023 00:19:27 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/favicon-32x32.png - -
+28-10-2023 00:19:27 [Information] The file "/favicon-32x32.png" was not modified
+28-10-2023 00:19:27 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/favicon-32x32.png - - - 304 - image/png 2.2403ms
+28-10-2023 00:19:27 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 93.5164ms
+28-10-2023 00:20:30 [Information] Request starting HTTP/2 POST https://localhost:7139/api/Kafka/addMessage application/json 76
+28-10-2023 00:20:30 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+28-10-2023 00:20:30 [Information] Route matched with "{action = \"AddUserToKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUserToKafka(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+28-10-2023 00:21:03 [Information] Executed action "OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)" in 32353.828ms
+28-10-2023 00:21:03 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+28-10-2023 00:21:03 [Error] [500]: One or more errors occurred. (Status(StatusCode="Internal", Detail="Error starting gRPC call. HttpRequestException: The SSL connection could not be established, see inner exception. AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid", DebugException="System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CompleteHandshake(SslAuthenticationOptions sslAuthenticationOptions)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp2ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)"))
+AutoWrapper.Wrappers.ApiException: One or more errors occurred. (Status(StatusCode="Internal", Detail="Error starting gRPC call. HttpRequestException: The SSL connection could not be established, see inner exception. AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid", DebugException="System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CompleteHandshake(SslAuthenticationOptions sslAuthenticationOptions)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp2ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)"))
+   at OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka(User user) in D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\Controllers\KafkaController.cs:line 31
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+28-10-2023 00:21:03 [Information] Source:[::1] Request: POST https localhost:7139/api/Kafka/addMessage  {
+  "userId": 0,
+  "userName": "John",
+  "password": "1234567",
+  "age": 0
+} Responded with [500] in 32609ms
+28-10-2023 00:21:03 [Information] Request finished HTTP/2 POST https://localhost:7139/api/Kafka/addMessage application/json 76 - 500 2719 application/json 32616.4704ms
+28-10-2023 00:24:27 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+28-10-2023 00:24:27 [Information] Now listening on: "https://localhost:7139"
+28-10-2023 00:24:27 [Information] Now listening on: "http://localhost:5139"
+28-10-2023 00:24:27 [Information] Application started. Press Ctrl+C to shut down.
+28-10-2023 00:24:27 [Information] Hosting environment: "Development"
+28-10-2023 00:24:27 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+28-10-2023 00:24:30 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/index.html - -
+28-10-2023 00:24:30 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/index.html - - - 200 - text/html;charset=utf-8 293.6291ms
+28-10-2023 00:24:30 [Information] Request starting HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - -
+28-10-2023 00:24:30 [Information] Request starting HTTP/2 GET https://localhost:7139/_vs/browserLink - -
+28-10-2023 00:24:30 [Information] Request finished HTTP/2 GET https://localhost:7139/_framework/aspnetcore-browser-refresh.js - - - 200 12362 application/javascript;+charset=utf-8 12.2112ms
+28-10-2023 00:24:30 [Information] Request finished HTTP/2 GET https://localhost:7139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.3601ms
+28-10-2023 00:24:30 [Information] Request starting HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - -
+28-10-2023 00:24:30 [Information] Request finished HTTP/2 GET https://localhost:7139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 85.4821ms
+28-10-2023 00:27:41 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+28-10-2023 00:27:41 [Information] Now listening on: "http://localhost:5139"
+28-10-2023 00:27:41 [Information] Application started. Press Ctrl+C to shut down.
+28-10-2023 00:27:41 [Information] Hosting environment: "Development"
+28-10-2023 00:27:41 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+28-10-2023 00:27:42 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger - -
+28-10-2023 00:27:42 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger - - - 301 0 - 84.7894ms
+28-10-2023 00:27:42 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger/index.html - -
+28-10-2023 00:27:43 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger/swagger-ui.css - -
+28-10-2023 00:27:43 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger/swagger-ui-bundle.js - -
+28-10-2023 00:27:43 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger/swagger-ui-standalone-preset.js - -
+28-10-2023 00:27:43 [Information] Request starting HTTP/1.1 GET http://localhost:5139/_vs/browserLink - -
+28-10-2023 00:27:43 [Information] Request starting HTTP/1.1 GET http://localhost:5139/_framework/aspnetcore-browser-refresh.js - -
+28-10-2023 00:27:43 [Information] Request finished HTTP/1.1 GET http://localhost:5139/_framework/aspnetcore-browser-refresh.js - - - 200 12362 application/javascript;+charset=utf-8 4.0016ms
+28-10-2023 00:27:43 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger/index.html - - - 200 - text/html;charset=utf-8 222.9176ms
+28-10-2023 00:27:43 [Information] Request finished HTTP/1.1 GET http://localhost:5139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.0187ms
+28-10-2023 00:27:43 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+28-10-2023 00:27:43 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+28-10-2023 00:27:43 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+28-10-2023 00:27:43 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 48.5381ms
+28-10-2023 00:27:43 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 49.9117ms
+28-10-2023 00:27:43 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger/swagger-ui.css - - - 200 143632 text/css 52.8493ms
+28-10-2023 00:27:43 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - -
+28-10-2023 00:27:43 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger/favicon-32x32.png - -
+28-10-2023 00:27:43 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+28-10-2023 00:27:43 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger/favicon-32x32.png - - - 200 628 image/png 1.6540ms
+28-10-2023 00:27:43 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 82.6399ms
+28-10-2023 00:28:11 [Information] Request starting HTTP/1.1 POST http://localhost:5139/api/Kafka/addMessage application/json 76
+28-10-2023 00:28:11 [Warning] Failed to determine the https port for redirect.
+28-10-2023 00:28:11 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+28-10-2023 00:28:11 [Information] Route matched with "{action = \"AddUserToKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUserToKafka(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+28-10-2023 00:29:54 [Information] Executed action "OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)" in 102995.6518ms
+28-10-2023 00:29:54 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+28-10-2023 00:29:54 [Error] [500]: One or more errors occurred. (Status(StatusCode="Internal", Detail="Error starting gRPC call. HttpRequestException: The SSL connection could not be established, see inner exception. AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid", DebugException="System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CompleteHandshake(SslAuthenticationOptions sslAuthenticationOptions)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp2ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)"))
+AutoWrapper.Wrappers.ApiException: One or more errors occurred. (Status(StatusCode="Internal", Detail="Error starting gRPC call. HttpRequestException: The SSL connection could not be established, see inner exception. AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid", DebugException="System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CompleteHandshake(SslAuthenticationOptions sslAuthenticationOptions)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp2ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)"))
+   at OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka(User user) in D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\Controllers\KafkaController.cs:line 31
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+28-10-2023 00:29:54 [Information] Source:[::1] Request: POST http localhost:5139/api/Kafka/addMessage  {
+  "userId": 0,
+  "userName": "qwerty",
+  "password": "11111",
+  "age": 0
+} Responded with [500] in 103172ms
+28-10-2023 00:29:54 [Information] Request finished HTTP/1.1 POST http://localhost:5139/api/Kafka/addMessage application/json 76 - 500 2719 application/json 103189.0012ms
+28-10-2023 00:31:40 [Information] Request starting HTTP/1.1 POST http://localhost:5139/api/Kafka/addMessage application/json 76
+28-10-2023 00:31:40 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+28-10-2023 00:31:40 [Information] Route matched with "{action = \"AddUserToKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUserToKafka(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+28-10-2023 00:35:18 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+28-10-2023 00:35:18 [Information] Now listening on: "http://localhost:5139"
+28-10-2023 00:35:18 [Information] Application started. Press Ctrl+C to shut down.
+28-10-2023 00:35:18 [Information] Hosting environment: "Development"
+28-10-2023 00:35:18 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+28-10-2023 00:35:20 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger/index.html - -
+28-10-2023 00:35:20 [Information] Request starting HTTP/1.1 GET http://localhost:5139/_framework/aspnetcore-browser-refresh.js - -
+28-10-2023 00:35:20 [Information] Request starting HTTP/1.1 GET http://localhost:5139/_vs/browserLink - -
+28-10-2023 00:35:20 [Information] Request finished HTTP/1.1 GET http://localhost:5139/_framework/aspnetcore-browser-refresh.js - - - 200 12362 application/javascript;+charset=utf-8 4.0665ms
+28-10-2023 00:35:20 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger/index.html - - - 200 - text/html;charset=utf-8 310.8769ms
+28-10-2023 00:35:20 [Information] Request finished HTTP/1.1 GET http://localhost:5139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.0636ms
+28-10-2023 00:35:20 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - -
+28-10-2023 00:35:20 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 82.3705ms
+28-10-2023 00:35:36 [Information] Request starting HTTP/1.1 POST http://localhost:5139/api/Kafka/addMessage application/json 76
+28-10-2023 00:35:36 [Warning] Failed to determine the https port for redirect.
+28-10-2023 00:35:36 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+28-10-2023 00:35:36 [Information] Route matched with "{action = \"AddUserToKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUserToKafka(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+28-10-2023 00:42:28 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+28-10-2023 00:42:28 [Information] Now listening on: "http://localhost:5139"
+28-10-2023 00:42:28 [Information] Application started. Press Ctrl+C to shut down.
+28-10-2023 00:42:28 [Information] Hosting environment: "Development"
+28-10-2023 00:42:28 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+28-10-2023 00:42:30 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger/index.html - -
+28-10-2023 00:42:30 [Information] Request starting HTTP/1.1 GET http://localhost:5139/_framework/aspnetcore-browser-refresh.js - -
+28-10-2023 00:42:30 [Information] Request starting HTTP/1.1 GET http://localhost:5139/_vs/browserLink - -
+28-10-2023 00:42:30 [Information] Request finished HTTP/1.1 GET http://localhost:5139/_framework/aspnetcore-browser-refresh.js - - - 200 12362 application/javascript;+charset=utf-8 6.4699ms
+28-10-2023 00:42:30 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger/index.html - - - 200 - text/html;charset=utf-8 299.1508ms
+28-10-2023 00:42:30 [Information] Request finished HTTP/1.1 GET http://localhost:5139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.1736ms
+28-10-2023 00:42:30 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - -
+28-10-2023 00:42:31 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 96.0087ms
+28-10-2023 00:43:00 [Information] Request starting HTTP/1.1 POST http://localhost:5139/api/User/addUser application/json 83
+28-10-2023 00:43:00 [Warning] Failed to determine the https port for redirect.
+28-10-2023 00:43:00 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.UserController.AddUser (OsnovanieWebApp)"'
+28-10-2023 00:43:00 [Information] Route matched with "{action = \"AddUser\", controller = \"User\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUser(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.UserController" ("OsnovanieWebApp").
+28-10-2023 00:44:03 [Information] Executed action "OsnovanieWebApp.Controllers.UserController.AddUser (OsnovanieWebApp)" in 62660.5895ms
+28-10-2023 00:44:03 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.UserController.AddUser (OsnovanieWebApp)"'
+28-10-2023 00:44:03 [Error] [500]: One or more errors occurred. (Status(StatusCode="Internal", Detail="Error starting gRPC call. HttpRequestException: The SSL connection could not be established, see inner exception. AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid", DebugException="System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CompleteHandshake(SslAuthenticationOptions sslAuthenticationOptions)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp2ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)"))
+AutoWrapper.Wrappers.ApiException: One or more errors occurred. (Status(StatusCode="Internal", Detail="Error starting gRPC call. HttpRequestException: The SSL connection could not be established, see inner exception. AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid", DebugException="System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CompleteHandshake(SslAuthenticationOptions sslAuthenticationOptions)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp2ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)"))
+   at OsnovanieWebApp.Controllers.UserController.AddUser(User user) in D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\Controllers\UserController.cs:line 61
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+28-10-2023 00:44:03 [Information] Source:[::1] Request: POST http localhost:5139/api/User/addUser  {
+  "userId": 0,
+  "userName": "new_user1",
+  "password": "123456789",
+  "age": 0
+} Responded with [500] in 62855ms
+28-10-2023 00:44:03 [Information] Request finished HTTP/1.1 POST http://localhost:5139/api/User/addUser application/json 83 - 500 2719 application/json 62860.6617ms
+28-10-2023 00:47:22 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+28-10-2023 00:47:23 [Information] Now listening on: "http://localhost:5139"
+28-10-2023 00:47:23 [Information] Application started. Press Ctrl+C to shut down.
+28-10-2023 00:47:23 [Information] Hosting environment: "Development"
+28-10-2023 00:47:23 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+28-10-2023 00:47:24 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger/index.html - -
+28-10-2023 00:47:25 [Information] Request starting HTTP/1.1 GET http://localhost:5139/_framework/aspnetcore-browser-refresh.js - -
+28-10-2023 00:47:25 [Information] Request starting HTTP/1.1 GET http://localhost:5139/_vs/browserLink - -
+28-10-2023 00:47:25 [Information] Request finished HTTP/1.1 GET http://localhost:5139/_framework/aspnetcore-browser-refresh.js - - - 200 12362 application/javascript;+charset=utf-8 6.2162ms
+28-10-2023 00:47:25 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger/index.html - - - 200 - text/html;charset=utf-8 299.9166ms
+28-10-2023 00:47:25 [Information] Request finished HTTP/1.1 GET http://localhost:5139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.9438ms
+28-10-2023 00:47:25 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - -
+28-10-2023 00:47:25 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 95.0007ms
+28-10-2023 00:47:40 [Information] Request starting HTTP/1.1 POST http://localhost:5139/api/Kafka/addMessage application/json 78
+28-10-2023 00:47:40 [Warning] Failed to determine the https port for redirect.
+28-10-2023 00:47:40 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+28-10-2023 00:47:40 [Information] Route matched with "{action = \"AddUserToKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUserToKafka(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+28-10-2023 00:48:21 [Information] Executed action "OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)" in 40206.3056ms
+28-10-2023 00:48:21 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+28-10-2023 00:48:21 [Error] [500]: One or more errors occurred. (Status(StatusCode="Internal", Detail="Error starting gRPC call. HttpRequestException: The SSL connection could not be established, see inner exception. AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid", DebugException="System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CompleteHandshake(SslAuthenticationOptions sslAuthenticationOptions)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp2ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)"))
+AutoWrapper.Wrappers.ApiException: One or more errors occurred. (Status(StatusCode="Internal", Detail="Error starting gRPC call. HttpRequestException: The SSL connection could not be established, see inner exception. AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid", DebugException="System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CompleteHandshake(SslAuthenticationOptions sslAuthenticationOptions)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp2ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)"))
+   at OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka(User user) in D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\Controllers\KafkaController.cs:line 31
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+28-10-2023 00:48:21 [Information] Source:[::1] Request: POST http localhost:5139/api/Kafka/addMessage  {
+  "userId": 0,
+  "userName": "qwerty",
+  "password": "1234567",
+  "age": 0
+} Responded with [500] in 40389ms
+28-10-2023 00:48:21 [Information] Request finished HTTP/1.1 POST http://localhost:5139/api/Kafka/addMessage application/json 78 - 500 2719 application/json 40394.7581ms
+28-10-2023 00:59:02 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+28-10-2023 00:59:02 [Information] Now listening on: "http://localhost:5139"
+28-10-2023 00:59:02 [Information] Application started. Press Ctrl+C to shut down.
+28-10-2023 00:59:02 [Information] Hosting environment: "Development"
+28-10-2023 00:59:02 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+28-10-2023 00:59:04 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger/index.html - -
+28-10-2023 00:59:04 [Information] Request starting HTTP/1.1 GET http://localhost:5139/_framework/aspnetcore-browser-refresh.js - -
+28-10-2023 00:59:04 [Information] Request starting HTTP/1.1 GET http://localhost:5139/_vs/browserLink - -
+28-10-2023 00:59:04 [Information] Request finished HTTP/1.1 GET http://localhost:5139/_framework/aspnetcore-browser-refresh.js - - - 200 12362 application/javascript;+charset=utf-8 4.4310ms
+28-10-2023 00:59:04 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger/index.html - - - 200 - text/html;charset=utf-8 392.5303ms
+28-10-2023 00:59:04 [Information] Request finished HTTP/1.1 GET http://localhost:5139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 90.1341ms
+28-10-2023 00:59:04 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - -
+28-10-2023 00:59:04 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 98.1059ms
+28-10-2023 00:59:22 [Information] Request starting HTTP/1.1 POST http://localhost:5139/api/Kafka/addMessage application/json 80
+28-10-2023 00:59:22 [Warning] Failed to determine the https port for redirect.
+28-10-2023 00:59:22 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+28-10-2023 00:59:22 [Information] Route matched with "{action = \"AddUserToKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUserToKafka(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+28-10-2023 01:04:15 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+28-10-2023 01:04:15 [Information] Now listening on: "http://localhost:5139"
+28-10-2023 01:04:15 [Information] Application started. Press Ctrl+C to shut down.
+28-10-2023 01:04:15 [Information] Hosting environment: "Development"
+28-10-2023 01:04:15 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+28-10-2023 01:04:17 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger/index.html - -
+28-10-2023 01:04:17 [Information] Request starting HTTP/1.1 GET http://localhost:5139/_framework/aspnetcore-browser-refresh.js - -
+28-10-2023 01:04:17 [Information] Request starting HTTP/1.1 GET http://localhost:5139/_vs/browserLink - -
+28-10-2023 01:04:17 [Information] Request finished HTTP/1.1 GET http://localhost:5139/_framework/aspnetcore-browser-refresh.js - - - 200 12362 application/javascript;+charset=utf-8 14.2610ms
+28-10-2023 01:04:17 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger/index.html - - - 200 - text/html;charset=utf-8 316.7243ms
+28-10-2023 01:04:17 [Information] Request finished HTTP/1.1 GET http://localhost:5139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.4621ms
+28-10-2023 01:04:17 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - -
+28-10-2023 01:04:17 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 88.0272ms
+28-10-2023 01:04:34 [Information] Request starting HTTP/1.1 POST http://localhost:5139/api/Kafka/addMessage application/json 75
+28-10-2023 01:04:34 [Warning] Failed to determine the https port for redirect.
+28-10-2023 01:04:34 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+28-10-2023 01:04:34 [Information] Route matched with "{action = \"AddUserToKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUserToKafka(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+28-10-2023 01:13:24 [Information] User profile is available. Using '"C:\Users\Professional\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+28-10-2023 01:13:25 [Information] Now listening on: "http://localhost:5139"
+28-10-2023 01:13:25 [Information] Application started. Press Ctrl+C to shut down.
+28-10-2023 01:13:25 [Information] Hosting environment: "Development"
+28-10-2023 01:13:25 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\"
+28-10-2023 01:13:27 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger/index.html - -
+28-10-2023 01:13:28 [Information] Request starting HTTP/1.1 GET http://localhost:5139/_framework/aspnetcore-browser-refresh.js - -
+28-10-2023 01:13:28 [Information] Request starting HTTP/1.1 GET http://localhost:5139/_vs/browserLink - -
+28-10-2023 01:13:28 [Information] Request finished HTTP/1.1 GET http://localhost:5139/_framework/aspnetcore-browser-refresh.js - - - 200 12362 application/javascript;+charset=utf-8 5.4308ms
+28-10-2023 01:13:28 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger/index.html - - - 200 - text/html;charset=utf-8 429.1975ms
+28-10-2023 01:13:28 [Information] Request finished HTTP/1.1 GET http://localhost:5139/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 130.5742ms
+28-10-2023 01:13:28 [Information] Request starting HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - -
+28-10-2023 01:13:28 [Information] Request finished HTTP/1.1 GET http://localhost:5139/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 103.3132ms
+28-10-2023 01:13:41 [Information] Request starting HTTP/1.1 POST http://localhost:5139/api/Kafka/addMessage application/json 77
+28-10-2023 01:13:41 [Warning] Failed to determine the https port for redirect.
+28-10-2023 01:13:41 [Information] Executing endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+28-10-2023 01:13:41 [Information] Route matched with "{action = \"AddUserToKafka\", controller = \"Kafka\"}". Executing controller action with signature "AutoWrapper.Wrappers.ApiResponse AddUserToKafka(OsnovanieService.User)" on controller "OsnovanieWebApp.Controllers.KafkaController" ("OsnovanieWebApp").
+28-10-2023 01:13:54 [Information] Executed action "OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)" in 13723.1756ms
+28-10-2023 01:13:54 [Information] Executed endpoint '"OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka (OsnovanieWebApp)"'
+28-10-2023 01:13:54 [Error] [500]: One or more errors occurred. (Status(StatusCode="Internal", Detail="Error starting gRPC call. HttpRequestException: The SSL connection could not be established, see inner exception. AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid, UntrustedRoot", DebugException="System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid, UntrustedRoot
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CompleteHandshake(SslAuthenticationOptions sslAuthenticationOptions)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp2ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)"))
+AutoWrapper.Wrappers.ApiException: One or more errors occurred. (Status(StatusCode="Internal", Detail="Error starting gRPC call. HttpRequestException: The SSL connection could not be established, see inner exception. AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid, UntrustedRoot", DebugException="System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: NotTimeValid, UntrustedRoot
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CompleteHandshake(SslAuthenticationOptions sslAuthenticationOptions)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp2ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)"))
+   at OsnovanieWebApp.Controllers.KafkaController.AddUserToKafka(User user) in D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\Controllers\KafkaController.cs:line 31
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AutoWrapper.Base.WrapperBase.InvokeAsyncBase(HttpContext context, AutoWrapperMembers awm)
+28-10-2023 01:13:54 [Information] Source:[::1] Request: POST http localhost:5139/api/Kafka/addMessage  {
+  "userId": 0,
+  "userName": "qwerty",
+  "password": "111222",
+  "age": 0
+} Responded with [500] in 13935ms
+28-10-2023 01:13:54 [Information] Request finished HTTP/1.1 POST http://localhost:5139/api/Kafka/addMessage application/json 77 - 500 2749 application/json 13942.2023ms

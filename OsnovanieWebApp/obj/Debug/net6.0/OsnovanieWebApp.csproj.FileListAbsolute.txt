@@ -1,6 +1,7 @@
 D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\bin\Debug\net6.0\appsettings.Development.json
 D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\bin\Debug\net6.0\appsettings.json
 D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\bin\Debug\net6.0\custom.json
+D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\bin\Debug\net6.0\libman.json
 D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\bin\Debug\net6.0\list.json
 D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\bin\Debug\net6.0\view.json
 D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\OsnovanieWebApp\bin\Debug\net6.0\OsnovanieWebApp.exe

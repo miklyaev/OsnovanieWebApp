@@ -15,12 +15,20 @@ namespace GrpcService1.DbService
         public DbSet<TBook> Books => Set<TBook>();
         public DbSet<TAuthor> Authors => Set<TAuthor>();
 
-
         //public ApplicationContext() => Database.EnsureCreated();
+
+        public ApplicationContext()
+        {
+        }
+
+        public ApplicationContext(DbContextOptions<ApplicationContext> options)
+            : base(options)
+        {
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=LearnDb;Username=postgres;Password=dasha2009");
+            //optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=LearnDb;Username=postgres;Password=dasha2009");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

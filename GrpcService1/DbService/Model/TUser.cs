@@ -1,10 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 
 namespace GrpcService1.DbService.Model
 {
     [Table("t_user")]
+    [Index("Age", Name = "Age_Index")]
     public class TUser
     {
         [Key]
@@ -19,7 +21,7 @@ namespace GrpcService1.DbService.Model
 
         [Column("age")]
         public int? Age { get; set; }
-
+       
         [Column("first_name")]
         public string? FirstName { get; set; }
 
