@@ -29,17 +29,19 @@ namespace OsnovanieService
         public Task<ServiceResponse> UpdateBook(Book book);
 
     }
-    public class MainService : IMainService
+    public class MainService : BaseService, IMainService
     {
         public readonly IConfiguration _configuration;
         public readonly ILogger _logger;
         public readonly IDistributedCache _cache;
 
-        public MainService(IConfiguration config, ILogger log, IDistributedCache distributedCache)
+        public MainService(IConfiguration config, ILogger log, IDistributedCache distributedCache) : base(config)
         {
             _configuration = config;
             _logger = log;
             _cache = distributedCache;
+
+            
         }
         public string GetHelloWorld()
         {
@@ -84,33 +86,33 @@ namespace OsnovanieService
             {
                 return JsonConvert.DeserializeObject<ListOfUsers?>(json);
             }
-            using var channel = GrpcChannel.ForAddress("https://localhost:7195");
-            var client = new Greeter.GreeterClient(channel);
+            //using var channel = GrpcChannel.ForAddress("https://localhost:7195");
+            //var client = new Greeter.GreeterClient(channel);
             global::Google.Protobuf.WellKnownTypes.Empty request = new global::Google.Protobuf.WellKnownTypes.Empty();
-            var reply = await client.GetAllUsersAsync(request);
+            var reply = await _client.GetAllUsersAsync(request);
             await _cache.SetStringAsync("all", JsonConvert.SerializeObject(reply));
             return reply;
         }
 
         public async Task<UniqueID> AddUser(User user)
         {
-            using var channel = GrpcChannel.ForAddress("https://localhost:7195");
-            var client = new Greeter.GreeterClient(channel);
-            return await client.AddUserAsync(user);
+            //using var channel = GrpcChannel.ForAddress("https://localhost:7195");
+            //var client = new Greeter.GreeterClient(channel);
+            return await _client.AddUserAsync(user);
         }
 
         public async Task<PersonReply> AddUserToKafka(User user)
         {
-            using var channel = GrpcChannel.ForAddress("https://localhost:7195");
-            var client = new Greeter.GreeterClient(channel);
-            return await client.WriteToKafkaAsync(user);
+            //using var channel = GrpcChannel.ForAddress("https://localhost:7195", new GrpcChannelOptions { HttpHandler = _httpHandler });
+            //var client = new Greeter.GreeterClient(channel);
+            return await _client.WriteToKafkaAsync(user);
         }
 
         public async Task<ListOfUsers> ReadFromKafka(string topic)
         {
-            using var channel = GrpcChannel.ForAddress("https://localhost:7195");
-            var client = new Greeter.GreeterClient(channel);
-            return await client.ReadFromKafkaAsync(new Kafka
+            //using var channel = GrpcChannel.ForAddress("https://localhost:7195");
+            //var client = new Greeter.GreeterClient(channel);
+            return await _client.ReadFromKafkaAsync(new Kafka
             {
                 TopicName = topic
             });
@@ -118,37 +120,37 @@ namespace OsnovanieService
 
         public async Task<UniqueID> AddRegion(Region region)
         {
-            using var channel = GrpcChannel.ForAddress("https://localhost:7195");
-            var client = new Greeter.GreeterClient(channel);
-            return await client.AddRegionAsync(region);
+            //using var channel = GrpcChannel.ForAddress("https://localhost:7195");
+            //var client = new Greeter.GreeterClient(channel);
+            return await _client.AddRegionAsync(region);
         }
 
         public async Task<ServiceResponse> AddSignalToKafka(Signal signal)
         {
-            using var channel = GrpcChannel.ForAddress("https://localhost:7195");
-            var client = new Greeter.GreeterClient(channel);
-            return await client.AddSignalToKafkaAsync(signal);
+            //using var channel = GrpcChannel.ForAddress("https://localhost:7195");
+            //var client = new Greeter.GreeterClient(channel);
+            return await _client.AddSignalToKafkaAsync(signal);
         }
 
         public async Task<ServiceResponse> AddAuthor(Author author)
         {
-            using var channel = GrpcChannel.ForAddress("https://localhost:7195");
-            var client = new Greeter.GreeterClient(channel);
-            return await client.AddAuthorAsync(author);
+            //using var channel = GrpcChannel.ForAddress("https://localhost:7195");
+            //var client = new Greeter.GreeterClient(channel);
+            return await _client.AddAuthorAsync(author);
         }
 
         public async Task<ServiceResponse> AddBook(Book book)
         {
-            using var channel = GrpcChannel.ForAddress("https://localhost:7195");
-            var client = new Greeter.GreeterClient(channel);
-            return await client.AddBookAsync(book);
+            //using var channel = GrpcChannel.ForAddress("https://localhost:7195");
+            //var client = new Greeter.GreeterClient(channel);
+            return await _client.AddBookAsync(book);
         }
 
         public async Task<ServiceResponse> UpdateBook(Book book)
         {
-            using var channel = GrpcChannel.ForAddress("https://localhost:7195");
-            var client = new Greeter.GreeterClient(channel);
-            return await client.UpdateBookAsync(book);
+            //using var channel = GrpcChannel.ForAddress("https://localhost:7195");
+            //var client = new Greeter.GreeterClient(channel);
+            return await _client.UpdateBookAsync(book);
         }
 
 

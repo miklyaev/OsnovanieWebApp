@@ -1,4 +1,5 @@
 ﻿using AutoWrapper.Wrappers;
+using Grpc.Net.Client;
 using Microsoft.AspNetCore.Mvc;
 using OsnovanieService;
 using ILogger = Serilog.ILogger;
