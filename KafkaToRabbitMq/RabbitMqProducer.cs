@@ -30,14 +30,14 @@ namespace KafkaToRabbitMq
         public RabbitMqProducer(IConfiguration configuration)
         {
             _configuration = configuration;
-            _exchange = configuration["EXCHANGE"];
-            _queue = configuration["QUEUE"];
+            _exchange = configuration["Bus:EXCHANGE"];
+            _queue = configuration["Bus:QUEUE"];
 
             try
             {
-                var factory = new ConnectionFactory() { HostName = _configuration["HostName"],
-                                                        UserName = _configuration["UserName"],
-                                                        Password = _configuration["Password"] 
+                var factory = new ConnectionFactory() { HostName = _configuration["Bus:HostName"],
+                                                        UserName = _configuration["Bus:UserName"],
+                                                        Password = _configuration["Bus:Password"] 
                                                        };
                 _connection = factory.CreateConnection();
                 _channel = _connection.CreateModel();

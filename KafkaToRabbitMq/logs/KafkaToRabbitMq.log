@@ -1223,3 +1223,133 @@
 2023-11-06 00:54:51.912 +07:00 [INF] Application started. Press Ctrl+C to shut down.
 2023-11-06 00:54:51.917 +07:00 [INF] Hosting environment: Development
 2023-11-06 00:54:51.919 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-11-06 19:49:55.876 +07:00 [INF] Инициализация успешно завершена.
+2023-11-06 19:49:55.898 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-06 19:49:55.904 +07:00 [INF] Hosting environment: Development
+2023-11-06 19:49:55.906 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-11-06 19:56:42.414 +07:00 [ERR] Error Kafka consumer: Application maximum poll interval (300000ms) exceeded by 286ms
+2023-11-06 19:58:34.464 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "John99",
+  "Password": "90909090",
+  "Age": 0
+}' at: 'CSharp_Topic [[0]] @149'.
+2023-11-06 19:58:51.192 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=149, key=2023-11-06 19:58:00, message={
+  "UserId": 0,
+  "UserName": "John99",
+  "Password": "90909090",
+  "Age": 0
+}
+
+2023-11-06 20:01:11.038 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "ZZZZZ",
+  "Password": "90909090",
+  "Age": 0
+}' at: 'CSharp_Topic [[0]] @150'.
+2023-11-06 20:01:16.058 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=150, key=06.11.2023 20:01:00, message={
+  "UserId": 0,
+  "UserName": "ZZZZZ",
+  "Password": "90909090",
+  "Age": 0
+}
+
+2023-11-06 22:16:39.950 +07:00 [INF] Инициализация успешно завершена.
+2023-11-06 22:16:42.631 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "A1",
+  "Password": "werwerw",
+  "Age": 0
+}' at: 'CSharp_Topic [[0]] @151'.
+2023-11-06 22:16:42.632 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-06 22:16:54.330 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=151, key=06.11.2023 22:09:06.700, message={
+  "UserId": 0,
+  "UserName": "A1",
+  "Password": "werwerw",
+  "Age": 0
+}
+
+2023-11-06 22:16:57.707 +07:00 [INF] Hosting environment: Development
+2023-11-06 22:17:02.511 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-11-06 22:19:45.962 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "A2",
+  "Password": "797979",
+  "Age": 0
+}' at: 'CSharp_Topic [[0]] @152'.
+2023-11-06 22:19:51.626 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=152, key=06.11.2023 22:19:42.530, message={
+  "UserId": 0,
+  "UserName": "A2",
+  "Password": "797979",
+  "Age": 0
+}
+
+2023-11-06 23:07:52.539 +07:00 [INF] Инициализация успешно завершена.
+2023-11-06 23:07:55.845 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "A3",
+  "Password": "797979",
+  "Age": 0
+}' at: 'CSharp_Topic [[0]] @153'.
+2023-11-06 23:07:55.845 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-06 23:07:57.371 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=153, key=06.11.2023 22:21:01.257, message={
+  "UserId": 0,
+  "UserName": "A3",
+  "Password": "797979",
+  "Age": 0
+}
+
+2023-11-06 23:07:57.377 +07:00 [INF] Hosting environment: Development
+2023-11-06 23:07:57.377 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-11-06 23:08:03.879 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "A4",
+  "Password": "sdfsfdsf",
+  "Age": 0
+}' at: 'CSharp_Topic [[0]] @154'.
+2023-11-06 23:08:06.017 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=154, key=06.11.2023 22:41:07.301, message={
+  "UserId": 0,
+  "UserName": "A4",
+  "Password": "sdfsfdsf",
+  "Age": 0
+}
+
+2023-11-06 23:09:27.610 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "A5",
+  "Password": "46464646",
+  "Age": 0
+}' at: 'CSharp_Topic [[0]] @155'.
+2023-11-06 23:09:29.279 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=155, key=06.11.2023 23:09:24.593, message={
+  "UserId": 0,
+  "UserName": "A5",
+  "Password": "46464646",
+  "Age": 0
+}
+
+2023-11-06 23:11:01.237 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "B1",
+  "Password": "46464646",
+  "Age": 0
+}' at: 'CSharp_Topic [[0]] @156'.
+2023-11-06 23:11:03.205 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=156, key=06.11.2023 23:10:58.770, message={
+  "UserId": 0,
+  "UserName": "B1",
+  "Password": "46464646",
+  "Age": 0
+}
+
+2023-11-06 23:12:36.638 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "B2",
+  "Password": "46464646",
+  "Age": 0
+}' at: 'CSharp_Topic [[0]] @157'.
+2023-11-06 23:12:37.340 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=157, key=06.11.2023 23:12:35.637, message={
+  "UserId": 0,
+  "UserName": "B2",
+  "Password": "46464646",
+  "Age": 0
+}
+

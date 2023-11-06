@@ -13,6 +13,7 @@ namespace KafkaToRabbitMq
         private readonly IRabbitMqProducer _senderToRabbit;
         private readonly IConfiguration _configuration;
 
+
         public Worker(ILogger logger, IKafkaReceiverService receiver, IRabbitMqProducer sender, IConfiguration configuration)
         {
             _logger = logger;
@@ -35,13 +36,12 @@ namespace KafkaToRabbitMq
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-
             try
             {
                 while (!stoppingToken.IsCancellationRequested)
                 {
 
-                    var result = await _receiver.ReadFromKafka();                   
+                    var result = await _receiver.ReadFromKafka();
 
                     if (result != null)
                     {
@@ -49,7 +49,8 @@ namespace KafkaToRabbitMq
                         _receiver.Commit(result);
                     }
 
-                    Thread.Sleep(Convert.ToInt16(_configuration["POLLING_INTERVAL"]));                 
+                    await Task.Delay(Convert.ToInt16(_configuration["POLLING_INTERVAL"]));
+                    //Thread.Sleep(Convert.ToInt16(_configuration["POLLING_INTERVAL"]));                 
                 }
             }
             catch (OperationCanceledException)

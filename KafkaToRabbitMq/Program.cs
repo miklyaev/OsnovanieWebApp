@@ -13,8 +13,8 @@ IHost host = (IHost)Host.CreateDefaultBuilder(args)
             .AddJsonFile("kafka_config.json", optional: true, reloadOnChange: true);
     })
     .ConfigureServices((context, services) =>
-    {
-        services.AddSingleton<ICustomConsumer<string, string>, Consumer<string, string>>();
+    {       
+        services.AddTransient<ICustomConsumer<string, string>, Consumer<string, string>>();
         services.AddSingleton<IKafkaReceiverService, KafkaReceiverService>();
         services.AddSingleton<IRabbitMqProducer, RabbitMqProducer>();
         services.AddHostedService<Worker>();
