@@ -1,0 +1,140 @@
+using Grpc.Net.Client;
+using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
+using OsnovanieService.Model;
+using Serilog;
+
+namespace OsnovanieService
+{
+    public class Test
+    {
+        public int TypeId { get; set; }
+        public string TypeName { get; set; }
+    }
+    public interface IMainService
+    {
+        public string GetHelloWorld();
+        public CheckRequestResponse ViewRequest();
+        public ListRequestInfo ListRequest();
+        public Task<User?> GetUser(int userId);
+        public Task<ListOfUsers?> GetAllUsers();
+        public Task<UniqueID> AddUser(User user);
+        public Task<UniqueID> AddRegion(Region region);
+        public Task<PersonReply> AddUserToKafka(User user);
+        public Task<ListOfUsers> ReadFromKafka(string topic);
+        public Task<ServiceResponse> AddSignalToKafka(Signal signal);
+        public Task<ServiceResponse> AddAuthor(Author author);
+        public Task<ServiceResponse> AddBook(Book book);
+        public Task<ServiceResponse> UpdateBook(Book book);
+
+    }
+    public class MainService : BaseService, IMainService
+    {
+        private readonly IConfiguration _configuration;
+        private readonly ILogger _logger;
+        private readonly IDistributedCache _cache;
+
+        public MainService(IConfiguration configuration, ILogger logger, IDistributedCache distributedCache)
+            : base(configuration)
+        {
+            _configuration = configuration;
+            _logger = logger;
+            _cache = distributedCache;
+        }
+        public string GetHelloWorld()
+        {
+            _logger.Information("Hello world!!!");
+            return "Hello world!!!";
+        }
+
+        public CheckRequestResponse ViewRequest()
+        {
+            var jsonString = File.ReadAllText("view.json");
+            return JsonConvert.DeserializeObject<CheckRequestResponse>(jsonString);
+        }
+
+        public ListRequestInfo ListRequest()
+        {
+            var jsonString = File.ReadAllText("list.json");
+            return JsonConvert.DeserializeObject<ListRequestInfo>(jsonString);
+        }
+
+        public async Task<User?> GetUser(int userId)
+        {
+            var json = await _cache.GetStringAsync(Convert.ToString(userId));
+            if (!string.IsNullOrEmpty(json))
+            {
+                return JsonConvert.DeserializeObject<User>(json);
+            }
+            using var channel = GrpcChannel.ForAddress("https://localhost:7195");
+            var client = new Greeter.GreeterClient(channel);
+            UniqueID request = new UniqueID
+            {
+                Id = userId
+            };
+            var reply = await client.GetUserAsync(request);
+            await _cache.SetStringAsync(Convert.ToString(userId), JsonConvert.SerializeObject(reply));
+            return reply;
+        }
+
+        public async Task<ListOfUsers?> GetAllUsers()
+        {
+            var json = await _cache.GetStringAsync("all");
+            if (!string.IsNullOrEmpty(json))
+            {
+                return JsonConvert.DeserializeObject<ListOfUsers?>(json);
+            }
+
+            global::Google.Protobuf.WellKnownTypes.Empty request = new global::Google.Protobuf.WellKnownTypes.Empty();
+            var reply = await _client.GetAllUsersAsync(request);
+            await _cache.SetStringAsync("all", JsonConvert.SerializeObject(reply));
+            return reply;
+        }
+
+        public async Task<UniqueID> AddUser(User user)
+        {
+            return await _client.AddUserAsync(user);
+        }
+
+        public async Task<PersonReply> AddUserToKafka(User user)
+        {
+            return await _client.WriteToKafkaAsync(user);
+        }
+
+        public async Task<ListOfUsers> ReadFromKafka(string topic)
+        {
+            return await _client.ReadFromKafkaAsync(new Kafka
+            {
+                TopicName = topic
+            });
+        }
+
+        public async Task<UniqueID> AddRegion(Region region)
+        {
+            return await _client.AddRegionAsync(region);
+        }
+
+        public async Task<ServiceResponse> AddSignalToKafka(Signal signal)
+        {
+            return await _client.AddSignalToKafkaAsync(signal);
+        }
+
+        public async Task<ServiceResponse> AddAuthor(Author author)
+        {
+            return await _client.AddAuthorAsync(author);
+        }
+
+        public async Task<ServiceResponse> AddBook(Book book)
+        {
+            return await _client.AddBookAsync(book);
+        }
+
+        public async Task<ServiceResponse> UpdateBook(Book book)
+        {
+            return await _client.UpdateBookAsync(book);
+        }
+
+
+    }
+}

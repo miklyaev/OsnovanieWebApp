@@ -1,0 +1,12 @@
+{
+
+  "login": "v.kosolapov@mail.ru",
+  "pass": "",
+  "filter": {
+          "firstName": "Акакий",
+          "middleName": "Валентинович",
+          "lastName": "Петров",
+          "company": "ООО \"Ромашка\"",
+          "HideArchived": true
+          }
+}

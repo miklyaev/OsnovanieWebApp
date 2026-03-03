@@ -1,0 +1,1362 @@
+2023-01-16 23:09:16.713 +07:00 [INF] Инициализация. Завершена успешно.
+2023-01-16 23:09:16.730 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-16 23:09:16.735 +07:00 [INF] Hosting environment: Development
+2023-01-16 23:09:16.736 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\OsnovanieWebApp\KafkaToRabbitMq
+2023-01-16 23:09:17.132 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=5, key=15.01.2023 02:08:44.509, message={
+  "UserId": 0,
+  "UserName": "John",
+  "Password": "Biden",
+  "Age": 90
+}
+
+2023-01-16 23:09:18.151 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=6, key=15.01.2023 02:09:03.640, message={
+  "UserId": 0,
+  "UserName": "John2",
+  "Password": "Biden2",
+  "Age": 90
+}
+
+2023-01-16 23:09:19.157 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=7, key=15.01.2023 02:29:47.614, message={
+  "UserId": 0,
+  "UserName": "Ivan",
+  "Password": "Putin",
+  "Age": 60
+}
+
+2023-01-16 23:25:08.753 +07:00 [INF] Инициализация. Завершена успешно.
+2023-01-16 23:25:09.779 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-16 23:25:09.785 +07:00 [INF] Hosting environment: Development
+2023-01-16 23:25:09.786 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\OsnovanieWebApp\KafkaToRabbitMq
+2023-01-16 23:25:32.887 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=5, key=15.01.2023 02:08:44.509, message={
+  "UserId": 0,
+  "UserName": "John",
+  "Password": "Biden",
+  "Age": 90
+}
+
+2023-01-16 23:25:34.932 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=6, key=15.01.2023 02:09:03.640, message={
+  "UserId": 0,
+  "UserName": "John2",
+  "Password": "Biden2",
+  "Age": 90
+}
+
+2023-01-16 23:25:36.951 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=7, key=15.01.2023 02:29:47.614, message={
+  "UserId": 0,
+  "UserName": "Ivan",
+  "Password": "Putin",
+  "Age": 60
+}
+
+2023-01-16 23:25:38.971 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=8, key=16.01.2023 23:22:41.678, message={
+  "UserId": 0,
+  "UserName": "Vovan",
+  "Password": "Vovan",
+  "Age": 50
+}
+
+2023-01-16 23:25:40.987 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=9, key=16.01.2023 23:22:59.624, message={
+  "UserId": 0,
+  "UserName": "Vovan2",
+  "Password": "Vovan2",
+  "Age": 50
+}
+
+2023-01-16 23:28:03.801 +07:00 [INF] Инициализация. Завершена успешно.
+2023-01-16 23:28:04.826 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-16 23:28:04.831 +07:00 [INF] Hosting environment: Development
+2023-01-16 23:28:04.832 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\OsnovanieWebApp\KafkaToRabbitMq
+2023-01-16 23:29:04.465 +07:00 [INF] Application is shutting down...
+2023-01-16 23:33:44.738 +07:00 [INF] Инициализация успешно завершена.
+2023-01-16 23:33:45.764 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-16 23:33:45.770 +07:00 [INF] Hosting environment: Development
+2023-01-16 23:33:45.771 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\OsnovanieWebApp\KafkaToRabbitMq
+2023-01-16 23:33:54.910 +07:00 [INF] Application is shutting down...
+2023-01-16 23:33:54.924 +07:00 [INF] stoppingToken.IsCancellationRequested = True
+2023-01-16 23:35:46.409 +07:00 [INF] Инициализация успешно завершена.
+2023-01-16 23:35:47.450 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-16 23:35:47.456 +07:00 [INF] Hosting environment: Development
+2023-01-16 23:35:47.458 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\OsnovanieWebApp\KafkaToRabbitMq
+2023-01-16 23:35:56.468 +07:00 [INF] Инициализация успешно завершена.
+2023-01-16 23:35:57.506 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-16 23:35:57.512 +07:00 [INF] Hosting environment: Development
+2023-01-16 23:35:57.513 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\OsnovanieWebApp\KafkaToRabbitMq
+2023-01-16 23:36:08.312 +07:00 [INF] Application is shutting down...
+2023-01-16 23:36:08.315 +07:00 [INF] Получена команда Stop. cancellationToken.IsCancellationRequested = False
+2023-01-16 23:36:08.326 +07:00 [INF] stoppingToken.IsCancellationRequested = True
+2023-02-04 01:20:18.606 +07:00 [INF] Инициализация успешно завершена.
+2023-02-04 01:20:24.725 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=10, key=04.02.2023 01:15:48.560, message={
+  "UserId": 0,
+  "UserName": "string",
+  "Password": "string",
+  "Age": 50
+}
+
+2023-02-04 01:20:24.757 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=11, key=04.02.2023 01:18:06.238, message={
+  "UserId": 0,
+  "UserName": "string",
+  "Password": "string",
+  "Age": 51
+}
+
+2023-02-04 01:21:05.150 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=12, key=04.02.2023 01:21:04.352, message={
+  "UserId": 0,
+  "UserName": "string",
+  "Password": "string",
+  "Age": 20
+}
+
+2023-02-04 01:24:25.345 +07:00 [INF] Инициализация успешно завершена.
+2023-02-04 01:28:43.813 +07:00 [INF] Инициализация успешно завершена.
+2023-02-04 01:29:54.278 +07:00 [INF] Инициализация успешно завершена.
+2023-02-04 01:31:56.229 +07:00 [INF] Инициализация успешно завершена.
+2023-02-04 01:32:21.329 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "string",
+  "Password": "string",
+  "Age": 70
+}' at: 'CSharp_Topic [[0]] @13'.
+2023-02-04 01:32:21.331 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=13, key=04.02.2023 01:31:05.909, message={
+  "UserId": 0,
+  "UserName": "string",
+  "Password": "string",
+  "Age": 70
+}
+
+2023-02-04 01:37:41.226 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "string",
+  "Password": "string",
+  "Age": 70
+}' at: 'CSharp_Topic [[0]] @14'.
+2023-02-04 01:37:41.233 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=14, key=04.02.2023 01:32:59.363, message={
+  "UserId": 0,
+  "UserName": "string",
+  "Password": "string",
+  "Age": 70
+}
+
+2023-02-05 00:55:40.519 +07:00 [INF] Инициализация успешно завершена.
+2023-02-05 01:38:37.214 +07:00 [INF] Инициализация успешно завершена.
+2023-02-05 01:41:29.733 +07:00 [INF] Инициализация успешно завершена.
+2023-02-05 01:44:14.221 +07:00 [INF] Инициализация успешно завершена.
+2023-02-05 01:47:49.181 +07:00 [INF] Инициализация успешно завершена.
+2023-02-05 01:57:19.883 +07:00 [INF] Инициализация успешно завершена.
+2023-02-11 00:57:37.260 +07:00 [INF] Инициализация успешно завершена.
+2023-02-11 00:57:39.313 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2054ms in state CONNECT)
+2023-02-11 00:57:39.315 +07:00 [ERR] Error Kafka consumer: 1/1 brokers are down
+2023-02-11 00:57:42.307 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2033ms in state CONNECT, 1 identical error(s) suppressed)
+2023-02-11 00:58:12.488 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2043ms in state CONNECT, 10 identical error(s) suppressed)
+2023-02-11 00:58:51.139 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2053ms in state CONNECT, 10 identical error(s) suppressed)
+2023-02-11 00:59:14.532 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2038ms in state CONNECT, 10 identical error(s) suppressed)
+2023-02-11 00:59:44.724 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2050ms in state CONNECT, 10 identical error(s) suppressed)
+2023-02-11 01:03:47.322 +07:00 [INF] Инициализация успешно завершена.
+2023-02-11 01:03:49.368 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2045ms in state CONNECT)
+2023-02-11 01:03:49.370 +07:00 [ERR] Error Kafka consumer: 1/1 brokers are down
+2023-02-11 01:03:52.390 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2040ms in state CONNECT, 1 identical error(s) suppressed)
+2023-02-11 01:04:22.539 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2051ms in state CONNECT, 10 identical error(s) suppressed)
+2023-02-11 01:04:52.750 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2061ms in state CONNECT, 10 identical error(s) suppressed)
+2023-02-11 01:05:22.910 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2054ms in state CONNECT, 10 identical error(s) suppressed)
+2023-02-11 01:05:54.548 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/bootstrap: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2444ms in state CONNECT, 8 identical error(s) suppressed)
+2023-02-11 01:35:26.793 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 12:48:17.477 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 12:48:17.885 +07:00 [INF] Consumed message '{
+  "TagName": "Qwerty",
+  "TagValue": "string",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @15'.
+2023-03-18 12:48:17.887 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=15, key=18.03.2023 00:23:20.908, message={
+  "TagName": "Qwerty",
+  "TagValue": "string",
+  "TagType": "string"
+}
+
+2023-03-18 12:53:09.710 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 12:55:18.101 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 12:56:27.543 +07:00 [INF] Consumed message '{
+  "TagName": "FloatTag",
+  "TagValue": "678.9",
+  "TagType": "float"
+}' at: 'CSharp_Topic [[0]] @16'.
+2023-03-18 12:56:27.544 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=16, key=18.03.2023 12:56:20.487, message={
+  "TagName": "FloatTag",
+  "TagValue": "678.9",
+  "TagType": "float"
+}
+
+2023-03-18 12:57:49.299 +07:00 [INF] Consumed message '{
+  "TagName": "FloatTag",
+  "TagValue": "678.9",
+  "TagType": "float"
+}' at: 'CSharp_Topic [[0]] @17'.
+2023-03-18 12:57:49.301 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=17, key=18.03.2023 12:57:38.223, message={
+  "TagName": "FloatTag",
+  "TagValue": "678.9",
+  "TagType": "float"
+}
+
+2023-03-18 12:59:08.938 +07:00 [INF] Consumed message '{
+  "TagName": "FloatTag",
+  "TagValue": "678.9",
+  "TagType": "float"
+}' at: 'CSharp_Topic [[0]] @18'.
+2023-03-18 12:59:08.940 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=18, key=18.03.2023 12:58:29.744, message={
+  "TagName": "FloatTag",
+  "TagValue": "678.9",
+  "TagType": "float"
+}
+
+2023-03-18 13:11:53.333 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 13:20:38.410 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 13:35:37.191 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 13:35:37.216 +07:00 [INF] Consumed message '{
+  "TagName": "Tag4",
+  "TagValue": "string",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @19'.
+2023-03-18 13:35:37.218 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=19, key=18.03.2023 13:24:19.535, message={
+  "TagName": "Tag4",
+  "TagValue": "string",
+  "TagType": "string"
+}
+
+2023-03-18 13:35:37.232 +07:00 [INF] Consumed message '{
+  "TagName": "Tag5",
+  "TagValue": "string",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @20'.
+2023-03-18 13:35:37.233 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=20, key=18.03.2023 13:25:44.033, message={
+  "TagName": "Tag5",
+  "TagValue": "string",
+  "TagType": "string"
+}
+
+2023-03-18 13:35:37.238 +07:00 [INF] Consumed message '{
+  "TagName": "Tag5",
+  "TagValue": "rtyry",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @21'.
+2023-03-18 13:35:37.239 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=21, key=18.03.2023 13:26:14.273, message={
+  "TagName": "Tag5",
+  "TagValue": "rtyry",
+  "TagType": "string"
+}
+
+2023-03-18 13:36:18.391 +07:00 [INF] Consumed message '{
+  "TagName": "Tag5",
+  "TagValue": "234.7",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @22'.
+2023-03-18 13:36:18.398 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=22, key=18.03.2023 13:36:17.389, message={
+  "TagName": "Tag5",
+  "TagValue": "234.7",
+  "TagType": "string"
+}
+
+2023-03-18 18:21:18.051 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 18:22:57.734 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 18:34:19.094 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 18:34:19.121 +07:00 [INF] Consumed message 'Test, Test' at: 'CSharp_Topic [[0]] @23'.
+2023-03-18 18:34:19.122 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=23, key=1, message=Test, Test
+
+2023-03-18 18:37:11.312 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 18:43:36.924 +07:00 [INF] Инициализация успешно завершена.
+2023-03-18 18:43:36.942 +07:00 [INF] Consumed message '{
+  "TagName": "Tag5",
+  "TagValue": "333",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @24'.
+2023-03-18 18:43:36.943 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=24, key=18.03.2023 18:37:45.244, message={
+  "TagName": "Tag5",
+  "TagValue": "333",
+  "TagType": "string"
+}
+
+2023-03-18 18:43:36.956 +07:00 [INF] Consumed message '{
+  "TagName": "Tag5",
+  "TagValue": "333",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @25'.
+2023-03-18 18:43:36.958 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=25, key=18.03.2023 18:40:22.803, message={
+  "TagName": "Tag5",
+  "TagValue": "333",
+  "TagType": "string"
+}
+
+2023-03-18 18:44:35.711 +07:00 [INF] Consumed message '{
+  "TagName": "sss",
+  "TagValue": "string",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @26'.
+2023-03-18 18:44:35.717 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=26, key=18.03.2023 18:44:34.703, message={
+  "TagName": "sss",
+  "TagValue": "string",
+  "TagType": "string"
+}
+
+2023-03-18 18:46:29.960 +07:00 [INF] Consumed message '{
+  "TagName": "sss",
+  "TagValue": "string",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @27'.
+2023-03-18 18:46:29.962 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=27, key=18.03.2023 18:46:28.960, message={
+  "TagName": "sss",
+  "TagValue": "string",
+  "TagType": "string"
+}
+
+2023-04-03 00:54:35.401 +07:00 [INF] Инициализация успешно завершена.
+2023-04-03 00:55:05.267 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "lkjlkj",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @40'.
+2023-04-03 00:55:05.268 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=40, key=03.04.2023 00:55:04.230, message={
+  "TagName": "Tag1",
+  "TagValue": "lkjlkj",
+  "TagType": "string"
+}
+
+2023-04-03 00:57:55.418 +07:00 [INF] Инициализация успешно завершена.
+2023-04-03 00:57:55.453 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "ttttt",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @41'.
+2023-04-03 00:57:55.454 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=41, key=03.04.2023 00:55:10.869, message={
+  "TagName": "Tag1",
+  "TagValue": "ttttt",
+  "TagType": "string"
+}
+
+2023-04-03 00:57:55.470 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "kkkkk",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @42'.
+2023-04-03 00:57:55.470 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=42, key=03.04.2023 00:55:31.865, message={
+  "TagName": "Tag1",
+  "TagValue": "kkkkk",
+  "TagType": "string"
+}
+
+2023-04-03 00:58:23.465 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "99",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @43'.
+2023-04-03 00:58:23.467 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=43, key=03.04.2023 00:58:22.453, message={
+  "TagName": "Tag1",
+  "TagValue": "99",
+  "TagType": "int"
+}
+
+2023-04-03 00:58:29.333 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "4545",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @44'.
+2023-04-03 00:58:29.336 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=44, key=03.04.2023 00:58:28.330, message={
+  "TagName": "Tag1",
+  "TagValue": "4545",
+  "TagType": "int"
+}
+
+2023-04-03 01:08:58.247 +07:00 [INF] Инициализация успешно завершена.
+2023-04-03 01:10:46.201 +07:00 [INF] Инициализация успешно завершена.
+2023-04-03 01:11:11.847 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "qqqq",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @45'.
+2023-04-03 01:11:11.849 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=45, key=03.04.2023 01:09:28.398, message={
+  "TagName": "Tag1",
+  "TagValue": "qqqq",
+  "TagType": "string"
+}
+
+2023-04-03 01:11:11.861 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "rrrr",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @46'.
+2023-04-03 01:11:11.863 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=46, key=03.04.2023 01:09:37.496, message={
+  "TagName": "Tag1",
+  "TagValue": "rrrr",
+  "TagType": "string"
+}
+
+2023-04-03 01:12:11.982 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "uuuu",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @47'.
+2023-04-03 01:12:11.984 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=47, key=03.04.2023 01:12:10.986, message={
+  "TagName": "Tag1",
+  "TagValue": "uuuu",
+  "TagType": "string"
+}
+
+2023-04-03 01:16:10.422 +07:00 [INF] Инициализация успешно завершена.
+2023-04-15 00:27:41.541 +07:00 [INF] Инициализация успешно завершена.
+2023-04-15 00:29:35.181 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "qwerty",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @51'.
+2023-04-15 00:29:35.185 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=51, key=15.04.2023 00:29:34.140, message={
+  "TagName": "Tag1",
+  "TagValue": "qwerty",
+  "TagType": "string"
+}
+
+2023-04-15 00:35:25.716 +07:00 [INF] Инициализация успешно завершена.
+2023-04-15 00:35:35.187 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "eterte",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @52'.
+2023-04-15 00:35:35.189 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=52, key=15.04.2023 00:29:48.900, message={
+  "TagName": "Tag1",
+  "TagValue": "eterte",
+  "TagType": "string"
+}
+
+2023-04-15 00:35:59.538 +07:00 [INF] Consumed message '{
+  "TagName": "Tag2",
+  "TagValue": "12",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @53'.
+2023-04-15 00:35:59.545 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=53, key=15.04.2023 00:30:02.452, message={
+  "TagName": "Tag2",
+  "TagValue": "12",
+  "TagType": "int"
+}
+
+2023-04-15 00:36:04.606 +07:00 [INF] Consumed message '{
+  "TagName": "Tag2",
+  "TagValue": "567",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @54'.
+2023-04-15 00:36:04.609 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=54, key=15.04.2023 00:30:08.587, message={
+  "TagName": "Tag2",
+  "TagValue": "567",
+  "TagType": "int"
+}
+
+2023-04-15 00:36:06.190 +07:00 [INF] Consumed message '{
+  "TagName": "Tag2",
+  "TagValue": "578",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @55'.
+2023-04-15 00:36:06.192 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=55, key=15.04.2023 00:30:14.133, message={
+  "TagName": "Tag2",
+  "TagValue": "578",
+  "TagType": "int"
+}
+
+2023-04-25 00:09:42.390 +07:00 [INF] Инициализация успешно завершена.
+2023-04-25 00:10:08.494 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "100",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @56'.
+2023-04-25 00:10:08.496 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=56, key=25.04.2023 00:10:07.469, message={
+  "TagName": "Tag1",
+  "TagValue": "100",
+  "TagType": "int"
+}
+
+2023-04-25 00:10:16.452 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "100",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @56'.
+2023-04-25 00:10:16.453 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=56, key=25.04.2023 00:10:07.469, message={
+  "TagName": "Tag1",
+  "TagValue": "100",
+  "TagType": "int"
+}
+
+2023-04-25 00:10:34.062 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "101",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @57'.
+2023-04-25 00:10:34.064 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=57, key=25.04.2023 00:10:33.046, message={
+  "TagName": "Tag1",
+  "TagValue": "101",
+  "TagType": "int"
+}
+
+2023-04-25 00:19:08.184 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "200",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @58'.
+2023-04-25 00:19:08.187 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=58, key=25.04.2023 00:10:45.511, message={
+  "TagName": "Tag1",
+  "TagValue": "200",
+  "TagType": "int"
+}
+
+2023-04-25 00:19:08.191 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "200",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @59'.
+2023-04-25 00:19:08.192 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=59, key=25.04.2023 00:10:55.861, message={
+  "TagName": "Tag1",
+  "TagValue": "200",
+  "TagType": "int"
+}
+
+2023-04-25 00:19:08.196 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "300",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @60'.
+2023-04-25 00:19:08.198 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=60, key=25.04.2023 00:11:12.219, message={
+  "TagName": "Tag1",
+  "TagValue": "300",
+  "TagType": "int"
+}
+
+2023-04-25 00:19:08.202 +07:00 [INF] Consumed message '{
+  "TagName": "Tag2",
+  "TagValue": "qwerty",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @61'.
+2023-04-25 00:19:08.203 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=61, key=25.04.2023 00:13:09.288, message={
+  "TagName": "Tag2",
+  "TagValue": "qwerty",
+  "TagType": "string"
+}
+
+2023-04-25 00:55:03.915 +07:00 [INF] Инициализация успешно завершена.
+2023-04-25 00:55:26.766 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "string",
+  "TagType": "qweqweqwe"
+}' at: 'CSharp_Topic [[0]] @62'.
+2023-04-25 00:55:26.768 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=62, key=25.04.2023 00:55:25.754, message={
+  "TagName": "Tag1",
+  "TagValue": "string",
+  "TagType": "qweqweqwe"
+}
+
+2023-04-25 00:58:55.331 +07:00 [INF] Инициализация успешно завершена.
+2023-04-25 00:58:58.538 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "string",
+  "TagType": "ertert"
+}' at: 'CSharp_Topic [[0]] @63'.
+2023-04-25 00:58:58.539 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=63, key=25.04.2023 00:55:34.756, message={
+  "TagName": "Tag1",
+  "TagValue": "string",
+  "TagType": "ertert"
+}
+
+2023-04-25 00:59:09.557 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "string",
+  "TagType": "wwwww"
+}' at: 'CSharp_Topic [[0]] @64'.
+2023-04-25 00:59:09.558 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=64, key=25.04.2023 00:55:41.205, message={
+  "TagName": "Tag1",
+  "TagValue": "string",
+  "TagType": "wwwww"
+}
+
+2023-04-25 00:59:20.908 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "string",
+  "TagType": "uuuu"
+}' at: 'CSharp_Topic [[0]] @65'.
+2023-04-25 00:59:20.909 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=65, key=25.04.2023 00:56:55.689, message={
+  "TagName": "Tag1",
+  "TagValue": "string",
+  "TagType": "uuuu"
+}
+
+2023-04-25 01:03:14.656 +07:00 [INF] Инициализация успешно завершена.
+2023-04-25 01:03:41.708 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "132",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @66'.
+2023-04-25 01:03:41.710 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=66, key=25.04.2023 01:03:40.691, message={
+  "TagName": "Tag1",
+  "TagValue": "132",
+  "TagType": "int"
+}
+
+2023-04-25 01:03:44.923 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "111",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @67'.
+2023-04-25 01:03:44.924 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=67, key=25.04.2023 01:03:44.883, message={
+  "TagName": "Tag1",
+  "TagValue": "111",
+  "TagType": "int"
+}
+
+2023-04-25 01:03:54.312 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "2342",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @68'.
+2023-04-25 01:03:54.314 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=68, key=25.04.2023 01:03:53.302, message={
+  "TagName": "Tag1",
+  "TagValue": "2342",
+  "TagType": "int"
+}
+
+2023-04-25 01:15:13.598 +07:00 [INF] Инициализация успешно завершена.
+2023-04-25 01:15:13.615 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-25 01:15:13.618 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "33",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @69'.
+2023-04-25 01:15:13.619 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=69, key=25.04.2023 01:05:08.180, message={
+  "TagName": "Tag1",
+  "TagValue": "33",
+  "TagType": "int"
+}
+
+2023-04-25 01:15:13.620 +07:00 [INF] Hosting environment: Development
+2023-04-25 01:15:22.100 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-04-25 01:15:22.113 +07:00 [INF] Consumed message '{
+  "TagName": "Tag1",
+  "TagValue": "36",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @70'.
+2023-04-25 01:15:22.114 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=70, key=25.04.2023 01:05:12.951, message={
+  "TagName": "Tag1",
+  "TagValue": "36",
+  "TagType": "int"
+}
+
+2023-04-25 01:22:29.175 +07:00 [INF] Инициализация успешно завершена.
+2023-04-25 01:22:29.193 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-25 01:22:48.969 +07:00 [INF] Consumed message '{
+  "TagName": "T1",
+  "TagValue": "qqq",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @71'.
+2023-04-25 01:22:48.975 +07:00 [INF] Hosting environment: Development
+2023-04-25 01:22:48.975 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=71, key=25.04.2023 01:16:19.614, message={
+  "TagName": "T1",
+  "TagValue": "qqq",
+  "TagType": "string"
+}
+
+2023-04-25 01:22:48.977 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-04-25 01:23:00.333 +07:00 [INF] Consumed message '{
+  "TagName": "T1",
+  "TagValue": "qqq",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @72'.
+2023-04-25 01:23:00.335 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=72, key=25.04.2023 01:16:24.156, message={
+  "TagName": "T1",
+  "TagValue": "qqq",
+  "TagType": "string"
+}
+
+2023-04-25 01:23:06.201 +07:00 [INF] Consumed message '{
+  "TagName": "T1",
+  "TagValue": "www",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @73'.
+2023-04-25 01:23:06.202 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=73, key=25.04.2023 01:16:31.955, message={
+  "TagName": "T1",
+  "TagValue": "www",
+  "TagType": "string"
+}
+
+2023-04-25 01:23:23.622 +07:00 [INF] Consumed message '{
+  "TagName": "T1",
+  "TagValue": "eeee",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @74'.
+2023-04-25 01:23:23.624 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=74, key=25.04.2023 01:16:38.088, message={
+  "TagName": "T1",
+  "TagValue": "eeee",
+  "TagType": "string"
+}
+
+2023-04-25 01:23:27.446 +07:00 [INF] Consumed message '{
+  "TagName": "T1",
+  "TagValue": "uuu",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @75'.
+2023-04-25 01:23:27.448 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=75, key=25.04.2023 01:17:47.263, message={
+  "TagName": "T1",
+  "TagValue": "uuu",
+  "TagType": "string"
+}
+
+2023-04-25 01:23:38.448 +07:00 [INF] Consumed message '{
+  "TagName": "T1",
+  "TagValue": "ttt",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @76'.
+2023-04-25 01:23:38.451 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=76, key=25.04.2023 01:19:28.758, message={
+  "TagName": "T1",
+  "TagValue": "ttt",
+  "TagType": "string"
+}
+
+2023-04-25 01:23:41.435 +07:00 [INF] Consumed message '{
+  "TagName": "T1",
+  "TagValue": "eeu",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @77'.
+2023-04-25 01:23:41.437 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=77, key=25.04.2023 01:19:59.522, message={
+  "TagName": "T1",
+  "TagValue": "eeu",
+  "TagType": "string"
+}
+
+2023-04-25 01:23:43.588 +07:00 [INF] Consumed message '{
+  "TagName": "T1",
+  "TagValue": "asd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @78'.
+2023-04-25 01:23:43.591 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=78, key=25.04.2023 01:20:17.756, message={
+  "TagName": "T1",
+  "TagValue": "asd",
+  "TagType": "string"
+}
+
+2023-04-30 23:50:16.170 +07:00 [INF] Инициализация успешно завершена.
+2023-04-30 23:50:16.198 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-30 23:50:16.205 +07:00 [INF] Hosting environment: Development
+2023-04-30 23:50:16.208 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-04-30 23:53:35.527 +07:00 [INF] Инициализация успешно завершена.
+2023-04-30 23:53:35.551 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-30 23:53:35.558 +07:00 [INF] Hosting environment: Development
+2023-04-30 23:53:35.561 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-05-01 00:09:47.510 +07:00 [INF] Инициализация успешно завершена.
+2023-05-01 00:09:47.529 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-01 00:09:47.534 +07:00 [INF] Hosting environment: Development
+2023-05-01 00:09:47.536 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-05-01 00:13:04.895 +07:00 [ERR] Error Kafka consumer: GroupCoordinator: 192.168.0.104:9092: Disconnected (after 197364ms in state UP)
+2023-05-01 00:13:04.896 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/0: Disconnected (after 197381ms in state UP)
+2023-05-01 00:13:04.897 +07:00 [ERR] Error Kafka consumer: 2/2 brokers are down
+2023-05-01 00:13:06.876 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/0: Disconnected: verify that security.protocol is correctly configured, broker might require SASL authentication (after 1472ms in state UP)
+2023-05-01 00:13:06.878 +07:00 [ERR] Error Kafka consumer: 2/2 brokers are down
+2023-05-01 00:13:08.686 +07:00 [ERR] Error Kafka consumer: GroupCoordinator: 192.168.0.104:9092: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 3791ms in state CONNECT)
+2023-05-01 00:13:09.197 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/0: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2320ms in state CONNECT)
+2023-05-01 00:13:11.229 +07:00 [ERR] Error Kafka consumer: GroupCoordinator: 192.168.0.104:9092: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2240ms in state CONNECT, 1 identical error(s) suppressed)
+2023-05-01 00:13:11.857 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/0: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 2222ms in state CONNECT, 1 identical error(s) suppressed)
+2023-05-01 00:13:42.069 +07:00 [ERR] Error Kafka consumer: 192.168.0.104:9092/0: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 0ms in state CONNECT, 23 identical error(s) suppressed)
+2023-05-01 00:13:44.609 +07:00 [ERR] Error Kafka consumer: GroupCoordinator: 192.168.0.104:9092: Connect to ipv4#192.168.0.104:9092 failed: Unknown error (after 16ms in state CONNECT, 4 identical error(s) suppressed)
+2023-05-01 00:19:32.206 +07:00 [INF] Инициализация успешно завершена.
+2023-05-01 00:19:32.224 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-01 00:19:32.230 +07:00 [INF] Hosting environment: Development
+2023-05-01 00:19:32.231 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-05-01 00:19:32.308 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "Fifa1",
+  "Password": "wrwr",
+  "Age": 60
+}' at: 'CSharp_Topic [[0]] @79'.
+2023-05-01 00:19:32.309 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=79, key=01.05.2023 00:10:15.595, message={
+  "UserId": 0,
+  "UserName": "Fifa1",
+  "Password": "wrwr",
+  "Age": 60
+}
+
+2023-05-01 00:19:40.800 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "Fifa2",
+  "Password": "12345",
+  "Age": 60
+}' at: 'CSharp_Topic [[0]] @80'.
+2023-05-01 00:19:40.802 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=80, key=01.05.2023 00:11:04.354, message={
+  "UserId": 0,
+  "UserName": "Fifa2",
+  "Password": "12345",
+  "Age": 60
+}
+
+2023-05-01 00:58:59.349 +07:00 [INF] Инициализация успешно завершена.
+2023-05-01 00:58:59.368 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-01 00:58:59.374 +07:00 [INF] Hosting environment: Development
+2023-05-01 00:58:59.378 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-05-01 01:04:46.893 +07:00 [INF] Инициализация успешно завершена.
+2023-05-01 01:04:46.920 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-01 01:04:46.928 +07:00 [INF] Hosting environment: Development
+2023-05-01 01:04:46.933 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-05-01 01:04:53.687 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "Fifa3",
+  "Password": "string",
+  "Age": 30
+}' at: 'CSharp_Topic [[0]] @81'.
+2023-05-01 01:04:53.688 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=81, key=01.05.2023 01:00:31.042, message={
+  "UserId": 0,
+  "UserName": "Fifa3",
+  "Password": "string",
+  "Age": 30
+}
+
+2023-05-01 01:04:55.248 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "Fifa4",
+  "Password": "57575757",
+  "Age": 30
+}' at: 'CSharp_Topic [[0]] @82'.
+2023-05-01 01:04:55.258 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=82, key=01.05.2023 01:02:46.237, message={
+  "UserId": 0,
+  "UserName": "Fifa4",
+  "Password": "57575757",
+  "Age": 30
+}
+
+2023-05-01 01:05:53.435 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "Fifa5",
+  "Password": "fhgfgh",
+  "Age": 40
+}' at: 'CSharp_Topic [[0]] @83'.
+2023-05-01 01:05:53.444 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=83, key=01.05.2023 01:05:48.132, message={
+  "UserId": 0,
+  "UserName": "Fifa5",
+  "Password": "fhgfgh",
+  "Age": 40
+}
+
+2023-05-01 01:05:54.742 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "Fifa5",
+  "Password": "fhgfgh",
+  "Age": 40
+}' at: 'CSharp_Topic [[0]] @83'.
+2023-05-01 01:05:54.751 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=83, key=01.05.2023 01:05:48.132, message={
+  "UserId": 0,
+  "UserName": "Fifa5",
+  "Password": "fhgfgh",
+  "Age": 40
+}
+
+2023-05-01 01:06:47.275 +07:00 [INF] Consumed message '{
+  "UserId": 30,
+  "UserName": "Fifa6",
+  "Password": "fhgfgh",
+  "Age": 40
+}' at: 'CSharp_Topic [[0]] @84'.
+2023-05-01 01:06:47.291 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=84, key=01.05.2023 01:06:43.073, message={
+  "UserId": 30,
+  "UserName": "Fifa6",
+  "Password": "fhgfgh",
+  "Age": 40
+}
+
+2023-05-01 01:06:49.632 +07:00 [INF] Consumed message '{
+  "UserId": 30,
+  "UserName": "Fifa6",
+  "Password": "fhgfgh",
+  "Age": 40
+}' at: 'CSharp_Topic [[0]] @84'.
+2023-05-01 01:06:49.646 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=84, key=01.05.2023 01:06:43.073, message={
+  "UserId": 30,
+  "UserName": "Fifa6",
+  "Password": "fhgfgh",
+  "Age": 40
+}
+
+2023-05-01 01:26:20.904 +07:00 [INF] Инициализация успешно завершена.
+2023-05-01 01:26:20.940 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-01 01:26:20.954 +07:00 [INF] Hosting environment: Development
+2023-05-01 01:26:20.961 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-05-01 01:30:26.703 +07:00 [INF] Инициализация успешно завершена.
+2023-05-01 01:30:26.729 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-01 01:30:26.742 +07:00 [INF] Hosting environment: Development
+2023-05-01 01:30:26.748 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-05-01 01:31:23.515 +07:00 [INF] Consumed message '{
+  "TagName": "T10",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @85'.
+2023-05-01 01:31:23.517 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=85, key=01.05.2023 01:31:18.854, message={
+  "TagName": "T10",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:31:24.964 +07:00 [INF] Consumed message '{
+  "TagName": "T10",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @85'.
+2023-05-01 01:31:24.970 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=85, key=01.05.2023 01:31:18.854, message={
+  "TagName": "T10",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:34:08.187 +07:00 [INF] Consumed message '{
+  "TagName": "T11",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @86'.
+2023-05-01 01:34:08.197 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=86, key=01.05.2023 01:34:04.035, message={
+  "TagName": "T11",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:34:17.219 +07:00 [INF] Consumed message '{
+  "TagName": "T11",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @86'.
+2023-05-01 01:34:18.932 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=86, key=01.05.2023 01:34:04.035, message={
+  "TagName": "T11",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:41:03.619 +07:00 [INF] Consumed message '{
+  "TagName": "T12",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @87'.
+2023-05-01 01:41:03.634 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=87, key=01.05.2023 01:40:47.252, message={
+  "TagName": "T12",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:41:31.344 +07:00 [INF] Consumed message '{
+  "TagName": "T13",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @88'.
+2023-05-01 01:41:31.364 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=88, key=01.05.2023 01:41:27.728, message={
+  "TagName": "T13",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:41:44.386 +07:00 [INF] Consumed message '{
+  "TagName": "T13",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @88'.
+2023-05-01 01:41:44.396 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=88, key=01.05.2023 01:41:27.728, message={
+  "TagName": "T13",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:42:03.140 +07:00 [INF] Consumed message '{
+  "TagName": "T14",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @89'.
+2023-05-01 01:42:03.149 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=89, key=01.05.2023 01:41:53.683, message={
+  "TagName": "T14",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:42:20.366 +07:00 [INF] Consumed message '{
+  "TagName": "T15",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @90'.
+2023-05-01 01:42:20.374 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=90, key=01.05.2023 01:42:17.677, message={
+  "TagName": "T15",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:42:32.516 +07:00 [INF] Consumed message '{
+  "TagName": "T15",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @90'.
+2023-05-01 01:42:32.530 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=90, key=01.05.2023 01:42:17.677, message={
+  "TagName": "T15",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:42:47.685 +07:00 [INF] Consumed message '{
+  "TagName": "T16",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @91'.
+2023-05-01 01:42:47.694 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=91, key=01.05.2023 01:42:40.073, message={
+  "TagName": "T16",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-05-01 01:43:18.471 +07:00 [INF] Consumed message '{
+  "TagName": "T16",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @91'.
+2023-05-01 01:43:18.492 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=91, key=01.05.2023 01:42:40.073, message={
+  "TagName": "T16",
+  "TagValue": "dfgdgfd",
+  "TagType": "string"
+}
+
+2023-06-10 00:36:00.168 +07:00 [INF] Инициализация успешно завершена.
+2023-06-10 00:36:00.190 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-10 00:36:00.196 +07:00 [INF] Hosting environment: Development
+2023-06-10 00:36:00.197 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-06-10 00:36:00.546 +07:00 [INF] Consumed message '{
+  "TagName": "M2",
+  "TagValue": "sfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @129'.
+2023-06-10 00:36:00.548 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=129, key=03.06.2023 01:58:42.049, message={
+  "TagName": "M2",
+  "TagValue": "sfd",
+  "TagType": "string"
+}
+
+2023-06-10 00:36:02.586 +07:00 [INF] Consumed message '{
+  "TagName": "M2",
+  "TagValue": "sfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @130'.
+2023-06-10 00:36:02.587 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=130, key=03.06.2023 01:58:55.010, message={
+  "TagName": "M2",
+  "TagValue": "sfd",
+  "TagType": "string"
+}
+
+2023-06-10 00:36:04.609 +07:00 [INF] Consumed message '{
+  "TagName": "M4",
+  "TagValue": "sfd",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @131'.
+2023-06-10 00:36:04.611 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=131, key=03.06.2023 01:59:18.154, message={
+  "TagName": "M4",
+  "TagValue": "sfd",
+  "TagType": "string"
+}
+
+2023-06-10 00:37:31.193 +07:00 [INF] Consumed message '{
+  "TagName": "M1",
+  "TagValue": "123",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @132'.
+2023-06-10 00:37:31.195 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=132, key=10.06.2023 00:37:30.165, message={
+  "TagName": "M1",
+  "TagValue": "123",
+  "TagType": "int"
+}
+
+2023-06-10 00:38:13.380 +07:00 [INF] Consumed message '{
+  "TagName": "M2",
+  "TagValue": "5675",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @133'.
+2023-06-10 00:38:13.382 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=133, key=10.06.2023 00:38:11.633, message={
+  "TagName": "M2",
+  "TagValue": "5675",
+  "TagType": "int"
+}
+
+2023-06-10 00:43:14.160 +07:00 [INF] Consumed message '{
+  "TagName": "M3",
+  "TagValue": "33",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @134'.
+2023-06-10 00:43:14.162 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=134, key=10.06.2023 00:41:01.274, message={
+  "TagName": "M3",
+  "TagValue": "33",
+  "TagType": "int"
+}
+
+2023-06-10 00:43:16.169 +07:00 [INF] Consumed message '{
+  "TagName": "M3",
+  "TagValue": "33",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @135'.
+2023-06-10 00:43:16.172 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=135, key=10.06.2023 00:41:36.689, message={
+  "TagName": "M3",
+  "TagValue": "33",
+  "TagType": "int"
+}
+
+2023-06-10 01:00:02.669 +07:00 [INF] Consumed message 'ertetetet' at: 'CSharp_Topic [[0]] @136'.
+2023-06-10 01:00:02.671 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=136, key=1, message=ertetetet
+
+2023-06-10 01:03:39.123 +07:00 [INF] Инициализация успешно завершена.
+2023-06-10 01:03:39.144 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-10 01:03:39.150 +07:00 [INF] Hosting environment: Development
+2023-06-10 01:03:39.152 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-06-10 01:04:44.398 +07:00 [INF] Consumed message '{
+  "TagName": "B1",
+  "TagValue": "43243",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @137'.
+2023-06-10 01:04:44.400 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=137, key=10.06.2023 01:04:43.396, message={
+  "TagName": "B1",
+  "TagValue": "43243",
+  "TagType": "string"
+}
+
+2023-06-10 01:06:24.107 +07:00 [INF] Consumed message '{
+  "TagName": "B2",
+  "TagValue": "0890",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @138'.
+2023-06-10 01:06:26.915 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=138, key=10.06.2023 01:06:21.462, message={
+  "TagName": "B2",
+  "TagValue": "0890",
+  "TagType": "string"
+}
+
+2023-06-10 01:06:36.958 +07:00 [INF] Consumed message '{
+  "TagName": "B3",
+  "TagValue": "0890",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @139'.
+2023-06-10 01:06:38.555 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=139, key=10.06.2023 01:06:34.898, message={
+  "TagName": "B3",
+  "TagValue": "0890",
+  "TagType": "string"
+}
+
+2023-06-10 01:06:48.601 +07:00 [INF] Consumed message '{
+  "TagName": "B4",
+  "TagValue": "7979",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @140'.
+2023-06-10 01:06:51.044 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=140, key=10.06.2023 01:06:46.135, message={
+  "TagName": "B4",
+  "TagValue": "7979",
+  "TagType": "string"
+}
+
+2023-06-10 01:07:05.121 +07:00 [INF] Consumed message '{
+  "TagName": "B5",
+  "TagValue": "8888",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @141'.
+2023-06-10 01:07:07.301 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=141, key=10.06.2023 01:07:03.378, message={
+  "TagName": "B5",
+  "TagValue": "8888",
+  "TagType": "string"
+}
+
+2023-06-10 01:07:09.310 +07:00 [INF] Consumed message '{
+  "TagName": "B5",
+  "TagValue": "8888",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @141'.
+2023-06-10 01:07:09.312 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=141, key=10.06.2023 01:07:03.378, message={
+  "TagName": "B5",
+  "TagValue": "8888",
+  "TagType": "string"
+}
+
+2023-06-10 01:09:37.521 +07:00 [INF] Consumed message '{
+  "TagName": "B6",
+  "TagValue": "8989",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @142'.
+2023-06-10 01:09:39.655 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=142, key=10.06.2023 01:09:36.510, message={
+  "TagName": "B6",
+  "TagValue": "8989",
+  "TagType": "string"
+}
+
+2023-06-10 01:09:41.675 +07:00 [INF] Consumed message '{
+  "TagName": "B6",
+  "TagValue": "8989",
+  "TagType": "string"
+}' at: 'CSharp_Topic [[0]] @142'.
+2023-06-10 01:09:43.660 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=142, key=10.06.2023 01:09:36.510, message={
+  "TagName": "B6",
+  "TagValue": "8989",
+  "TagType": "string"
+}
+
+2023-06-10 01:10:29.893 +07:00 [INF] Consumed message 'fhfhfhffhfhfh' at: 'CSharp_Topic [[0]] @143'.
+2023-06-10 01:10:33.853 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=143, key=2, message=fhfhfhffhfhfh
+
+2023-06-10 01:11:45.050 +07:00 [INF] Consumed message '{
+  "TagName": "B7",
+  "TagValue": "8989",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @144'.
+2023-06-10 01:11:46.823 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=144, key=10.06.2023 01:11:42.885, message={
+  "TagName": "B7",
+  "TagValue": "8989",
+  "TagType": "int"
+}
+
+2023-06-10 01:12:05.485 +07:00 [INF] Consumed message '{
+  "TagName": "B8",
+  "TagValue": "8989",
+  "TagType": "int"
+}' at: 'CSharp_Topic [[0]] @145'.
+2023-06-10 01:12:07.556 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=145, key=10.06.2023 01:12:03.278, message={
+  "TagName": "B8",
+  "TagValue": "8989",
+  "TagType": "int"
+}
+
+2023-11-06 00:16:36.417 +07:00 [INF] Инициализация успешно завершена.
+2023-11-06 00:16:50.281 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-06 00:16:50.287 +07:00 [INF] Hosting environment: Development
+2023-11-06 00:16:50.288 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-11-06 00:49:25.545 +07:00 [INF] Инициализация успешно завершена.
+2023-11-06 00:49:25.567 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-06 00:49:25.572 +07:00 [INF] Hosting environment: Development
+2023-11-06 00:49:25.574 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-11-06 00:54:51.891 +07:00 [INF] Инициализация успешно завершена.
+2023-11-06 00:54:51.912 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-06 00:54:51.917 +07:00 [INF] Hosting environment: Development
+2023-11-06 00:54:51.919 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-11-06 19:49:55.876 +07:00 [INF] Инициализация успешно завершена.
+2023-11-06 19:49:55.898 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-06 19:49:55.904 +07:00 [INF] Hosting environment: Development
+2023-11-06 19:49:55.906 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-11-06 19:56:42.414 +07:00 [ERR] Error Kafka consumer: Application maximum poll interval (300000ms) exceeded by 286ms
+2023-11-06 19:58:34.464 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "John99",
+  "Password": "90909090",
+  "Age": 0
+}' at: 'CSharp_Topic [[0]] @149'.
+2023-11-06 19:58:51.192 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=149, key=2023-11-06 19:58:00, message={
+  "UserId": 0,
+  "UserName": "John99",
+  "Password": "90909090",
+  "Age": 0
+}
+
+2023-11-06 20:01:11.038 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "ZZZZZ",
+  "Password": "90909090",
+  "Age": 0
+}' at: 'CSharp_Topic [[0]] @150'.
+2023-11-06 20:01:16.058 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=150, key=06.11.2023 20:01:00, message={
+  "UserId": 0,
+  "UserName": "ZZZZZ",
+  "Password": "90909090",
+  "Age": 0
+}
+
+2023-11-06 22:16:39.950 +07:00 [INF] Инициализация успешно завершена.
+2023-11-06 22:16:42.631 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "A1",
+  "Password": "werwerw",
+  "Age": 0
+}' at: 'CSharp_Topic [[0]] @151'.
+2023-11-06 22:16:42.632 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-06 22:16:54.330 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=151, key=06.11.2023 22:09:06.700, message={
+  "UserId": 0,
+  "UserName": "A1",
+  "Password": "werwerw",
+  "Age": 0
+}
+
+2023-11-06 22:16:57.707 +07:00 [INF] Hosting environment: Development
+2023-11-06 22:17:02.511 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-11-06 22:19:45.962 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "A2",
+  "Password": "797979",
+  "Age": 0
+}' at: 'CSharp_Topic [[0]] @152'.
+2023-11-06 22:19:51.626 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=152, key=06.11.2023 22:19:42.530, message={
+  "UserId": 0,
+  "UserName": "A2",
+  "Password": "797979",
+  "Age": 0
+}
+
+2023-11-06 23:07:52.539 +07:00 [INF] Инициализация успешно завершена.
+2023-11-06 23:07:55.845 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "A3",
+  "Password": "797979",
+  "Age": 0
+}' at: 'CSharp_Topic [[0]] @153'.
+2023-11-06 23:07:55.845 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-06 23:07:57.371 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=153, key=06.11.2023 22:21:01.257, message={
+  "UserId": 0,
+  "UserName": "A3",
+  "Password": "797979",
+  "Age": 0
+}
+
+2023-11-06 23:07:57.377 +07:00 [INF] Hosting environment: Development
+2023-11-06 23:07:57.377 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2023-11-06 23:08:03.879 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "A4",
+  "Password": "sdfsfdsf",
+  "Age": 0
+}' at: 'CSharp_Topic [[0]] @154'.
+2023-11-06 23:08:06.017 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=154, key=06.11.2023 22:41:07.301, message={
+  "UserId": 0,
+  "UserName": "A4",
+  "Password": "sdfsfdsf",
+  "Age": 0
+}
+
+2023-11-06 23:09:27.610 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "A5",
+  "Password": "46464646",
+  "Age": 0
+}' at: 'CSharp_Topic [[0]] @155'.
+2023-11-06 23:09:29.279 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=155, key=06.11.2023 23:09:24.593, message={
+  "UserId": 0,
+  "UserName": "A5",
+  "Password": "46464646",
+  "Age": 0
+}
+
+2023-11-06 23:11:01.237 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "B1",
+  "Password": "46464646",
+  "Age": 0
+}' at: 'CSharp_Topic [[0]] @156'.
+2023-11-06 23:11:03.205 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=156, key=06.11.2023 23:10:58.770, message={
+  "UserId": 0,
+  "UserName": "B1",
+  "Password": "46464646",
+  "Age": 0
+}
+
+2023-11-06 23:12:36.638 +07:00 [INF] Consumed message '{
+  "UserId": 0,
+  "UserName": "B2",
+  "Password": "46464646",
+  "Age": 0
+}' at: 'CSharp_Topic [[0]] @157'.
+2023-11-06 23:12:37.340 +07:00 [INF] Из кафки успешно считано: topic=CSharp_Topic, offset=157, key=06.11.2023 23:12:35.637, message={
+  "UserId": 0,
+  "UserName": "B2",
+  "Password": "46464646",
+  "Age": 0
+}
+
+2026-02-27 16:18:55.752 +07:00 [INF] Инициализация успешно завершена.
+2026-02-27 16:18:55.771 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-27 16:18:55.776 +07:00 [INF] Hosting environment: Development
+2026-02-27 16:18:55.777 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2026-02-27 16:19:00.100 +07:00 [ERR] Error Kafka consumer: Subscribed topic not available: CSharp_Topic: Broker: Unknown topic or partition
+2026-02-27 16:24:20.644 +07:00 [INF] Application is shutting down...
+2026-02-27 16:24:20.648 +07:00 [INF] Получена команда Stop

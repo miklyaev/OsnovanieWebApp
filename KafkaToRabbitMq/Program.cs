@@ -1,0 +1,41 @@
+using KafkaLibNetCore;
+using KafkaToRabbitMq;
+using Microsoft.Extensions.Logging.EventLog;
+using Serilog;
+
+IHost host = (IHost)Host.CreateDefaultBuilder(args)
+    .ConfigureAppConfiguration((hostingContext, configuration) =>
+    {
+        configuration.Sources.Clear();
+        configuration
+            .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+            .AddJsonFile("kafka_config.json", optional: true, reloadOnChange: true);
+    })
+    .ConfigureServices((context, services) =>
+    {
+        services.AddTransient<ICustomConsumer<string, string>, Consumer<string, string>>();
+        services.AddSingleton<IKafkaReceiverService, KafkaReceiverService>();
+        services.AddSingleton<IRabbitMqProducer, RabbitMqProducer>();
+        services.AddHostedService<Worker>();
+
+        if (OperatingSystem.IsWindows())
+        {
+            services.Configure<EventLogSettings>(config =>
+            {
+                config.LogName = "KafkaToRabbitMqService";
+                config.SourceName = "KafkaToRabbitMqService";
+            });
+        }
+    })
+    .UseSerilog((hostContext, services, configuration) =>
+    {
+        configuration.ReadFrom.Services(services);
+        configuration.WriteTo.Console();
+        configuration.WriteTo.File(
+                 Environment.CurrentDirectory + @"\logs\KafkaToRabbitMq.log");
+    })
+    .UseWindowsService()
+    .Build();
+
+await host.RunAsync();
+

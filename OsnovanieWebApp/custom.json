@@ -1,0 +1,16 @@
+{
+  "RESPONSE": {
+    "statusId": 4,
+    "status": "Готово",
+    "requestId": 1090040,
+
+    "info": {
+      "firstName": "Дмитрий",
+      "lastName": "Мухин",
+      "middleName": "Павлович",
+      "checkCertInFNSStatus": 2,
+      "fnsCode": null,
+      "existingCertsInFNS": null
+    }
+  }
+}

@@ -1,0 +1,98 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService1";
+
+package greet;
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply);
+  rpc GetAll(google.protobuf.Empty) returns (PersonReply);
+  rpc GetUser(UniqueID) returns (User);
+  rpc GetAllUsers(google.protobuf.Empty) returns (ListOfUsers);
+  rpc AddUser(User) returns (UniqueID);
+  rpc WriteToKafka(User) returns (PersonReply);
+  rpc ReadFromKafka(Kafka) returns (ListOfUsers);
+  rpc AddRegion(Region) returns (UniqueID);
+  rpc AddSignalToKafka(Signal) returns (ServiceResponse);
+  rpc AddAuthor(Author) returns (ServiceResponse);
+  rpc AddBook(Book) returns (ServiceResponse);
+  rpc UpdateAuthor(Author) returns (ServiceResponse);
+  rpc UpdateBook(Book) returns (ServiceResponse);
+}
+
+message ServiceResponse {
+	int32 code = 1;
+	int32 entityId = 2;
+	string errorMessage = 3;
+}
+
+message Author {
+	int32 authorId = 1;
+	string name = 2;
+	int32 age = 3;
+	repeated int32 bookIds = 4;
+}
+
+message Book {
+	int32 bookId = 1;
+	string title = 2;
+	int32 pages = 3;
+	int32 authorId = 4;
+	google.protobuf.Timestamp issueDate = 5;
+}
+
+message Signal {
+	string TagName = 1;
+	string TagValue = 2;
+	string TagType = 3;
+}
+
+message UniqueID {
+	int32 Id = 1;
+}
+
+message Kafka {
+	string topicName = 1;
+	bool success = 2;
+	string msg = 3;
+	int32 offset = 4;
+	string key = 5;
+}
+message User {
+	int32 userId = 1;
+	string userName = 2;
+	string password = 3;
+	int32 age = 4;
+}
+
+message Region {
+	int32 regionId = 1;
+	int32 regionCode = 2;
+	string regionName = 3;
+}
+
+message ListOfUsers{
+	repeated User data = 1;
+}
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+  int32 age = 2;
+}
+
+// The response message containing the greetings.
+message HelloReply {
+  string message = 1;
+}
+
+message PersonReply {
+  string message = 1;
+}
+
+message Empty {
+
+}
