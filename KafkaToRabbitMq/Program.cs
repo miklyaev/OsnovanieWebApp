@@ -1,8 +1,7 @@
-using KafkaToRabbitMq;
-using Serilog;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging.EventLog;
 using KafkaLibNetCore;
+using KafkaToRabbitMq;
+using Microsoft.Extensions.Logging.EventLog;
+using Serilog;
 
 IHost host = (IHost)Host.CreateDefaultBuilder(args)
     .ConfigureAppConfiguration((hostingContext, configuration) =>
@@ -13,7 +12,7 @@ IHost host = (IHost)Host.CreateDefaultBuilder(args)
             .AddJsonFile("kafka_config.json", optional: true, reloadOnChange: true);
     })
     .ConfigureServices((context, services) =>
-    {       
+    {
         services.AddTransient<ICustomConsumer<string, string>, Consumer<string, string>>();
         services.AddSingleton<IKafkaReceiverService, KafkaReceiverService>();
         services.AddSingleton<IRabbitMqProducer, RabbitMqProducer>();
@@ -28,7 +27,8 @@ IHost host = (IHost)Host.CreateDefaultBuilder(args)
             });
         }
     })
-    .UseSerilog((hostContext, services, configuration) => {
+    .UseSerilog((hostContext, services, configuration) =>
+    {
         configuration.ReadFrom.Services(services);
         configuration.WriteTo.Console();
         configuration.WriteTo.File(

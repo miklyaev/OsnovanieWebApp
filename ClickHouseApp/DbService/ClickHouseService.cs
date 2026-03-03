@@ -1,19 +1,13 @@
 ﻿
 using ClickHouseApp.DbService.Exceptions;
 using ClickHouseApp.Dto;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Octonica.ClickHouseClient;
 using Polly;
 using RestSharp;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace ClickHouseApp.DbService
 {
@@ -67,7 +61,7 @@ namespace ClickHouseApp.DbService
 
         public void UpdateUser(User user)
         {
-            
+
         }
         public async Task AddUser(User user)
         {
@@ -122,15 +116,15 @@ namespace ClickHouseApp.DbService
         }
         public async Task<bool> AddSignals(List<Signal> signals)
         {
-            StringBuilder builder= new StringBuilder();
+            StringBuilder builder = new StringBuilder();
             var sql = $"INSERT INTO t_signal (id, TagName, TagType, TagValue) values ";
 
-            foreach (var signal in signals) 
+            foreach (var signal in signals)
             {
                 builder.Append($"('{signal.SignalId}', '{signal.TagName}', '{signal.TagType}', '{signal.TagValue}'),");
             }
             sql += builder.ToString();
-            var outStr = sql.TrimEnd(',') + ";" ;
+            var outStr = sql.TrimEnd(',') + ";";
 
             var responseFinal = await _insertPolicy.ExecuteAsync(async () =>
             {

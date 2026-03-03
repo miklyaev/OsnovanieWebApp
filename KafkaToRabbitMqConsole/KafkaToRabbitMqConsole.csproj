@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>dotnet-KafkaToRabbitMqConsole-b6b96d23-11fe-4e26-9784-57f50cc39215</UserSecretsId>
@@ -22,6 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\KafkaLibNetCore\KafkaLibNetCore.csproj" />
+    <Reference Include="KafkaLibNetCore">
+      <HintPath>..\KafkaLibNetCore\bin\Debug\net9.0\KafkaLibNetCore.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

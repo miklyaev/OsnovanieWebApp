@@ -19,7 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqConsumer", "Rabbitm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactiveAppConsole", "ReactiveAppConsole\ReactiveAppConsole.csproj", "{B4B0F37F-260C-4FE9-897B-DABCEB8CC25A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClickHouseApp", "ClickHouseApp\ClickHouseApp.csproj", "{75985128-862C-4F42-BBE7-55110EF0A2A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClickHouseApp", "ClickHouseApp\ClickHouseApp.csproj", "{75985128-862C-4F42-BBE7-55110EF0A2A1}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{AA2142FC-41A2-4EC8-9344-52ED144771BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{75985128-862C-4F42-BBE7-55110EF0A2A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75985128-862C-4F42-BBE7-55110EF0A2A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75985128-862C-4F42-BBE7-55110EF0A2A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA2142FC-41A2-4EC8-9344-52ED144771BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA2142FC-41A2-4EC8-9344-52ED144771BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA2142FC-41A2-4EC8-9344-52ED144771BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA2142FC-41A2-4EC8-9344-52ED144771BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

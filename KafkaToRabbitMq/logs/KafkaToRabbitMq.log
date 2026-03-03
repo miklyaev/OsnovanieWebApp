@@ -1353,3 +1353,10 @@
   "Age": 0
 }
 
+2026-02-27 16:18:55.752 +07:00 [INF] Инициализация успешно завершена.
+2026-02-27 16:18:55.771 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-27 16:18:55.776 +07:00 [INF] Hosting environment: Development
+2026-02-27 16:18:55.777 +07:00 [INF] Content root path: D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\KafkaToRabbitMq
+2026-02-27 16:19:00.100 +07:00 [ERR] Error Kafka consumer: Subscribed topic not available: CSharp_Topic: Broker: Unknown topic or partition
+2026-02-27 16:24:20.644 +07:00 [INF] Application is shutting down...
+2026-02-27 16:24:20.648 +07:00 [INF] Получена команда Stop

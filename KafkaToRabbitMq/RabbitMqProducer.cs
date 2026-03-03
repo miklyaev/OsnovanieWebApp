@@ -1,15 +1,6 @@
-﻿using Confluent.Kafka;
-using KafkaToRabbitMq.Exceptions;
+﻿using KafkaToRabbitMq.Exceptions;
 using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
-using System.Threading.Channels;
-using System.Threading.Tasks;
-using static KafkaLibNetCore.ICustomProducer;
 
 namespace KafkaToRabbitMq
 {
@@ -35,10 +26,12 @@ namespace KafkaToRabbitMq
 
             try
             {
-                var factory = new ConnectionFactory() { HostName = _configuration["Bus:HostName"],
-                                                        UserName = _configuration["Bus:UserName"],
-                                                        Password = _configuration["Bus:Password"] 
-                                                       };
+                var factory = new ConnectionFactory()
+                {
+                    HostName = _configuration["Bus:HostName"],
+                    UserName = _configuration["Bus:UserName"],
+                    Password = _configuration["Bus:Password"]
+                };
                 _connection = factory.CreateConnection();
                 _channel = _connection.CreateModel();
                 _channel.ExchangeDeclare(_exchange, ExchangeType.Fanout); //декларируем Exchange
@@ -94,7 +87,7 @@ namespace KafkaToRabbitMq
             {
                 throw new RabbitMqException(exc.Message);
             }
-            
+
         }
 
         public void Dispose()

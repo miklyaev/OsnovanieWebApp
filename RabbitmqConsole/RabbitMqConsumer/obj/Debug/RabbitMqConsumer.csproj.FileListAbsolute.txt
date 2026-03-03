@@ -40,6 +40,6 @@ D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\RabbitmqConsole\RabbitMqConsumer\
 D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\RabbitmqConsole\RabbitMqConsumer\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\RabbitmqConsole\RabbitMqConsumer\obj\Debug\RabbitMqConsumer.csproj.AssemblyReference.cache
 D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\RabbitmqConsole\RabbitMqConsumer\obj\Debug\RabbitMqConsumer.csproj.CoreCompileInputs.cache
-D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\RabbitmqConsole\RabbitMqConsumer\obj\Debug\RabbitMqConsumer.csproj.CopyComplete
+D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\RabbitmqConsole\RabbitMqConsumer\obj\Debug\RabbitMq.DAEB2F40.Up2Date
 D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\RabbitmqConsole\RabbitMqConsumer\obj\Debug\RabbitMqConsumer.exe
 D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\RabbitmqConsole\RabbitMqConsumer\obj\Debug\RabbitMqConsumer.pdb

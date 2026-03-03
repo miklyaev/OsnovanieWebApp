@@ -4157,3 +4157,24 @@ VALUES ('20231104173428_CreateIndex', '7.0.0');"
 06-11-2023 23:12:36 [Verbose] Message sent.
 06-11-2023 23:12:36 [Information] Executed endpoint '"gRPC - /greet.Greeter/WriteToKafka"'
 06-11-2023 23:12:36 [Information] Request finished HTTP/2 POST https://localhost:7195/greet.Greeter/WriteToKafka application/grpc - - 200 - application/grpc 1015.4086ms
+02-03-2026 23:51:05 [Verbose] Discovering gRPC methods for "GrpcService1.Services.GreeterService".
+02-03-2026 23:51:05 [Verbose] Added gRPC method '"SayHello"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/SayHello"'.
+02-03-2026 23:51:05 [Verbose] Added gRPC method '"GetAll"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetAll"'.
+02-03-2026 23:51:05 [Verbose] Added gRPC method '"GetUser"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetUser"'.
+02-03-2026 23:51:05 [Verbose] Added gRPC method '"GetAllUsers"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/GetAllUsers"'.
+02-03-2026 23:51:05 [Verbose] Added gRPC method '"AddUser"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddUser"'.
+02-03-2026 23:51:05 [Verbose] Added gRPC method '"WriteToKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/WriteToKafka"'.
+02-03-2026 23:51:05 [Verbose] Added gRPC method '"ReadFromKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/ReadFromKafka"'.
+02-03-2026 23:51:05 [Verbose] Added gRPC method '"AddRegion"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddRegion"'.
+02-03-2026 23:51:05 [Verbose] Added gRPC method '"AddSignalToKafka"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddSignalToKafka"'.
+02-03-2026 23:51:05 [Verbose] Added gRPC method '"AddAuthor"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddAuthor"'.
+02-03-2026 23:51:05 [Verbose] Added gRPC method '"AddBook"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/AddBook"'.
+02-03-2026 23:51:05 [Verbose] Added gRPC method '"UpdateAuthor"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/UpdateAuthor"'.
+02-03-2026 23:51:05 [Verbose] Added gRPC method '"UpdateBook"' to service '"greet.Greeter"'. Method type: Unary, HTTP method: "POST", route pattern: '"/greet.Greeter/UpdateBook"'.
+02-03-2026 23:51:06 [Information] Now listening on: "http://localhost:5195"
+02-03-2026 23:51:06 [Information] Now listening on: "https://localhost:7195"
+02-03-2026 23:51:06 [Information] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+02-03-2026 23:51:06 [Information] Application started. Press Ctrl+C to shut down.
+02-03-2026 23:51:06 [Information] Hosting environment: "Development"
+02-03-2026 23:51:06 [Information] Content root path: "D:\SamplesProjC#\Astral\GitHub\OsnovanieWebApp\GrpcService1"
+03-03-2026 00:02:03 [Information] Application is shutting down...
