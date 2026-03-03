@@ -1,4 +1,4 @@
-﻿
+
 using ClickHouseApp.DbService.Exceptions;
 using ClickHouseApp.Dto;
 using Microsoft.Extensions.Options;
@@ -23,7 +23,7 @@ namespace ClickHouseApp.DbService
 
     public class ClickHouseService : IClickHouseService
     {
-        public readonly IConfiguration _configuration;
+        private readonly IConfiguration _configuration;
         private readonly ILogger<ClickHouseService> _logger;
         private readonly ClickHouseConnection _connection;
         private readonly RestClient _client;

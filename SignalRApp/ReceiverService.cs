@@ -1,13 +1,14 @@
-﻿using ILogger = Serilog.ILogger;
+using ILogger = Serilog.ILogger;
 
 namespace SignalRApp
 {
     public class ReceiverService : BackgroundService
     {
-        public readonly IConfiguration _configuration;
-        public readonly ILogger _logger;
-        public readonly IRabbitMqConsumer _rabbitMqConsumer;
-        public readonly IChat _chat;
+        private readonly IConfiguration _configuration;
+        private readonly ILogger _logger;
+        private readonly IRabbitMqConsumer _rabbitMqConsumer;
+        private readonly IChat _chat;
+
         public ReceiverService(IConfiguration configuration, IRabbitMqConsumer rabbitMqConsumer, ILogger logger, IChat chat)
         {
             _configuration = configuration;

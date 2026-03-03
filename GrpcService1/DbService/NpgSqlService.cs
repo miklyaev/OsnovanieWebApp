@@ -1,4 +1,4 @@
-﻿using GrpcService1.DbService.Model;
+using GrpcService1.DbService.Model;
 namespace GrpcService1.DbService
 {
     public interface INpgSqlService
@@ -17,7 +17,7 @@ namespace GrpcService1.DbService
     }
     public class NpgSqlService : INpgSqlService
     {
-        public readonly IConfiguration _configuration;
+        private readonly IConfiguration _configuration;
         private readonly ILogger<NpgSqlService> _logger;
         public NpgSqlService(IConfiguration config, ILogger<NpgSqlService> log)
         {

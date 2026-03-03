@@ -1,4 +1,4 @@
-﻿using Confluent.Kafka;
+using Confluent.Kafka;
 using Microsoft.Extensions.Configuration;
 using Serilog;
 using System.Collections.Generic;
@@ -29,16 +29,13 @@ namespace KafkaLibNetCore
     /// </summary>
     public class Consumer<TKey, TValue> : ICustomConsumer<TKey, TValue>
     {
+        private readonly ILogger _logger;
+        private ConsumerConfig _consumerConfig;
+        private IConsumer<TKey, TValue> _consumer;
 
-        private readonly ILogger m_logger;
-        ConsumerConfig m_consumerConfig;
-
-        IConsumer<TKey, TValue> m_consumer;
-
-        public Consumer(ILogger logger, IConfiguration config)
+        public Consumer(ILogger logger, IConfiguration configuration)
         {
-            IConfiguration m_configuration = config;
-            m_logger = logger;
+            _logger = logger;
         }
         /// <summary>
         /// Конфигурация консюмера
@@ -53,11 +50,11 @@ namespace KafkaLibNetCore
         {
             try
             {
-                m_consumerConfig = GetConsumerConfig(kafkaUrl, groupId, security, sasl, autoReset, enableAutoCommit);
+                _consumerConfig = GetConsumerConfig(kafkaUrl, groupId, security, sasl, autoReset, enableAutoCommit);
             }
             catch (KafkaException err)
             {
-                m_logger.Error($"Error Kafka consumer: {err.Error.Reason}");
+                _logger.Error($"Error Kafka consumer: {err.Error.Reason}");
             }
         }
         /// <summary>
@@ -66,23 +63,25 @@ namespace KafkaLibNetCore
         /// <param name="topic"></param>
         public void SubscribeTopic(string topic)
         {
-            bool bSuccess = true;
+            var success = true;
 
-            m_consumer = new ConsumerBuilder<TKey, TValue>(m_consumerConfig)
+            _consumer = new ConsumerBuilder<TKey, TValue>(_consumerConfig)
             .SetErrorHandler((producer, error) =>
             {
-                m_logger.Error($"Error Kafka consumer: {error.Reason}");
-                bSuccess = false;
+                _logger.Error($"Error Kafka consumer: {error.Reason}");
+                success = false;
             }).Build();
 
             try
             {
-                if (bSuccess)
-                    m_consumer.Subscribe(topic);
+                if (success)
+                {
+                    _consumer.Subscribe(topic);
+                }
             }
             catch (KafkaException err)
             {
-                m_logger.Error($"Subscribe error Kafka consumer: {err.Error.Reason}, topic = {topic}");
+                _logger.Error($"Subscribe error Kafka consumer: {err.Error.Reason}, topic = {topic}");
             }
 
         }
@@ -92,29 +91,31 @@ namespace KafkaLibNetCore
         /// <param name="topics"></param>
         public void SubscribeTopics(List<string> topics)
         {
-            bool bSuccess = true;
-            m_consumer = new ConsumerBuilder<TKey, TValue>(m_consumerConfig)
+            var success = true;
+            _consumer = new ConsumerBuilder<TKey, TValue>(_consumerConfig)
             .SetErrorHandler((producer, error) =>
             {
-                m_logger.Error($"Error Kafka consumer: {error.Reason}");
-                bSuccess = false;
+                _logger.Error($"Error Kafka consumer: {error.Reason}");
+                success = false;
             }).Build();
 
             try
             {
-                if (bSuccess)
-                    m_consumer.Subscribe(topics);
+                if (success)
+                {
+                    _consumer.Subscribe(topics);
+                }
             }
             catch (KafkaException err)
             {
-                m_logger.Error($"Subscribe error Kafka consumer: {err.Error.Reason}");
+                _logger.Error($"Subscribe error Kafka consumer: {err.Error.Reason}");
             }
 
         }
 
         public void ConsumerClose()
         {
-            m_consumer.Close();
+            _consumer.Close();
         }
 
         /// <summary>
@@ -128,11 +129,11 @@ namespace KafkaLibNetCore
         {
             try
             {
-                var cr = m_consumer.Consume(interval);//(cts.Token);
+                var cr = _consumer.Consume(interval);//(cts.Token);
 
                 if (cr != null)
                 {
-                    m_logger.Information($"Consumed message '{cr.Message.Value}' at: '{cr.TopicPartitionOffset}'.");
+                    _logger.Information($"Consumed message '{cr.Message.Value}' at: '{cr.TopicPartitionOffset}'.");
                     return cr;
                 }
                 else
@@ -140,7 +141,7 @@ namespace KafkaLibNetCore
             }
             catch (KafkaException err)
             {
-                m_logger.Error($"Error Kafka consumer: {err.Error.Reason}");
+                _logger.Error($"Error Kafka consumer: {err.Error.Reason}");
                 return null;
             }
         }
@@ -153,11 +154,11 @@ namespace KafkaLibNetCore
         {
             try
             {
-                m_consumer.Commit(result);
+                _consumer.Commit(result);
             }
             catch (KafkaException err)
             {
-                m_logger.Error($"Error Kafka consumer: {err.Error.Reason}");
+                _logger.Error($"Error Kafka consumer: {err.Error.Reason}");
             }
         }
         /// <summary>

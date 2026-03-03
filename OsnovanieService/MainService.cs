@@ -1,4 +1,4 @@
-﻿using Grpc.Net.Client;
+using Grpc.Net.Client;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
@@ -9,8 +9,8 @@ namespace OsnovanieService
 {
     public class Test
     {
-        public int typeId { get; set; }
-        public string typeName { get; set; }
+        public int TypeId { get; set; }
+        public string TypeName { get; set; }
     }
     public interface IMainService
     {
@@ -31,17 +31,16 @@ namespace OsnovanieService
     }
     public class MainService : BaseService, IMainService
     {
-        public readonly IConfiguration _configuration;
-        public readonly ILogger _logger;
-        public readonly IDistributedCache _cache;
+        private readonly IConfiguration _configuration;
+        private readonly ILogger _logger;
+        private readonly IDistributedCache _cache;
 
-        public MainService(IConfiguration config, ILogger log, IDistributedCache distributedCache) : base(config)
+        public MainService(IConfiguration configuration, ILogger logger, IDistributedCache distributedCache)
+            : base(configuration)
         {
-            _configuration = config;
-            _logger = log;
+            _configuration = configuration;
+            _logger = logger;
             _cache = distributedCache;
-
-            
         }
         public string GetHelloWorld()
         {
