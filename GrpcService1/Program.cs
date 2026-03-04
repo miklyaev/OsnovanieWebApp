@@ -1,4 +1,3 @@
-using Confluent.Kafka;
 using GrpcService1.DbService;
 using GrpcService1.Services;
 using KafkaLibNetCore;

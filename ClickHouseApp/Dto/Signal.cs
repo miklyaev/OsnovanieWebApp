@@ -23,6 +23,6 @@ namespace ClickHouseApp.Dto
 
         public TagTypeInfo TagType { get; set; }
 
-        public object TagValue { get; set; }
+        public object? TagValue { get; set; } = null;
     }
 }
